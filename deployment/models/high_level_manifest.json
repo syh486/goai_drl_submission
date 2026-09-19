@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "policy": {
+    "source": "checkpoints/navigation/sru_deploy_model_2750.pt",
+    "source_sha256": "eb31b8bfba80190784e9d571db8748db71e9405d4fc8028642bbc3cb9f2bea03",
+    "policy_index": 1,
+    "onnx": "sru_policy1_model2750.onnx",
+    "onnx_sha256": "77ba167f52861e471cacb6499dcaddf5355c1bc9e363d87ab860469fd8a5f446",
+    "inputs": {
+      "obs": [
+        "batch",
+        2575
+      ],
+      "h_in": [
+        1,
+        "batch",
+        512
+      ],
+      "c_in": [
+        1,
+        "batch",
+        512
+      ]
+    },
+    "outputs": [
+      "actions",
+      "h_out",
+      "c_out"
+    ],
+    "observation_order": [
+      "base_lin_vel_body_xyz[3]",
+      "base_ang_vel_body_xyz[3]",
+      "projected_gravity_body_xyz[3]",
+      "previous_raw_policy_action[2]",
+      "goal_body_xy_z_distance[4]",
+      "fused_lidar_latent_flat[64*5*8]"
+    ],
+    "recurrent_reset": "zero h_in and c_in at navigation start only"
+  },
+  "encoder": {
+    "source": "checkpoints/lidar_encoder_random_terrain_ft/best.pt",
+    "source_sha256": "017794f486c5c5792ac6682a34dda0701604ac31f15f9c3e68ea288b35b0edb5",
+    "model_name": "model1_opt_hybrid_d2c_geo_late_additive_resgate",
+    "onnx": "s10_lidar_encoder.onnx",
+    "onnx_sha256": "011eb34e5093ba6481dfffdcc63354076ad09d3dd1ee475b9193b07938e7706c",
+    "inputs": {
+      "front_distance": [
+        "batch",
+        96,
+        90
+      ],
+      "rear_distance": [
+        "batch",
+        96,
+        90
+      ],
+      "front_world_z": [
+        "batch",
+        96,
+        90
+      ],
+      "rear_world_z": [
+        "batch",
+        96,
+        90
+      ]
+    },
+    "input_units": {
+      "distance": "metres",
+      "world_z": "metres"
+    },
+    "internal_normalization": {
+      "distance_divisor_m": 10.0,
+      "world_z_divisor_m": 3.0
+    },
+    "output": {
+      "fused_latent": [
+        "batch",
+        64,
+        5,
+        8
+      ]
+    }
+  },
+  "action_processing": {
+    "raw_action": "unbounded [vx,yaw] actor output",
+    "tanh_then_scale": [
+      1.5,
+      1.0
+    ],
+    "clamp_vx_yaw": [
+      1.0,
+      1.0
+    ],
+    "low_pass_alpha_previous": 0.5,
+    "policy_hz": 5.0,
+    "command_order": [
+      "vx",
+      "vy=0",
+      "yaw_rate"
+    ]
+  },
+  "verification": {
+    "encoder": {
+      "max_abs": 5.662441253662109e-07,
+      "mean_abs": 7.545052755908444e-08
+    },
+    "actor_actions": {
+      "max_abs": 5.960464477539062e-07,
+      "mean_abs": 1.7415732145309448e-07
+    },
+    "actor_state_max_abs": 1.341104507446289e-07,
+    "sequence_length": 8
+  },
+  "verification_vectors": "high_level_verification_vectors.npz"
+}

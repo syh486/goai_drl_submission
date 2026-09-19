@@ -1,0 +1,174 @@
+topics:
+  front_cloud: /rslidar_front/points
+  rear_cloud: /rslidar_rear/points
+  robot_imu: /IMU_DATA
+  robot_joints: /JOINTS_DATA
+  cmd_vel: /cmd_vel
+  steer: /s10/navigation/steer
+  odometry: /s10/local_odometry
+  diagnostics: /s10/localization/diagnostics
+
+runtime:
+  device: cpu
+  control_hz: 5.0
+  publish_legacy_cmd_vel: false
+  publish_dds_steer: false
+  dds_runner_command_scale: [1.0, 1.0, 1.0]
+  enable_motion: false
+  max_dual_lidar_skew_s: 0.03
+  max_sensor_staleness_s: 0.5
+  # Factory teleoperation publishes /JOINTS_DATA at about 1 Hz. Keep the
+  # LiDAR/IMU gate strict while allowing one full joint publication period.
+  # SDK navigation configs omit this override and retain the 0.5 s gate.
+  max_joint_staleness_s: 1.5
+  # The tested S10 publishes XYZ/intensity only. KISS-ICP remains usable,
+  # but point-level motion deskew is unavailable while the base is moving.
+  require_point_timestamps: false
+  warmup_frames: 5
+  # IMU is 200 Hz. DDS callbacks can be batched around a 10 Hz LiDAR callback;
+  # three samples over 10 ms still provide a valid propagation interval.
+  min_imu_samples: 3
+  min_imu_span_s: 0.01
+  wheel_radius_m: 0.0825
+  wheel_signs: [-1.0, 1.0, -1.0, 1.0]
+  wheel_indices: [3, 7, 11, 15]
+
+localization:
+  voxel_size_m: 0.15
+  icp_threads: 4
+  icp_max_iterations: 20
+  # Evenly retain both front/rear coverage while bounding Python copies and
+  # KISS preprocessing. The raw pair contains roughly 100k points on hardware.
+  max_registration_points: 6000
+  # Limit each Airy before body-frame conversion. This keeps azimuth/elevation
+  # coverage while avoiding transformations over roughly 100k raw points.
+  max_cloud_points_per_lidar: 4000
+  diagnostics_hz: 2.0
+  support_height_hz: 0.5
+  # S10 RPY yaw is not a verified global heading. Keep roll/pitch tight, but
+  # let gyro integration and LiDAR geometry estimate heading.
+  orientation_yaw_sigma_deg: 180.0
+  orientation_nis_threshold: 16.27
+  lidar_nis_threshold: 22.46
+  # KISS already supplies a full SE(3) point-to-map pose correction. The
+  # additional Python/SciPy point-plane pass copied the complete local map and
+  # rebuilt a KD-tree every frame, producing 300+ ms tail latency on the AGX.
+  enable_point_coupling: false
+  point_coupling_sigma_m: 0.08
+  point_coupling_effective_points: 120.0
+  point_coupling_max_points: 1200
+  enable_zero_velocity_update: true
+  enable_motion_constraints: false
+
+# Disabled during mapping and waypoint collection. The read-only route-map
+# launcher enables this block with an explicit frozen map directory.
+map_localization:
+  enabled: false
+  map_dir: deployment/maps/current
+  registration_target: route_submap
+  registration_backend: kiss_icp
+  # The AGX cannot evaluate the desktop default of eight coarse+fine ICP
+  # registrations per LiDAR pair in real time. Keep one hypothesis and a
+  # compact candidate set; local odometry fills between map corrections.
+  update_stride: 2
+  beam_width: 1
+  candidate_count: 1
+  odometry_recovery_candidate_count: 1
+  max_coast_s: 5.0
+  query_voxel_m: 0.30
+  fine_query_voxel_m: 0.12
+  fine_max_query_points: 3000
+  query_submap_updates: 2
+  max_icp_iterations: 12
+  # Map matching runs concurrently with the four-thread local odometry ICP.
+  # Bound it so a slow map update cannot starve the real-time pose stream.
+  icp_threads: 2
+  fine_max_icp_iterations: 8
+  fine_max_correspondence_m: 0.40
+  fine_min_fitness: 0.55
+  fine_max_rmse_m: 0.18
+  odometry_tracking_candidate_count: 1
+  recovery_odometry_radius_submaps: 12
+  route_lag_cost: 0.05
+  # The multi-session candidate passes desktop held-out replay only with a
+  # wider candidate/query profile. Keep disabled until the same profile meets
+  # the AGX latency budget in a read-only field run.
+  multisession_consensus_enabled: false
+  min_fitness: 0.50
+  max_rmse_m: 0.48
+  continuity_min_fitness: 0.40
+  continuity_max_rmse_m: 0.50
+  temporal_fusion_enabled: true
+  max_route_consistent_relocalization_translation_m: 25.0
+  max_route_consistent_relocalization_yaw_deg: 45.0
+
+# Store long-range, body-frame keyframes for offline pose-graph mapping. This
+# avoids recording the roughly 8 GiB/10 min raw dual-LiDAR stream on the AGX.
+mapping_recording:
+  translation_m: 0.20
+  rotation_deg: 4.0
+  # Route mapping needs sequential scan overlap. During map acquisition retain each
+  # synchronized pair at up to the native 10 Hz instead of trusting the drifting
+  # online pose to decide which scans are important.
+  min_interval_s: 0.10
+  record_every_interval: true
+  voxel_size_m: 0.15
+  min_range_m: 0.45
+  max_range_m: 30.0
+  max_points: 24000
+  # Absorb short eMMC stalls instead of dropping sequential scans. Persist in
+  # batches; graceful shutdown performs one final filesystem sync.
+  queue_size: 64
+  sync_interval_frames: 100
+  reserve_free_gib: 1.0
+  # IMU is recorded by an isolated rclpy process so PointCloud2 decoding can
+  # never starve the 200 Hz callback. stop_support_mapping_lap.sh attaches it.
+  record_imu_stream: false
+
+start_alignment:
+  # Keep collection and navigation on the same start-anchor contract. Twelve
+  # stationary pairs cost about 1.2 s at 10 Hz and are more robust to people
+  # crossing either Airy during automatic initial yaw/translation alignment.
+  capture_frames: 12
+  voxel_size_m: 0.12
+  min_range_m: 0.35
+  max_range_m: 30.0
+  structural_min_z_m: -0.20
+  max_registration_points: 3500
+  yaw_search_range_deg: 45.0
+  yaw_search_step_deg: 2.0
+  coarse_candidates: 4
+  max_initial_translation_m: 1.5
+  max_correspondence_m: 0.80
+  trim_fraction: 0.70
+  icp_iterations: 25
+  stationary_wheel_speed_mps: 0.05
+  stationary_gyro_rps: 0.12
+
+sensors:
+  front:
+    points_in_body_frame: true
+    position_body_m: [0.22341, 0.0, -0.0001]
+    quaternion_body_sensor_wxyz: [0.00084463, 0.7071065, -0.00028154, 0.7071065]
+    ring_flip: false
+  rear:
+    points_in_body_frame: true
+    position_body_m: [-0.22341, 0.0, -0.0001]
+    quaternion_body_sensor_wxyz: [0.70703477, 0.0, -0.70717879, 0.0]
+    ring_flip: false
+
+# In collection mode the base starts over route_map origin and faces +X.
+# The second point only satisfies RouteManager's initialization contract and is
+# never tracked while --localization-only is active.
+route:
+  waypoints_map_m:
+    - [0.0, 0.0, 0.0]
+    - [1.0, 0.0, 0.0]
+  start_waypoint: 0
+  final_waypoint: 1
+  skipped_waypoints: []
+  reach_xy_m: 0.5
+  reach_z_m: 0.55
+  hold_s: 0.0
+  initial_base_height_m: 0.425
+  initial_map_yaw_deg: 0.0

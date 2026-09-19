@@ -1,0 +1,2813 @@
+{
+  "checkpoint": "/home/syh/goai_embodied_future_material/checkpoints/navigation/sru_deploy_model_2750.pt",
+  "checkpoint_iteration": 2750,
+  "episodes": 50,
+  "successes": 36,
+  "success_rate": 0.72,
+  "reasons": {
+    "large_angle": 3,
+    "goal_complete": 36,
+    "base_contact": 11
+  },
+  "terrain_profile": "stage5_lower_density_stairs",
+  "terrain_sampling": "random_without_replacement_across_6x30_atlas",
+  "goal_source": "stored_initial_local_target_plus_kiss_eskf",
+  "actor_input_sources": {
+    "base_lin_vel": "kiss_eskf_velocity_rotated_into_body_frame",
+    "base_ang_vel": "latest_simulated_body_imu_gyro",
+    "projected_gravity": "kiss_eskf_rotation",
+    "goal_body": "stored_initial_target_plus_kiss_eskf_pose",
+    "lidar_latent": "simulated_range_scans_plus_kiss_eskf_world_height",
+    "last_action": "policy_history"
+  },
+  "simulation_assumptions": "exact initial route-frame anchor; ideal synchronized simulated sensors without calibration errors, missing points, latency, or injected noise; MuJoCo truth is used only for physics, reset, terminal labels, and diagnostics",
+  "action_filter_alpha": 0.5,
+  "coordinate_error_definition": "KISS/ESKF estimate minus MuJoCo truth on non-terminal control steps; last_valid is the final sample before backend auto-reset",
+  "position_error_xy_m": {
+    "samples": 4818,
+    "mean": 0.0069593336274282455,
+    "p50": 0.005336888036196445,
+    "p95": 0.0180716005435679,
+    "max": 0.03994133793530934,
+    "last_valid": 0.00014863835285663476
+  },
+  "position_error_3d_m": {
+    "samples": 4818,
+    "mean": 0.008688563933417087,
+    "p50": 0.00690007434982201,
+    "p95": 0.023232566818478195,
+    "max": 0.03994287227544923,
+    "last_valid": 0.008709734799452667
+  },
+  "goal_vector_error_deg": {
+    "samples": 4818,
+    "mean": 0.6366851938049279,
+    "p50": 0.06723603949314855,
+    "p95": 4.005197759964787,
+    "max": 31.11845914804887,
+    "last_valid": 0.8410379769102856
+  },
+  "body_velocity_error_mps": {
+    "samples": 4818,
+    "mean": 0.03356593398557504,
+    "p50": 0.024812839925289154,
+    "p95": 0.09340340644121163,
+    "max": 0.46619364619255066,
+    "last_valid": 0.037753552198410034
+  },
+  "official_low_level": "/home/syh/goai_embodied_future_material/src/S10_sdk_deploy/policy/policy_official_20260828.onnx",
+  "lidar_encoder": "/home/syh/goai_embodied_future_material/checkpoints/lidar_encoder_random_terrain_ft/best.pt",
+  "records": [
+    {
+      "episode": 1,
+      "reason": "large_angle",
+      "success": false,
+      "steps": 131,
+      "tile_index": 107,
+      "terrain_row": 3,
+      "terrain_col": 17,
+      "terrain_type": "stairs",
+      "terrain_difficulty": 0.8694920019577709,
+      "terminal_goal_distance_xy_m": 5.21490707096604,
+      "terminal_base_position": [
+        100.12843972431318,
+        518.3026654942399,
+        0.2568685421917264
+      ],
+      "start_position": [
+        112.5,
+        522.6,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 130,
+        "mean": 0.014558191203630767,
+        "p50": 0.017067618856093546,
+        "p95": 0.019069608293489144,
+        "max": 0.02083796886584762,
+        "last_valid": 0.020047990600975604
+      },
+      "position_error_3d_m": {
+        "samples": 130,
+        "mean": 0.014715850708453732,
+        "p50": 0.017184826416458073,
+        "p95": 0.019252398161357886,
+        "max": 0.02111559338907062,
+        "last_valid": 0.02034089374441827
+      },
+      "goal_vector_error_deg": {
+        "samples": 130,
+        "mean": 0.166055619455871,
+        "p50": 0.17912036916552784,
+        "p95": 0.23233730585894902,
+        "max": 0.2571640325098064,
+        "last_valid": 0.2523676713741647
+      },
+      "body_velocity_error_mps": {
+        "samples": 130,
+        "mean": 0.02794194465252356,
+        "p50": 0.018293901346623898,
+        "p95": 0.09227589331567286,
+        "max": 0.12489622086286545,
+        "last_valid": 0.10008836537599564
+      },
+      "wall_seconds": 20.70133778400009
+    },
+    {
+      "episode": 2,
+      "reason": "goal_complete",
+      "success": true,
+      "steps": 124,
+      "tile_index": 172,
+      "terrain_row": 5,
+      "terrain_col": 22,
+      "terrain_type": "stairs",
+      "terrain_difficulty": 0.897557419491543,
+      "terminal_goal_distance_xy_m": 0.06240837670803487,
+      "terminal_base_position": [
+        154.62450601495138,
+        683.3573956506586,
+        0.9282926087673095
+      ],
+      "start_position": [
+        169.5,
+        663.6,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 123,
+        "mean": 0.004784208909252884,
+        "p50": 0.00428350180498886,
+        "p95": 0.008114571912197506,
+        "max": 0.010504338267874499,
+        "last_valid": 0.006116612821079795
+      },
+      "position_error_3d_m": {
+        "samples": 123,
+        "mean": 0.006874831661602714,
+        "p50": 0.005168759276166838,
+        "p95": 0.012992128045922183,
+        "max": 0.014896302175727016,
+        "last_valid": 0.012089647233055806
+      },
+      "goal_vector_error_deg": {
+        "samples": 123,
+        "mean": 0.37432493923031407,
+        "p50": 0.05284124946065456,
+        "p95": 2.0214131256694445,
+        "max": 2.4327531010272065,
+        "last_valid": 1.5766416132091656
+      },
+      "body_velocity_error_mps": {
+        "samples": 123,
+        "mean": 0.03218835274446604,
+        "p50": 0.023816274479031563,
+        "p95": 0.09357561022043226,
+        "max": 0.1474151760339737,
+        "last_valid": 0.032208338379859924
+      },
+      "wall_seconds": 18.708845875000065
+    },
+    {
+      "episode": 3,
+      "reason": "goal_complete",
+      "success": true,
+      "steps": 80,
+      "tile_index": 143,
+      "terrain_row": 4,
+      "terrain_col": 23,
+      "terrain_type": "maze",
+      "terrain_difficulty": 0.6868070692297858,
+      "terminal_goal_distance_xy_m": 0.009617241334648126,
+      "terminal_base_position": [
+        135.99367685088305,
+        705.8072463174187,
+        0.405542732898992
+      ],
+      "start_position": [
+        149.1,
+        704.8,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 79,
+        "mean": 0.0046626308434894485,
+        "p50": 0.005068628980552628,
+        "p95": 0.006857050681503659,
+        "max": 0.007247571534493277,
+        "last_valid": 0.006350718055145753
+      },
+      "position_error_3d_m": {
+        "samples": 79,
+        "mean": 0.006612559643684284,
+        "p50": 0.00611411843927941,
+        "p95": 0.010722862240031297,
+        "max": 0.01096418331802366,
+        "last_valid": 0.010304287252461922
+      },
+      "goal_vector_error_deg": {
+        "samples": 79,
+        "mean": 0.7327178938107479,
+        "p50": 0.08798360223528362,
+        "p95": 2.899183063935223,
+        "max": 3.2851170664146805,
+        "last_valid": 2.769541560731261
+      },
+      "body_velocity_error_mps": {
+        "samples": 79,
+        "mean": 0.03024850921599265,
+        "p50": 0.02648245356976986,
+        "p95": 0.06781473681330678,
+        "max": 0.11635486781597137,
+        "last_valid": 0.04741332307457924
+      },
+      "wall_seconds": 12.914476529000012
+    },
+    {
+      "episode": 4,
+      "reason": "goal_complete",
+      "success": true,
+      "steps": 93,
+      "tile_index": 28,
+      "terrain_row": 0,
+      "terrain_col": 28,
+      "terrain_type": "non_maze",
+      "terrain_difficulty": 0.7843705979764468,
+      "terminal_goal_distance_xy_m": 0.12315800649116045,
+      "terminal_base_position": [
+        20.889009525931193,
+        859.6773333621451,
+        0.40556156314455716
+      ],
+      "start_position": [
+        7.300000000000001,
+        855.1,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 92,
+        "mean": 0.00574464614985979,
+        "p50": 0.005736497286296427,
+        "p95": 0.009783623366685439,
+        "max": 0.0110347731801613,
+        "last_valid": 0.009041220684445841
+      },
+      "position_error_3d_m": {
+        "samples": 92,
+        "mean": 0.007533209182592769,
+        "p50": 0.00707916962096609,
+        "p95": 0.012548195980399605,
+        "max": 0.013626917915843764,
+        "last_valid": 0.01208198374380886
+      },
+      "goal_vector_error_deg": {
+        "samples": 92,
+        "mean": 1.3375862465517738,
+        "p50": 0.08127711405314494,
+        "p95": 6.040907320907644,
+        "max": 13.439893406902172,
+        "last_valid": 4.3897473398191895
+      },
+      "body_velocity_error_mps": {
+        "samples": 92,
+        "mean": 0.02946806945534342,
+        "p50": 0.02422308176755905,
+        "p95": 0.06528152674436571,
+        "max": 0.11711318045854568,
+        "last_valid": 0.045838162302970886
+      },
+      "wall_seconds": 13.610089189000064
+    },
+    {
+      "episode": 5,
+      "reason": "goal_complete",
+      "success": true,
+      "steps": 129,
+      "tile_index": 100,
+      "terrain_row": 3,
+      "terrain_col": 10,
+      "terrain_type": "stairs",
+      "terrain_difficulty": 0.9859132130304837,
+      "terminal_goal_distance_xy_m": 0.006132749627453143,
+      "terminal_base_position": [
+        102.59400634197205,
+        309.10129872300246,
+        0.6138243567174307
+      ],
+      "start_position": [
+        101.2,
+        329.2,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 128,
+        "mean": 0.00953432941835006,
+        "p50": 0.007480695746979991,
+        "p95": 0.019095349230312652,
+        "max": 0.021489846091294777,
+        "last_valid": 0.017534555434748817
+      },
+      "position_error_3d_m": {
+        "samples": 128,
+        "mean": 0.01207019842581925,
+        "p50": 0.00951776962603541,
+        "p95": 0.023665854348450255,
+        "max": 0.02432354465797379,
+        "last_valid": 0.022394313009860316
+      },
+      "goal_vector_error_deg": {
+        "samples": 128,
+        "mean": 0.885043344341332,
+        "p50": 0.10058260331889149,
+        "p95": 5.390314725904679,
+        "max": 5.681964625957505,
+        "last_valid": 4.980542774555733
+      },
+      "body_velocity_error_mps": {
+        "samples": 128,
+        "mean": 0.041353565433382755,
+        "p50": 0.02713335119187832,
+        "p95": 0.10529326945543283,
+        "max": 0.46619364619255066,
+        "last_valid": 0.043627336621284485
+      },
+      "wall_seconds": 19.98012031899998
+    },
+    {
+      "episode": 6,
+      "reason": "base_contact",
+      "success": false,
+      "steps": 19,
+      "tile_index": 25,
+      "terrain_row": 0,
+      "terrain_col": 25,
+      "terrain_type": "maze",
+      "terrain_difficulty": 0.5036811348755028,
+      "terminal_goal_distance_xy_m": 7.832374896969568,
+      "terminal_base_position": [
+        13.366969884529531,
+        760.5596712667384,
+        0.3835185548167726
+      ],
+      "start_position": [
+        15.100000000000001,
+        760.3,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 18,
+        "mean": 0.001231055014149004,
+        "p50": 0.0011800855756598752,
+        "p95": 0.002258601762160712,
+        "max": 0.0023976011224928536,
+        "last_valid": 0.0008014155621868812
+      },
+      "position_error_3d_m": {
+        "samples": 18,
+        "mean": 0.0015205110191260514,
+        "p50": 0.0014323472034786819,
+        "p95": 0.002555204259432745,
+        "max": 0.0028690943362738985,
+        "last_valid": 0.0010665717387643376
+      },
+      "goal_vector_error_deg": {
+        "samples": 18,
+        "mean": 0.014087328756214022,
+        "p50": 0.014615710585586646,
+        "p95": 0.022713756476365313,
+        "max": 0.0244575118964914,
+        "last_valid": 0.014425989674360326
+      },
+      "body_velocity_error_mps": {
+        "samples": 18,
+        "mean": 0.028904552726695936,
+        "p50": 0.016083686612546444,
+        "p95": 0.10968573652207851,
+        "max": 0.11445770412683487,
+        "last_valid": 0.03645683452486992
+      },
+      "wall_seconds": 2.411879567000028
+    },
+    {
+      "episode": 7,
+      "reason": "base_contact",
+      "success": false,
+      "steps": 35,
+      "tile_index": 59,
+      "terrain_row": 1,
+      "terrain_col": 29,
+      "terrain_type": "non_maze",
+      "terrain_difficulty": 0.8136544203512216,
+      "terminal_goal_distance_xy_m": 10.935261765236074,
+      "terminal_base_position": [
+        53.301220314504214,
+        895.4634499767631,
+        0.39955344825975553
+      ],
+      "start_position": [
+        55.900000000000006,
+        894.6,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 34,
+        "mean": 0.003493231923277145,
+        "p50": 0.003581652526366466,
+        "p95": 0.0052576957504035385,
+        "max": 0.005629340699769458,
+        "last_valid": 0.003608332132716765
+      },
+      "position_error_3d_m": {
+        "samples": 34,
+        "mean": 0.003676521786586401,
+        "p50": 0.003674215106485211,
+        "p95": 0.005314683674944985,
+        "max": 0.005672848336457761,
+        "last_valid": 0.003613408677115856
+      },
+      "goal_vector_error_deg": {
+        "samples": 34,
+        "mean": 0.06467788891021557,
+        "p50": 0.0652943729854894,
+        "p95": 0.09236034299577478,
+        "max": 0.1045845820120842,
+        "last_valid": 0.05804963500461884
+      },
+      "body_velocity_error_mps": {
+        "samples": 34,
+        "mean": 0.03615940931280527,
+        "p50": 0.03128016460686922,
+        "p95": 0.07720994167029857,
+        "max": 0.10736256837844849,
+        "last_valid": 0.036104921251535416
+      },
+      "wall_seconds": 4.994238693999932
+    },
+    {
+      "episode": 8,
+      "reason": "goal_complete",
+      "success": true,
+      "steps": 159,
+      "tile_index": 77,
+      "terrain_row": 2,
+      "terrain_col": 17,
+      "terrain_type": "maze",
+      "terrain_difficulty": 0.8361200465199059,
+      "terminal_goal_distance_xy_m": 0.07450526973784619,
+      "terminal_base_position": [
+        68.10462129387803,
+        518.6256381894949,
+        0.4041871341294808
+      ],
+      "start_position": [
+        83.8,
+        535.1,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 158,
+        "mean": 0.008442835696965585,
+        "p50": 0.008905117843655271,
+        "p95": 0.013400303160039019,
+        "max": 0.013855617924863069,
+        "last_valid": 0.013362765082847854
+      },
+      "position_error_3d_m": {
+        "samples": 158,
+        "mean": 0.018151484203772533,
+        "p50": 0.01845534953730667,
+        "p95": 0.03254268080166925,
+        "max": 0.03284486326808475,
+        "last_valid": 0.032575353871099624
+      },
+      "goal_vector_error_deg": {
+        "samples": 158,
+        "mean": 0.6874649366604728,
+        "p50": 0.12435116453237921,
+        "p95": 4.357524316802276,
+        "max": 7.340504144382679,
+        "last_valid": 0.807234661793362
+      },
+      "body_velocity_error_mps": {
+        "samples": 158,
+        "mean": 0.02601544281852408,
+        "p50": 0.02239409275352955,
+        "p95": 0.0632984347641468,
+        "max": 0.1130458191037178,
+        "last_valid": 0.021223679184913635
+      },
+      "wall_seconds": 24.804430856000067
+    },
+    {
+      "episode": 9,
+      "reason": "goal_complete",
+      "success": true,
+      "steps": 168,
+      "tile_index": 121,
+      "terrain_row": 4,
+      "terrain_col": 1,
+      "terrain_type": "maze",
+      "terrain_difficulty": 0.7653847952995267,
+      "terminal_goal_distance_xy_m": 0.028573300675028654,
+      "terminal_base_position": [
+        146.17763957281505,
+        31.11778889562544,
+        0.40251787428221775
+      ],
+      "start_position": [
+        120.4,
+        40.8,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 167,
+        "mean": 0.008953511339251638,
+        "p50": 0.007913038131740878,
+        "p95": 0.01902519066221672,
+        "max": 0.019708427316825948,
+        "last_valid": 0.018283303746059146
+      },
+      "position_error_3d_m": {
+        "samples": 167,
+        "mean": 0.010646450387574617,
+        "p50": 0.008584463258715331,
+        "p95": 0.023876634480472704,
+        "max": 0.02470250243533695,
+        "last_valid": 0.023202413106715853
+      },
+      "goal_vector_error_deg": {
+        "samples": 167,
+        "mean": 0.8412642876348918,
+        "p50": 0.06129633004696555,
+        "p95": 6.828325142110836,
+        "max": 8.569630547531805,
+        "last_valid": 5.6122968638714985
+      },
+      "body_velocity_error_mps": {
+        "samples": 167,
+        "mean": 0.03130375056159487,
+        "p50": 0.02387029118835926,
+        "p95": 0.10259307622909539,
+        "max": 0.17890781164169312,
+        "last_valid": 0.04132814332842827
+      },
+      "wall_seconds": 26.297057165999945
+    },
+    {
+      "episode": 10,
+      "reason": "goal_complete",
+      "success": true,
+      "steps": 143,
+      "tile_index": 126,
+      "terrain_row": 4,
+      "terrain_col": 6,
+      "terrain_type": "non_maze",
+      "terrain_difficulty": 0.6239197814756791,
+      "terminal_goal_distance_xy_m": 0.08090334050844517,
+      "terminal_base_position": [
+        147.8414623444422,
+        186.0558452628897,
+        0.4003111340132485
+      ],
+      "start_position": [
+        137.8,
+        207.7,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 142,
+        "mean": 0.011428943374111076,
+        "p50": 0.012892079325122513,
+        "p95": 0.01946301756218527,
+        "max": 0.021283248201505168,
+        "last_valid": 0.01786125469324265
+      },
+      "position_error_3d_m": {
+        "samples": 142,
+        "mean": 0.011460485000892804,
+        "p50": 0.012896896068730006,
+        "p95": 0.019466185475216512,
+        "max": 0.021288543002314336,
+        "last_valid": 0.017865981395606204
+      },
+      "goal_vector_error_deg": {
+        "samples": 142,
+        "mean": 0.4595997208454988,
+        "p50": 0.07657013536281478,
+        "p95": 2.4689319414595357,
+        "max": 2.907326657302978,
+        "last_valid": 2.738858873501389
+      },
+      "body_velocity_error_mps": {
+        "samples": 142,
+        "mean": 0.031513196334216585,
+        "p50": 0.02007326390594244,
+        "p95": 0.08190513513982284,
+        "max": 0.34150993824005127,
+        "last_valid": 0.0282380823045969
+      },
+      "wall_seconds": 22.82160598300004
+    },
+    {
+      "episode": 11,
+      "reason": "base_contact",
+      "success": false,
+      "steps": 65,
+      "tile_index": 79,
+      "terrain_row": 2,
+      "terrain_col": 19,
+      "terrain_type": "stairs",
+      "terrain_difficulty": 0.8843237459588285,
+      "terminal_goal_distance_xy_m": 11.561936725691854,
+      "terminal_base_position": [
+        69.18483818112828,
+        580.5017957126338,
+        0.4072724699474403
+      ],
+      "start_position": [
+        77.0,
+        576.0,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 64,
+        "mean": 0.002749242181594367,
+        "p50": 0.001924962789852922,
+        "p95": 0.006885203539648655,
+        "max": 0.008333918619297519,
+        "last_valid": 0.008333918619297519
+      },
+      "position_error_3d_m": {
+        "samples": 64,
+        "mean": 0.005258932844276081,
+        "p50": 0.002661429295295272,
+        "p95": 0.015616630180890883,
+        "max": 0.017372522643690366,
+        "last_valid": 0.017372522643690366
+      },
+      "goal_vector_error_deg": {
+        "samples": 64,
+        "mean": 0.06442628928273683,
+        "p50": 0.04910492531494477,
+        "p95": 0.17112455605743598,
+        "max": 0.18533280554435588,
+        "last_valid": 0.15532511770685423
+      },
+      "body_velocity_error_mps": {
+        "samples": 64,
+        "mean": 0.03998792505808524,
+        "p50": 0.025247029028832912,
+        "p95": 0.09688001610338684,
+        "max": 0.2816283702850342,
+        "last_valid": 0.04513605684041977
+      },
+      "wall_seconds": 9.349635562000003
+    },
+    {
+      "episode": 12,
+      "reason": "goal_complete",
+      "success": true,
+      "steps": 69,
+      "tile_index": 63,
+      "terrain_row": 2,
+      "terrain_col": 3,
+      "terrain_type": "non_maze",
+      "terrain_difficulty": 0.5722620944330234,
+      "terminal_goal_distance_xy_m": 0.01739882926503622,
+      "terminal_base_position": [
+        64.41737931048243,
+        113.60082390955166,
+        0.4040200440291042
+      ],
+      "start_position": [
+        66.8,
+        110.4,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 68,
+        "mean": 0.0050442585089169115,
+        "p50": 0.005285584133473941,
+        "p95": 0.009338813328189711,
+        "max": 0.010771277921341648,
+        "last_valid": 0.008001312242789434
+      },
+      "position_error_3d_m": {
+        "samples": 68,
+        "mean": 0.005061316206776689,
+        "p50": 0.0052898632757798995,
+        "p95": 0.009347750558124545,
+        "max": 0.010782645836608049,
+        "last_valid": 0.008015383095267
+      },
+      "goal_vector_error_deg": {
+        "samples": 68,
+        "mean": 0.592091434833729,
+        "p50": 0.04142768513262124,
+        "p95": 2.8475855740933134,
+        "max": 3.531206199950231,
+        "last_valid": 3.4697936248558676
+      },
+      "body_velocity_error_mps": {
+        "samples": 68,
+        "mean": 0.036417871165801495,
+        "p50": 0.024855812080204487,
+        "p95": 0.1148768551647663,
+        "max": 0.13537287712097168,
+        "last_valid": 0.046800605952739716
+      },
+      "wall_seconds": 10.661684606999984
+    },
+    {
+      "episode": 13,
+      "reason": "base_contact",
+      "success": false,
+      "steps": 60,
+      "tile_index": 89,
+      "terrain_row": 2,
+      "terrain_col": 29,
+      "terrain_type": "stairs",
+      "terrain_difficulty": 0.8743040097284747,
+      "terminal_goal_distance_xy_m": 2.803468442350955,
+      "terminal_base_position": [
+        86.67870372636906,
+        886.7167066822552,
+        0.17991484343371758
+      ],
+      "start_position": [
+        89.5,
+        896.9,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 59,
+        "mean": 0.023549501789188323,
+        "p50": 0.029538508157208154,
+        "p95": 0.03318819054311383,
+        "max": 0.03994133793530934,
+        "last_valid": 0.02966156045849007
+      },
+      "position_error_3d_m": {
+        "samples": 59,
+        "mean": 0.023904072331291062,
+        "p50": 0.03019706836782713,
+        "p95": 0.0338601617844964,
+        "max": 0.03994287227544923,
+        "last_valid": 0.03100619633502967
+      },
+      "goal_vector_error_deg": {
+        "samples": 59,
+        "mean": 0.1252685006772609,
+        "p50": 0.08176765613303566,
+        "p95": 0.34488880946096184,
+        "max": 0.3687461461074668,
+        "last_valid": 0.32971501195596586
+      },
+      "body_velocity_error_mps": {
+        "samples": 59,
+        "mean": 0.04909277606313511,
+        "p50": 0.044523853808641434,
+        "p95": 0.11273142546415328,
+        "max": 0.16290956735610962,
+        "last_valid": 0.06390830874443054
+      },
+      "wall_seconds": 8.417731109999977
+    },
+    {
+      "episode": 14,
+      "reason": "base_contact",
+      "success": false,
+      "steps": 142,
+      "tile_index": 57,
+      "terrain_row": 1,
+      "terrain_col": 27,
+      "terrain_type": "maze",
+      "terrain_difficulty": 0.9283071420461877,
+      "terminal_goal_distance_xy_m": 2.208850271799597,
+      "terminal_base_position": [
+        36.666009517182744,
+        828.6481077886644,
+        0.3957246514152827
+      ],
+      "start_position": [
+        37.9,
+        826.7,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 141,
+        "mean": 0.0032205271610676097,
+        "p50": 0.0034562145860574634,
+        "p95": 0.005790451178061962,
+        "max": 0.006656426232444977,
+        "last_valid": 0.001935466132702297
+      },
+      "position_error_3d_m": {
+        "samples": 141,
+        "mean": 0.003994252781114919,
+        "p50": 0.003960727880205285,
+        "p95": 0.00654754159638225,
+        "max": 0.00733395432876322,
+        "last_valid": 0.0033534338961751387
+      },
+      "goal_vector_error_deg": {
+        "samples": 141,
+        "mean": 0.03801652759579772,
+        "p50": 0.03391155570392813,
+        "p95": 0.07050869998424353,
+        "max": 0.08873103708416939,
+        "last_valid": 0.07662319783786364
+      },
+      "body_velocity_error_mps": {
+        "samples": 141,
+        "mean": 0.03378110491928268,
+        "p50": 0.026469524949789047,
+        "p95": 0.07875601947307587,
+        "max": 0.2792304754257202,
+        "last_valid": 0.046144191175699234
+      },
+      "wall_seconds": 22.682441492999942
+    },
+    {
+      "episode": 15,
+      "reason": "goal_complete",
+      "success": true,
+      "steps": 84,
+      "tile_index": 130,
+      "terrain_row": 4,
+      "terrain_col": 10,
+      "terrain_type": "maze",
+      "terrain_difficulty": 0.9123320952281706,
+      "terminal_goal_distance_xy_m": 0.018933538207043465,
+      "terminal_base_position": [
+        121.2814867957205,
+        312.496032615932,
+        0.40244470250715914
+      ],
+      "start_position": [
+        121.0,
+        327.1,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 83,
+        "mean": 0.00707855283951299,
+        "p50": 0.0086214975735327,
+        "p95": 0.011495334563609396,
+        "max": 0.012482015118739741,
+        "last_valid": 0.010145224345813227
+      },
+      "position_error_3d_m": {
+        "samples": 83,
+        "mean": 0.007671308780349271,
+        "p50": 0.00910547077282566,
+        "p95": 0.012314179552342108,
+        "max": 0.013131489400698216,
+        "last_valid": 0.011135375042320766
+      },
+      "goal_vector_error_deg": {
+        "samples": 83,
+        "mean": 1.3988540219467849,
+        "p50": 0.08355137286133969,
+        "p95": 7.250026393615288,
+        "max": 8.311453754422509,
+        "last_valid": 6.433069118811293
+      },
+      "body_velocity_error_mps": {
+        "samples": 83,
+        "mean": 0.02905487535936556,
+        "p50": 0.02451450005173683,
+        "p95": 0.07381424382328984,
+        "max": 0.11485979706048965,
+        "last_valid": 0.037204381078481674
+      },
+      "wall_seconds": 13.248614947000078
+    },
+    {
+      "episode": 16,
+      "reason": "goal_complete",
+      "success": true,
+      "steps": 94,
+      "tile_index": 175,
+      "terrain_row": 5,
+      "terrain_col": 25,
+      "terrain_type": "stairs",
+      "terrain_difficulty": 0.5856456520463944,
+      "terminal_goal_distance_xy_m": 0.06448355059171183,
+      "terminal_base_position": [
+        177.0400819223939,
+        751.2494869542185,
+        0.402659067001637
+      ],
+      "start_position": [
+        167.2,
+        763.3,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 93,
+        "mean": 0.014491078351470928,
+        "p50": 0.013592642460807275,
+        "p95": 0.025947062190707693,
+        "max": 0.027936134660858668,
+        "last_valid": 0.02500484352637596
+      },
+      "position_error_3d_m": {
+        "samples": 93,
+        "mean": 0.014513263609130933,
+        "p50": 0.013617169087747648,
+        "p95": 0.02595442901779227,
+        "max": 0.027940299149733294,
+        "last_valid": 0.025008157642311887
+      },
+      "goal_vector_error_deg": {
+        "samples": 93,
+        "mean": 2.214359170116125,
+        "p50": 0.2049892687016918,
+        "p95": 10.062957888087968,
+        "max": 10.515304162774376,
+        "last_valid": 9.605194365900424
+      },
+      "body_velocity_error_mps": {
+        "samples": 93,
+        "mean": 0.035898722202507075,
+        "p50": 0.029411518946290016,
+        "p95": 0.10158939212560646,
+        "max": 0.12692634761333466,
+        "last_valid": 0.022708257660269737
+      },
+      "wall_seconds": 13.455029198000148
+    },
+    {
+      "episode": 17,
+      "reason": "goal_complete",
+      "success": true,
+      "steps": 46,
+      "tile_index": 23,
+      "terrain_row": 0,
+      "terrain_col": 23,
+      "terrain_type": "non_maze",
+      "terrain_difficulty": 0.644164051965122,
+      "terminal_goal_distance_xy_m": 0.04678608912058143,
+      "terminal_base_position": [
+        16.442126903604866,
+        711.220353430371,
+        0.40079754298172815
+      ],
+      "start_position": [
+        18.3,
+        715.0,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 45,
+        "mean": 0.003571634514465294,
+        "p50": 0.003878544767046121,
+        "p95": 0.005444725373583714,
+        "max": 0.005757715289240918,
+        "last_valid": 0.004477558089479483
+      },
+      "position_error_3d_m": {
+        "samples": 45,
+        "mean": 0.003859514065936119,
+        "p50": 0.004038752444638309,
+        "p95": 0.00570577354493217,
+        "max": 0.005955583982504791,
+        "last_valid": 0.004769946341088056
+      },
+      "goal_vector_error_deg": {
+        "samples": 45,
+        "mean": 0.5733777617247916,
+        "p50": 0.10573865910444764,
+        "p95": 1.5348890144653236,
+        "max": 1.753488439384533,
+        "last_valid": 1.5862234174859335
+      },
+      "body_velocity_error_mps": {
+        "samples": 45,
+        "mean": 0.03301760507747531,
+        "p50": 0.028986476361751556,
+        "p95": 0.08334542810916894,
+        "max": 0.11623924970626831,
+        "last_valid": 0.032016731798648834
+      },
+      "wall_seconds": 6.619714054000042
+    },
+    {
+      "episode": 18,
+      "reason": "base_contact",
+      "success": false,
+      "steps": 16,
+      "tile_index": 136,
+      "terrain_row": 4,
+      "terrain_col": 16,
+      "terrain_type": "maze",
+      "terrain_difficulty": 0.7955719080554856,
+      "terminal_goal_distance_xy_m": 15.194439530318741,
+      "terminal_base_position": [
+        136.3552630890842,
+        499.86373113037996,
+        0.41998876368813043
+      ],
+      "start_position": [
+        137.2,
+        499.0,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 15,
+        "mean": 0.0018996622803888273,
+        "p50": 0.001936559629945138,
+        "p95": 0.002945489497276617,
+        "max": 0.0030249618207156253,
+        "last_valid": 0.001936559629945138
+      },
+      "position_error_3d_m": {
+        "samples": 15,
+        "mean": 0.0024803617492325154,
+        "p50": 0.0025396911140304875,
+        "p95": 0.0033444914798729116,
+        "max": 0.003432246876461938,
+        "last_valid": 0.0023590748343786188
+      },
+      "goal_vector_error_deg": {
+        "samples": 15,
+        "mean": 0.023147049633166647,
+        "p50": 0.020169063066716123,
+        "p95": 0.042548513131195176,
+        "max": 0.04428457920690479,
+        "last_valid": 0.009198236450118177
+      },
+      "body_velocity_error_mps": {
+        "samples": 15,
+        "mean": 0.02898492416522155,
+        "p50": 0.011075787246227264,
+        "p95": 0.0958151578903198,
+        "max": 0.10797297954559326,
+        "last_valid": 0.032608162611722946
+      },
+      "wall_seconds": 2.0792959000000337
+    },
+    {
+      "episode": 19,
+      "reason": "goal_complete",
+      "success": true,
+      "steps": 39,
+      "tile_index": 161,
+      "terrain_row": 5,
+      "terrain_col": 11,
+      "terrain_type": "non_maze",
+      "terrain_difficulty": 0.7677173949150016,
+      "terminal_goal_distance_xy_m": 0.09779282957570451,
+      "terminal_base_position": [
+        160.75289144784415,
+        349.88569843540114,
+        0.41942928679248637
+      ],
+      "start_position": [
+        163.1,
+        351.1,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 38,
+        "mean": 0.008012301559459853,
+        "p50": 0.008353374202833053,
+        "p95": 0.009725522947969753,
+        "max": 0.012354855751767988,
+        "last_valid": 0.008777044123557988
+      },
+      "position_error_3d_m": {
+        "samples": 38,
+        "mean": 0.008074703250022675,
+        "p50": 0.008401696865494482,
+        "p95": 0.00976360314739121,
+        "max": 0.012376740435182285,
+        "last_valid": 0.008837917572926486
+      },
+      "goal_vector_error_deg": {
+        "samples": 38,
+        "mean": 1.9591641586201625,
+        "p50": 0.5747412446503422,
+        "p95": 5.588602543188733,
+        "max": 6.149573675660687,
+        "last_valid": 4.402750520427593
+      },
+      "body_velocity_error_mps": {
+        "samples": 38,
+        "mean": 0.03148281244610093,
+        "p50": 0.02486798446625471,
+        "p95": 0.07702386640012263,
+        "max": 0.11713231354951859,
+        "last_valid": 0.022649424150586128
+      },
+      "wall_seconds": 5.113701713999944
+    },
+    {
+      "episode": 20,
+      "reason": "base_contact",
+      "success": false,
+      "steps": 26,
+      "tile_index": 178,
+      "terrain_row": 5,
+      "terrain_col": 28,
+      "terrain_type": "stairs",
+      "terrain_difficulty": 0.8996223582560333,
+      "terminal_goal_distance_xy_m": 13.571198599516878,
+      "terminal_base_position": [
+        162.2204827846765,
+        842.9718044806652,
+        0.4178971663942668
+      ],
+      "start_position": [
+        162.7,
+        840.5,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 25,
+        "mean": 0.0036376752248481834,
+        "p50": 0.003799060307848928,
+        "p95": 0.005073432681593175,
+        "max": 0.005693189411973645,
+        "last_valid": 0.001814489995885736
+      },
+      "position_error_3d_m": {
+        "samples": 25,
+        "mean": 0.004049935714850186,
+        "p50": 0.004201570150209594,
+        "p95": 0.005534035435641572,
+        "max": 0.0058427954928119575,
+        "last_valid": 0.003379162959720794
+      },
+      "goal_vector_error_deg": {
+        "samples": 25,
+        "mean": 0.03639664738812317,
+        "p50": 0.03359824499425022,
+        "p95": 0.06371137846106407,
+        "max": 0.06666228080225986,
+        "last_valid": 0.05107493673965297
+      },
+      "body_velocity_error_mps": {
+        "samples": 25,
+        "mean": 0.04678726704791188,
+        "p50": 0.044640690088272095,
+        "p95": 0.10147644877433774,
+        "max": 0.11400838941335678,
+        "last_valid": 0.04953988268971443
+      },
+      "wall_seconds": 3.5216711499999747
+    },
+    {
+      "episode": 21,
+      "reason": "goal_complete",
+      "success": true,
+      "steps": 115,
+      "tile_index": 46,
+      "terrain_row": 1,
+      "terrain_col": 16,
+      "terrain_type": "non_maze",
+      "terrain_difficulty": 0.6905106130482412,
+      "terminal_goal_distance_xy_m": 0.05109618586102332,
+      "terminal_base_position": [
+        41.44449627279129,
+        490.87488223900846,
+        0.40557225892261567
+      ],
+      "start_position": [
+        34.6,
+        480.6,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 114,
+        "mean": 0.003565008212728598,
+        "p50": 0.0023347355087416774,
+        "p95": 0.008762641330703968,
+        "max": 0.010417819149912069,
+        "last_valid": 0.0068309302222481294
+      },
+      "position_error_3d_m": {
+        "samples": 114,
+        "mean": 0.0038369961856534736,
+        "p50": 0.0024999231120429585,
+        "p95": 0.009103203245754194,
+        "max": 0.010628704870200538,
+        "last_valid": 0.00718708310721391
+      },
+      "goal_vector_error_deg": {
+        "samples": 114,
+        "mean": 0.5752638537000507,
+        "p50": 0.018492247990949222,
+        "p95": 3.55276186773528,
+        "max": 4.01019209225717,
+        "last_valid": 3.143343815566773
+      },
+      "body_velocity_error_mps": {
+        "samples": 114,
+        "mean": 0.02790468287237577,
+        "p50": 0.021715903654694557,
+        "p95": 0.06337539274245496,
+        "max": 0.11561816930770874,
+        "last_valid": 0.050915464758872986
+      },
+      "wall_seconds": 17.616046854999922
+    },
+    {
+      "episode": 22,
+      "reason": "goal_complete",
+      "success": true,
+      "steps": 71,
+      "tile_index": 94,
+      "terrain_row": 3,
+      "terrain_col": 4,
+      "terrain_type": "stairs",
+      "terrain_difficulty": 0.6312302579614324,
+      "terminal_goal_distance_xy_m": 0.031984259285344034,
+      "terminal_base_position": [
+        100.92160775795477,
+        137.17641827745476,
+        0.39103510681759013
+      ],
+      "start_position": [
+        93.2,
+        129.5,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 70,
+        "mean": 0.004177164177972685,
+        "p50": 0.0047016098838094395,
+        "p95": 0.00617428972906405,
+        "max": 0.007648453814144696,
+        "last_valid": 0.004270624196456163
+      },
+      "position_error_3d_m": {
+        "samples": 70,
+        "mean": 0.005574514088036735,
+        "p50": 0.005863361478619115,
+        "p95": 0.00817933548494333,
+        "max": 0.009086707334757877,
+        "last_valid": 0.0073405899821874345
+      },
+      "goal_vector_error_deg": {
+        "samples": 70,
+        "mean": 0.847798570112635,
+        "p50": 0.08500843521940564,
+        "p95": 4.193707763719582,
+        "max": 7.837052698176589,
+        "last_valid": 2.9081436482343745
+      },
+      "body_velocity_error_mps": {
+        "samples": 70,
+        "mean": 0.031196690224377172,
+        "p50": 0.02440650202333927,
+        "p95": 0.07619807757437226,
+        "max": 0.11997103691101074,
+        "last_valid": 0.02760201133787632
+      },
+      "wall_seconds": 10.920789065999998
+    },
+    {
+      "episode": 23,
+      "reason": "goal_complete",
+      "success": true,
+      "steps": 162,
+      "tile_index": 78,
+      "terrain_row": 2,
+      "terrain_col": 18,
+      "terrain_type": "maze",
+      "terrain_difficulty": 0.8297113173459509,
+      "terminal_goal_distance_xy_m": 0.04752929227608614,
+      "terminal_base_position": [
+        70.74158380647486,
+        555.5769821664068,
+        0.41262502565521114
+      ],
+      "start_position": [
+        61.3,
+        562.6,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 161,
+        "mean": 0.004140914352881196,
+        "p50": 0.004274502953140414,
+        "p95": 0.006023900696027178,
+        "max": 0.006327698672927793,
+        "last_valid": 0.00465312287691556
+      },
+      "position_error_3d_m": {
+        "samples": 161,
+        "mean": 0.005826199978062861,
+        "p50": 0.006146970325122632,
+        "p95": 0.00836942299141182,
+        "max": 0.00885810375487266,
+        "last_valid": 0.007440242698816362
+      },
+      "goal_vector_error_deg": {
+        "samples": 161,
+        "mean": 0.45639687336153123,
+        "p50": 0.04902578875091044,
+        "p95": 2.675453268958869,
+        "max": 9.262920251319407,
+        "last_valid": 9.262920251319407
+      },
+      "body_velocity_error_mps": {
+        "samples": 161,
+        "mean": 0.02814709312305641,
+        "p50": 0.022775253280997276,
+        "p95": 0.06956419348716736,
+        "max": 0.11360575258731842,
+        "last_valid": 0.0524655245244503
+      },
+      "wall_seconds": 25.94245528700003
+    },
+    {
+      "episode": 24,
+      "reason": "goal_complete",
+      "success": true,
+      "steps": 70,
+      "tile_index": 13,
+      "terrain_row": 0,
+      "terrain_col": 13,
+      "terrain_type": "non_maze",
+      "terrain_difficulty": 0.5219018828936144,
+      "terminal_goal_distance_xy_m": 0.10490650130957169,
+      "terminal_base_position": [
+        21.423105806710574,
+        392.8976696735407,
+        0.40191935353564684
+      ],
+      "start_position": [
+        20.6,
+        403.4,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 69,
+        "mean": 0.008855483786671857,
+        "p50": 0.0077406055060648,
+        "p95": 0.015416779990363663,
+        "max": 0.016727991862443763,
+        "last_valid": 0.015156873678523532
+      },
+      "position_error_3d_m": {
+        "samples": 69,
+        "mean": 0.00894038064731061,
+        "p50": 0.007805970710593522,
+        "p95": 0.015503962767181774,
+        "max": 0.01682401045794746,
+        "last_valid": 0.015263480038703476
+      },
+      "goal_vector_error_deg": {
+        "samples": 69,
+        "mean": 1.9414334286507895,
+        "p50": 0.19218357261044947,
+        "p95": 7.953156528820294,
+        "max": 11.407858043935004,
+        "last_valid": 6.057623138416981
+      },
+      "body_velocity_error_mps": {
+        "samples": 69,
+        "mean": 0.03626004304817837,
+        "p50": 0.02557208761572838,
+        "p95": 0.09942438453435896,
+        "max": 0.12240979075431824,
+        "last_valid": 0.024892006069421768
+      },
+      "wall_seconds": 10.284632170999885
+    },
+    {
+      "episode": 25,
+      "reason": "base_contact",
+      "success": false,
+      "steps": 57,
+      "tile_index": 154,
+      "terrain_row": 5,
+      "terrain_col": 4,
+      "terrain_type": "maze",
+      "terrain_difficulty": 0.5698842054769784,
+      "terminal_goal_distance_xy_m": 10.875257755416252,
+      "terminal_base_position": [
+        161.41882533214817,
+        145.79354183124252,
+        0.41511993472735415
+      ],
+      "start_position": [
+        162.7,
+        133.8,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 56,
+        "mean": 0.003529635845708306,
+        "p50": 0.0027340408568532603,
+        "p95": 0.007883593341436151,
+        "max": 0.008837301669723411,
+        "last_valid": 0.008837301669723411
+      },
+      "position_error_3d_m": {
+        "samples": 56,
+        "mean": 0.004082736270298742,
+        "p50": 0.0032604918641499885,
+        "p95": 0.008301274716471596,
+        "max": 0.009431309661208047,
+        "last_valid": 0.009431309661208047
+      },
+      "goal_vector_error_deg": {
+        "samples": 56,
+        "mean": 0.032686542470612846,
+        "p50": 0.02419435718994223,
+        "p95": 0.07231165475931281,
+        "max": 0.08867766422113227,
+        "last_valid": 0.07948052048648993
+      },
+      "body_velocity_error_mps": {
+        "samples": 56,
+        "mean": 0.028764621662308594,
+        "p50": 0.021345178596675396,
+        "p95": 0.07676106877624989,
+        "max": 0.11260318756103516,
+        "last_valid": 0.03008268214762211
+      },
+      "wall_seconds": 7.97663258700004
+    },
+    {
+      "episode": 26,
+      "reason": "goal_complete",
+      "success": true,
+      "steps": 104,
+      "tile_index": 21,
+      "terrain_row": 0,
+      "terrain_col": 21,
+      "terrain_type": "stairs",
+      "terrain_difficulty": 0.6561833206910206,
+      "terminal_goal_distance_xy_m": 0.025118282418199894,
+      "terminal_base_position": [
+        27.37849773359254,
+        655.7870161388261,
+        0.40529237818007174
+      ],
+      "start_position": [
+        9.5,
+        659.1,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 103,
+        "mean": 0.009963357895736618,
+        "p50": 0.009697144097671367,
+        "p95": 0.01631211731360038,
+        "max": 0.01842744487500056,
+        "last_valid": 0.01460391796046246
+      },
+      "position_error_3d_m": {
+        "samples": 103,
+        "mean": 0.01017974230554617,
+        "p50": 0.009904418606780234,
+        "p95": 0.016651056246412364,
+        "max": 0.018740129407420127,
+        "last_valid": 0.015029801428200639
+      },
+      "goal_vector_error_deg": {
+        "samples": 103,
+        "mean": 1.4588990717573673,
+        "p50": 0.08526822230499355,
+        "p95": 9.079296401866502,
+        "max": 14.181332529670197,
+        "last_valid": 11.509279260291011
+      },
+      "body_velocity_error_mps": {
+        "samples": 103,
+        "mean": 0.029553746146791914,
+        "p50": 0.019637590274214745,
+        "p95": 0.09167039170861241,
+        "max": 0.11614834517240524,
+        "last_valid": 0.03517638146877289
+      },
+      "wall_seconds": 15.32801564700003
+    },
+    {
+      "episode": 27,
+      "reason": "goal_complete",
+      "success": true,
+      "steps": 103,
+      "tile_index": 69,
+      "terrain_row": 2,
+      "terrain_col": 9,
+      "terrain_type": "stairs",
+      "terrain_difficulty": 0.5413649999612193,
+      "terminal_goal_distance_xy_m": 0.059984393671630554,
+      "terminal_base_position": [
+        67.14423951736364,
+        283.82211099410506,
+        0.4031132965328374
+      ],
+      "start_position": [
+        73.7,
+        299.1,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 102,
+        "mean": 0.00856214349687053,
+        "p50": 0.006419281335226876,
+        "p95": 0.02133717455712673,
+        "max": 0.02541409712520552,
+        "last_valid": 0.023275424815254818
+      },
+      "position_error_3d_m": {
+        "samples": 102,
+        "mean": 0.009453670711995188,
+        "p50": 0.007053267254969919,
+        "p95": 0.022509380830452376,
+        "max": 0.026209593235795525,
+        "last_valid": 0.02443285884764272
+      },
+      "goal_vector_error_deg": {
+        "samples": 102,
+        "mean": 0.6815691214808743,
+        "p50": 0.07296865425375165,
+        "p95": 3.5815649075752534,
+        "max": 4.418450030467195,
+        "last_valid": 4.418450030467195
+      },
+      "body_velocity_error_mps": {
+        "samples": 102,
+        "mean": 0.035169382321684824,
+        "p50": 0.028359614312648773,
+        "p95": 0.08011581115424629,
+        "max": 0.12196249514818192,
+        "last_valid": 0.020995916798710823
+      },
+      "wall_seconds": 15.411869154999977
+    },
+    {
+      "episode": 28,
+      "reason": "large_angle",
+      "success": false,
+      "steps": 66,
+      "tile_index": 61,
+      "terrain_row": 2,
+      "terrain_col": 1,
+      "terrain_type": "maze",
+      "terrain_difficulty": 0.7079037010853049,
+      "terminal_goal_distance_xy_m": 3.78662639444483,
+      "terminal_base_position": [
+        67.35210003159243,
+        34.36123957180853,
+        0.49008735344288284
+      ],
+      "start_position": [
+        70.5,
+        46.900000000000006,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 65,
+        "mean": 0.0023857897493766243,
+        "p50": 0.002426106063462132,
+        "p95": 0.004768648941628672,
+        "max": 0.0058921429651545105,
+        "last_valid": 0.004879445252268774
+      },
+      "position_error_3d_m": {
+        "samples": 65,
+        "mean": 0.003602091122325296,
+        "p50": 0.0029724659049886453,
+        "p95": 0.005785247736475973,
+        "max": 0.007741257828201545,
+        "last_valid": 0.007741257828201545
+      },
+      "goal_vector_error_deg": {
+        "samples": 65,
+        "mean": 0.033435365514669906,
+        "p50": 0.020145950668005057,
+        "p95": 0.08091723579764007,
+        "max": 0.14472134090640631,
+        "last_valid": 0.14472134090640631
+      },
+      "body_velocity_error_mps": {
+        "samples": 65,
+        "mean": 0.03641698088568564,
+        "p50": 0.02172236144542694,
+        "p95": 0.09502290338277815,
+        "max": 0.4325833022594452,
+        "last_valid": 0.4325833022594452
+      },
+      "wall_seconds": 9.592581720999988
+    },
+    {
+      "episode": 29,
+      "reason": "goal_complete",
+      "success": true,
+      "steps": 80,
+      "tile_index": 157,
+      "terrain_row": 5,
+      "terrain_col": 7,
+      "terrain_type": "non_maze",
+      "terrain_difficulty": 0.6637477822062727,
+      "terminal_goal_distance_xy_m": 0.175400714693365,
+      "terminal_base_position": [
+        158.81116984150506,
+        215.63567120938018,
+        0.403493250370362
+      ],
+      "start_position": [
+        165.2,
+        219.0,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 79,
+        "mean": 0.004710203696429048,
+        "p50": 0.004946986360173229,
+        "p95": 0.008043890532689947,
+        "max": 0.00882565188490379,
+        "last_valid": 0.008043812879311753
+      },
+      "position_error_3d_m": {
+        "samples": 79,
+        "mean": 0.005160379830434316,
+        "p50": 0.005343570485459329,
+        "p95": 0.008519481660514704,
+        "max": 0.009266740445932247,
+        "last_valid": 0.008601376740814038
+      },
+      "goal_vector_error_deg": {
+        "samples": 79,
+        "mean": 0.37513240060194925,
+        "p50": 0.10211260948730476,
+        "p95": 1.2480271326693186,
+        "max": 1.4683317213835512,
+        "last_valid": 1.0291262325451838
+      },
+      "body_velocity_error_mps": {
+        "samples": 79,
+        "mean": 0.042177267561230476,
+        "p50": 0.027530524879693985,
+        "p95": 0.11661270707845683,
+        "max": 0.4623553454875946,
+        "last_valid": 0.035623375326395035
+      },
+      "wall_seconds": 12.015310301
+    },
+    {
+      "episode": 30,
+      "reason": "goal_complete",
+      "success": true,
+      "steps": 141,
+      "tile_index": 147,
+      "terrain_row": 4,
+      "terrain_col": 27,
+      "terrain_type": "stairs",
+      "terrain_difficulty": 0.9513265719638085,
+      "terminal_goal_distance_xy_m": 0.04049349584808637,
+      "terminal_base_position": [
+        124.6996801110869,
+        824.3404922323055,
+        0.6108209128173319
+      ],
+      "start_position": [
+        147.8,
+        835.1,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 140,
+        "mean": 0.009227578739385749,
+        "p50": 0.007177008192112598,
+        "p95": 0.020362476166664516,
+        "max": 0.02398441213610972,
+        "last_valid": 0.017761343412519687
+      },
+      "position_error_3d_m": {
+        "samples": 140,
+        "mean": 0.012482947278267618,
+        "p50": 0.010517678046552367,
+        "p95": 0.025744808812364284,
+        "max": 0.02870745118711022,
+        "last_valid": 0.02370694334484164
+      },
+      "goal_vector_error_deg": {
+        "samples": 140,
+        "mean": 1.0150604806534516,
+        "p50": 0.08911469460760753,
+        "p95": 7.240262719159938,
+        "max": 12.454866438265391,
+        "last_valid": 10.542814597350016
+      },
+      "body_velocity_error_mps": {
+        "samples": 140,
+        "mean": 0.04261114084095295,
+        "p50": 0.029549057595431805,
+        "p95": 0.13718690723180735,
+        "max": 0.21235984563827515,
+        "last_valid": 0.019869446754455566
+      },
+      "wall_seconds": 21.00227853599995
+    },
+    {
+      "episode": 31,
+      "reason": "goal_complete",
+      "success": true,
+      "steps": 73,
+      "tile_index": 160,
+      "terrain_row": 5,
+      "terrain_col": 10,
+      "terrain_type": "stairs",
+      "terrain_difficulty": 0.7404552141500393,
+      "terminal_goal_distance_xy_m": 0.022814892519547086,
+      "terminal_base_position": [
+        176.5201470945617,
+        301.3892942117805,
+        0.3949164613683645
+      ],
+      "start_position": [
+        167.6,
+        303.3,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 72,
+        "mean": 0.004400171889864791,
+        "p50": 0.0032797060688171007,
+        "p95": 0.009048223344465808,
+        "max": 0.010080117814064505,
+        "last_valid": 0.007136210598309847
+      },
+      "position_error_3d_m": {
+        "samples": 72,
+        "mean": 0.004787640186606624,
+        "p50": 0.0035695957070793283,
+        "p95": 0.009358381538886386,
+        "max": 0.010330572103046666,
+        "last_valid": 0.007617436826768408
+      },
+      "goal_vector_error_deg": {
+        "samples": 72,
+        "mean": 0.34531585167666434,
+        "p50": 0.054380437219362435,
+        "p95": 1.1740718931790726,
+        "max": 1.320026395841414,
+        "last_valid": 1.0067005620366862
+      },
+      "body_velocity_error_mps": {
+        "samples": 72,
+        "mean": 0.029754750328720547,
+        "p50": 0.023355036042630672,
+        "p95": 0.07431573979556562,
+        "max": 0.11071890592575073,
+        "last_valid": 0.020890643820166588
+      },
+      "wall_seconds": 10.84803911899985
+    },
+    {
+      "episode": 32,
+      "reason": "goal_complete",
+      "success": true,
+      "steps": 248,
+      "tile_index": 75,
+      "terrain_row": 2,
+      "terrain_col": 15,
+      "terrain_type": "stairs",
+      "terrain_difficulty": 0.9480803859198834,
+      "terminal_goal_distance_xy_m": 0.006425996161287633,
+      "terminal_base_position": [
+        62.105003248980104,
+        475.19596751611186,
+        0.4055447952849055
+      ],
+      "start_position": [
+        65.2,
+        451.2,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 247,
+        "mean": 0.005050822292668644,
+        "p50": 0.005282241677617977,
+        "p95": 0.010361854122691921,
+        "max": 0.012348056672627157,
+        "last_valid": 0.009516231394631616
+      },
+      "position_error_3d_m": {
+        "samples": 247,
+        "mean": 0.00530770957822322,
+        "p50": 0.005642722224163213,
+        "p95": 0.011103719762625011,
+        "max": 0.012834962028892262,
+        "last_valid": 0.010260904521376478
+      },
+      "goal_vector_error_deg": {
+        "samples": 247,
+        "mean": 0.4126271140668272,
+        "p50": 0.026834925277357556,
+        "p95": 4.701811739088596,
+        "max": 6.54122217874602,
+        "last_valid": 5.958397883792224
+      },
+      "body_velocity_error_mps": {
+        "samples": 247,
+        "mean": 0.03516461766939535,
+        "p50": 0.025722630321979523,
+        "p95": 0.10397736728191373,
+        "max": 0.2684522867202759,
+        "last_valid": 0.04680889472365379
+      },
+      "wall_seconds": 38.81656348999991
+    },
+    {
+      "episode": 33,
+      "reason": "goal_complete",
+      "success": true,
+      "steps": 144,
+      "tile_index": 85,
+      "terrain_row": 2,
+      "terrain_col": 25,
+      "terrain_type": "maze",
+      "terrain_difficulty": 0.7575285646158573,
+      "terminal_goal_distance_xy_m": 0.1642062522477368,
+      "terminal_base_position": [
+        84.94571036615554,
+        761.1757111779863,
+        0.38847210176310365
+      ],
+      "start_position": [
+        73.2,
+        756.9,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 143,
+        "mean": 0.00420297132547189,
+        "p50": 0.004666642407340189,
+        "p95": 0.006943452447192668,
+        "max": 0.007241004962147007,
+        "last_valid": 0.006496631890665276
+      },
+      "position_error_3d_m": {
+        "samples": 143,
+        "mean": 0.006446225149082568,
+        "p50": 0.006767548693034814,
+        "p95": 0.011393221758864721,
+        "max": 0.011859039959112331,
+        "last_valid": 0.0109474524827019
+      },
+      "goal_vector_error_deg": {
+        "samples": 143,
+        "mean": 0.30549930858463037,
+        "p50": 0.07861450373076857,
+        "p95": 1.3747863156307376,
+        "max": 1.5018397040725047,
+        "last_valid": 1.304502642457847
+      },
+      "body_velocity_error_mps": {
+        "samples": 143,
+        "mean": 0.029842320919180147,
+        "p50": 0.025117257609963417,
+        "p95": 0.06566974110901358,
+        "max": 0.127545565366745,
+        "last_valid": 0.021078668534755707
+      },
+      "wall_seconds": 23.69660560500006
+    },
+    {
+      "episode": 34,
+      "reason": "goal_complete",
+      "success": true,
+      "steps": 116,
+      "tile_index": 65,
+      "terrain_row": 2,
+      "terrain_col": 5,
+      "terrain_type": "maze",
+      "terrain_difficulty": 0.9625600591883986,
+      "terminal_goal_distance_xy_m": 0.0654703463410281,
+      "terminal_base_position": [
+        89.33603465402165,
+        153.3860428955767,
+        0.3916780047044747
+      ],
+      "start_position": [
+        80.9,
+        168.5,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 115,
+        "mean": 0.003701525004433389,
+        "p50": 0.004037764001206117,
+        "p95": 0.005958807362979494,
+        "max": 0.006901197491547709,
+        "last_valid": 0.004524801202188101
+      },
+      "position_error_3d_m": {
+        "samples": 115,
+        "mean": 0.007921885167794662,
+        "p50": 0.008543182077745388,
+        "p95": 0.012386551357216143,
+        "max": 0.012922071402529354,
+        "last_valid": 0.011395142019519872
+      },
+      "goal_vector_error_deg": {
+        "samples": 115,
+        "mean": 0.6300704661984035,
+        "p50": 0.0688534012816202,
+        "p95": 4.133832306455945,
+        "max": 5.203465490381172,
+        "last_valid": 4.311518472430391
+      },
+      "body_velocity_error_mps": {
+        "samples": 115,
+        "mean": 0.027358895200102224,
+        "p50": 0.024071287363767624,
+        "p95": 0.06240846440196036,
+        "max": 0.10818764567375183,
+        "last_valid": 0.05206342786550522
+      },
+      "wall_seconds": 18.578432052999915
+    },
+    {
+      "episode": 35,
+      "reason": "base_contact",
+      "success": false,
+      "steps": 50,
+      "tile_index": 96,
+      "terrain_row": 3,
+      "terrain_col": 6,
+      "terrain_type": "maze",
+      "terrain_difficulty": 0.915556336062453,
+      "terminal_goal_distance_xy_m": 5.35443711015366,
+      "terminal_base_position": [
+        91.16523740878267,
+        184.40201926521007,
+        0.42036369354888503
+      ],
+      "start_position": [
+        90.4,
+        194.7,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 49,
+        "mean": 0.002295840929431684,
+        "p50": 0.0025533934331583717,
+        "p95": 0.0047170902172522025,
+        "max": 0.004994709268425509,
+        "last_valid": 0.003669323056954287
+      },
+      "position_error_3d_m": {
+        "samples": 49,
+        "mean": 0.0035526879016557953,
+        "p50": 0.003829282387667055,
+        "p95": 0.005931435107122307,
+        "max": 0.006842563910093513,
+        "last_valid": 0.006067391751250932
+      },
+      "goal_vector_error_deg": {
+        "samples": 49,
+        "mean": 0.04114516985575917,
+        "p50": 0.0338341100990485,
+        "p95": 0.09083828376068408,
+        "max": 0.10335223809651539,
+        "last_valid": 0.09663473043786441
+      },
+      "body_velocity_error_mps": {
+        "samples": 49,
+        "mean": 0.031801098957657814,
+        "p50": 0.02467869594693184,
+        "p95": 0.07861062586307518,
+        "max": 0.11243969947099686,
+        "last_valid": 0.02255946211516857
+      },
+      "wall_seconds": 7.817291240000031
+    },
+    {
+      "episode": 36,
+      "reason": "goal_complete",
+      "success": true,
+      "steps": 66,
+      "tile_index": 19,
+      "terrain_row": 0,
+      "terrain_col": 19,
+      "terrain_type": "maze",
+      "terrain_difficulty": 0.8349069973412552,
+      "terminal_goal_distance_xy_m": 0.06973551149864311,
+      "terminal_base_position": [
+        21.236082800631998,
+        594.9721139248203,
+        0.4076106645067592
+      ],
+      "start_position": [
+        24.700000000000003,
+        587.2,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 65,
+        "mean": 0.002681868133324647,
+        "p50": 0.0028661478210923234,
+        "p95": 0.004155611448401492,
+        "max": 0.004986268651214107,
+        "last_valid": 0.0039029525162080606
+      },
+      "position_error_3d_m": {
+        "samples": 65,
+        "mean": 0.004431918550173298,
+        "p50": 0.004105740258397771,
+        "p95": 0.007454629721267833,
+        "max": 0.00803577552487531,
+        "last_valid": 0.007299788692091999
+      },
+      "goal_vector_error_deg": {
+        "samples": 65,
+        "mean": 0.4680685024363259,
+        "p50": 0.11119391226949121,
+        "p95": 1.6138883938526694,
+        "max": 1.788555568403152,
+        "last_valid": 0.9267274544051588
+      },
+      "body_velocity_error_mps": {
+        "samples": 65,
+        "mean": 0.028086181679883828,
+        "p50": 0.02350444346666336,
+        "p95": 0.07668672800064086,
+        "max": 0.11285092681646347,
+        "last_valid": 0.013628038577735424
+      },
+      "wall_seconds": 9.948959798000033
+    },
+    {
+      "episode": 37,
+      "reason": "large_angle",
+      "success": false,
+      "steps": 97,
+      "tile_index": 163,
+      "terrain_row": 5,
+      "terrain_col": 13,
+      "terrain_type": "stairs",
+      "terrain_difficulty": 0.7663611380328701,
+      "terminal_goal_distance_xy_m": 3.46769707718049,
+      "terminal_base_position": [
+        168.57801792216105,
+        406.5673360050816,
+        0.20500344420206723
+      ],
+      "start_position": [
+        163.5,
+        404.4,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 96,
+        "mean": 0.009317068655002246,
+        "p50": 0.009429408384050968,
+        "p95": 0.01104555419326435,
+        "max": 0.01318623842701695,
+        "last_valid": 0.009018975957748516
+      },
+      "position_error_3d_m": {
+        "samples": 96,
+        "mean": 0.009361372901377138,
+        "p50": 0.009445140889181188,
+        "p95": 0.0111351638890344,
+        "max": 0.013258277453071161,
+        "last_valid": 0.009018999066644577
+      },
+      "goal_vector_error_deg": {
+        "samples": 96,
+        "mean": 0.07172433076410929,
+        "p50": 0.06609493700057482,
+        "p95": 0.15021879765241927,
+        "max": 0.17648438655227885,
+        "last_valid": 0.14804124343924166
+      },
+      "body_velocity_error_mps": {
+        "samples": 96,
+        "mean": 0.05061819167652478,
+        "p50": 0.038939572870731354,
+        "p95": 0.12659871205687523,
+        "max": 0.215896874666214,
+        "last_valid": 0.15566587448120117
+      },
+      "wall_seconds": 14.49091286199996
+    },
+    {
+      "episode": 38,
+      "reason": "goal_complete",
+      "success": true,
+      "steps": 80,
+      "tile_index": 122,
+      "terrain_row": 4,
+      "terrain_col": 2,
+      "terrain_type": "stairs",
+      "terrain_difficulty": 0.9338694768880056,
+      "terminal_goal_distance_xy_m": 0.0621048147116541,
+      "terminal_base_position": [
+        132.54245094867997,
+        67.52334769158898,
+        0.9322203746735159
+      ],
+      "start_position": [
+        139.2,
+        77.6,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 79,
+        "mean": 0.007815854267875533,
+        "p50": 0.007628735477477572,
+        "p95": 0.011700139116157906,
+        "max": 0.014342180905330104,
+        "last_valid": 0.00952331119885471
+      },
+      "position_error_3d_m": {
+        "samples": 79,
+        "mean": 0.01008984367225687,
+        "p50": 0.009501998735969576,
+        "p95": 0.016125625955287905,
+        "max": 0.016943579405698222,
+        "last_valid": 0.014809784061864608
+      },
+      "goal_vector_error_deg": {
+        "samples": 79,
+        "mean": 0.7336967619772639,
+        "p50": 0.13020585841308854,
+        "p95": 4.161011603790457,
+        "max": 4.596427830697015,
+        "last_valid": 4.388699034450574
+      },
+      "body_velocity_error_mps": {
+        "samples": 79,
+        "mean": 0.04005481420332401,
+        "p50": 0.02640100196003914,
+        "p95": 0.11308405250310895,
+        "max": 0.2873518466949463,
+        "last_valid": 0.02414935640990734
+      },
+      "wall_seconds": 11.416879031000008
+    },
+    {
+      "episode": 39,
+      "reason": "goal_complete",
+      "success": true,
+      "steps": 202,
+      "tile_index": 106,
+      "terrain_row": 3,
+      "terrain_col": 16,
+      "terrain_type": "maze",
+      "terrain_difficulty": 0.9020622630911314,
+      "terminal_goal_distance_xy_m": 0.1363014610923813,
+      "terminal_base_position": [
+        92.91638528687972,
+        508.70764138630534,
+        0.40024516550528716
+      ],
+      "start_position": [
+        113.7,
+        496.9,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 201,
+        "mean": 0.007551266255962211,
+        "p50": 0.005128827391611818,
+        "p95": 0.018337282978565374,
+        "max": 0.01942819701865822,
+        "last_valid": 0.017360264973017802
+      },
+      "position_error_3d_m": {
+        "samples": 201,
+        "mean": 0.011079956017964201,
+        "p50": 0.006016261244761661,
+        "p95": 0.028793844626239667,
+        "max": 0.029970156394822093,
+        "last_valid": 0.028541314739102198
+      },
+      "goal_vector_error_deg": {
+        "samples": 201,
+        "mean": 0.47087322512490637,
+        "p50": 0.05818200081774473,
+        "p95": 3.3835663754693774,
+        "max": 4.19312418735428,
+        "last_valid": 3.9880934702487103
+      },
+      "body_velocity_error_mps": {
+        "samples": 201,
+        "mean": 0.025448046124248364,
+        "p50": 0.021206388249993324,
+        "p95": 0.06244202330708504,
+        "max": 0.1102469265460968,
+        "last_valid": 0.046405546367168427
+      },
+      "wall_seconds": 31.693535396000016
+    },
+    {
+      "episode": 40,
+      "reason": "base_contact",
+      "success": false,
+      "steps": 26,
+      "tile_index": 1,
+      "terrain_row": 0,
+      "terrain_col": 1,
+      "terrain_type": "stairs",
+      "terrain_difficulty": 0.8486840145296819,
+      "terminal_goal_distance_xy_m": 22.86795683307169,
+      "terminal_base_position": [
+        24.300125824595042,
+        44.78239611282514,
+        0.39201448151601664
+      ],
+      "start_position": [
+        26.8,
+        47.5,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 25,
+        "mean": 0.003329631189818644,
+        "p50": 0.002557252975716192,
+        "p95": 0.008906364032728518,
+        "max": 0.009623269076963332,
+        "last_valid": 0.004340376083226989
+      },
+      "position_error_3d_m": {
+        "samples": 25,
+        "mean": 0.0034892978012007014,
+        "p50": 0.0027140457555613266,
+        "p95": 0.008944734215145064,
+        "max": 0.009655418901742922,
+        "last_valid": 0.004473571604244098
+      },
+      "goal_vector_error_deg": {
+        "samples": 25,
+        "mean": 0.023019468212818608,
+        "p50": 0.02143484621877019,
+        "p95": 0.03530262722855563,
+        "max": 0.052906466358523245,
+        "last_valid": 0.02393424818056521
+      },
+      "body_velocity_error_mps": {
+        "samples": 25,
+        "mean": 0.05672703451476991,
+        "p50": 0.043465420603752136,
+        "p95": 0.16791128814220413,
+        "max": 0.22239677608013153,
+        "last_valid": 0.22239677608013153
+      },
+      "wall_seconds": 3.3478968709998753
+    },
+    {
+      "episode": 41,
+      "reason": "goal_complete",
+      "success": true,
+      "steps": 114,
+      "tile_index": 58,
+      "terrain_row": 1,
+      "terrain_col": 28,
+      "terrain_type": "stairs",
+      "terrain_difficulty": 0.8597314779754683,
+      "terminal_goal_distance_xy_m": 0.03523515356800463,
+      "terminal_base_position": [
+        51.190250253984715,
+        852.3661406069222,
+        0.6135737705038111
+      ],
+      "start_position": [
+        33.2,
+        842.8,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 113,
+        "mean": 0.007489183364236918,
+        "p50": 0.006494808517599386,
+        "p95": 0.01328459247358279,
+        "max": 0.014674320367086853,
+        "last_valid": 0.012046308824502526
+      },
+      "position_error_3d_m": {
+        "samples": 113,
+        "mean": 0.009454308982975697,
+        "p50": 0.008621278826771772,
+        "p95": 0.016734712546076242,
+        "max": 0.017990764364445723,
+        "last_valid": 0.015850892339276206
+      },
+      "goal_vector_error_deg": {
+        "samples": 113,
+        "mean": 0.6349236620225629,
+        "p50": 0.07839176594975175,
+        "p95": 3.48532047555638,
+        "max": 3.823191420881319,
+        "last_valid": 3.3103742640063833
+      },
+      "body_velocity_error_mps": {
+        "samples": 113,
+        "mean": 0.047897601281746034,
+        "p50": 0.03212617710232735,
+        "p95": 0.15602957308292387,
+        "max": 0.18817493319511414,
+        "last_valid": 0.03616506978869438
+      },
+      "wall_seconds": 17.984309763000056
+    },
+    {
+      "episode": 42,
+      "reason": "base_contact",
+      "success": false,
+      "steps": 30,
+      "tile_index": 169,
+      "terrain_row": 5,
+      "terrain_col": 19,
+      "terrain_type": "maze",
+      "terrain_difficulty": 0.9679699113503131,
+      "terminal_goal_distance_xy_m": 13.802144479488154,
+      "terminal_base_position": [
+        162.73600913642383,
+        576.5883993695726,
+        0.4097961348047174
+      ],
+      "start_position": [
+        159.0,
+        574.1,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 29,
+        "mean": 0.001636531055993942,
+        "p50": 0.0016287489194518792,
+        "p95": 0.003275042914600549,
+        "max": 0.005014646223064882,
+        "last_valid": 0.0013699119071111192
+      },
+      "position_error_3d_m": {
+        "samples": 29,
+        "mean": 0.0033481578759437924,
+        "p50": 0.003066545133655272,
+        "p95": 0.005535557045997174,
+        "max": 0.00612332644660894,
+        "last_valid": 0.005110134384211836
+      },
+      "goal_vector_error_deg": {
+        "samples": 29,
+        "mean": 0.02584602000142977,
+        "p50": 0.023953977420131004,
+        "p95": 0.050539067952705255,
+        "max": 0.08478012929841632,
+        "last_valid": 0.010953159320704918
+      },
+      "body_velocity_error_mps": {
+        "samples": 29,
+        "mean": 0.05862395772068151,
+        "p50": 0.02881048247218132,
+        "p95": 0.2114213675260543,
+        "max": 0.3918173611164093,
+        "last_valid": 0.03262961655855179
+      },
+      "wall_seconds": 4.1424098400000275
+    },
+    {
+      "episode": 43,
+      "reason": "goal_complete",
+      "success": true,
+      "steps": 88,
+      "tile_index": 117,
+      "terrain_row": 3,
+      "terrain_col": 27,
+      "terrain_type": "stairs",
+      "terrain_difficulty": 0.9021804578064854,
+      "terminal_goal_distance_xy_m": 0.034438766202718844,
+      "terminal_base_position": [
+        90.33438161816238,
+        835.0980168333148,
+        0.40125990965176245
+      ],
+      "start_position": [
+        91.0,
+        820.5,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 87,
+        "mean": 0.0033511615312348023,
+        "p50": 0.0035290209386950526,
+        "p95": 0.005344481879530462,
+        "max": 0.006985468170653487,
+        "last_valid": 0.0037593719274371514
+      },
+      "position_error_3d_m": {
+        "samples": 87,
+        "mean": 0.00585857539454355,
+        "p50": 0.005462070143886172,
+        "p95": 0.009375756120657545,
+        "max": 0.009758540651118306,
+        "last_valid": 0.008701946726509965
+      },
+      "goal_vector_error_deg": {
+        "samples": 87,
+        "mean": 0.49082141033941723,
+        "p50": 0.06208191754605662,
+        "p95": 2.1236768433095623,
+        "max": 2.4559886206513015,
+        "last_valid": 1.7813649571288204
+      },
+      "body_velocity_error_mps": {
+        "samples": 87,
+        "mean": 0.02915693020137648,
+        "p50": 0.02362605556845665,
+        "p95": 0.08109983429312707,
+        "max": 0.11282693594694138,
+        "last_valid": 0.03344159945845604
+      },
+      "wall_seconds": 14.072233890000007
+    },
+    {
+      "episode": 44,
+      "reason": "goal_complete",
+      "success": true,
+      "steps": 76,
+      "tile_index": 32,
+      "terrain_row": 1,
+      "terrain_col": 2,
+      "terrain_type": "stairs",
+      "terrain_difficulty": 0.7767897003289979,
+      "terminal_goal_distance_xy_m": 0.08408959467231976,
+      "terminal_base_position": [
+        50.929611690937826,
+        75.42129671104739,
+        0.4040107241799692
+      ],
+      "start_position": [
+        40.5,
+        72.8,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 75,
+        "mean": 0.007198794861187056,
+        "p50": 0.007847313666127835,
+        "p95": 0.011676950916730348,
+        "max": 0.012904675266171924,
+        "last_valid": 0.010941621354370908
+      },
+      "position_error_3d_m": {
+        "samples": 75,
+        "mean": 0.008292858508401118,
+        "p50": 0.008758881316791456,
+        "p95": 0.013452291227967553,
+        "max": 0.014640896665632423,
+        "last_valid": 0.012861458768627898
+      },
+      "goal_vector_error_deg": {
+        "samples": 75,
+        "mean": 1.8646531746318888,
+        "p50": 0.13376279027163293,
+        "p95": 7.465901081585977,
+        "max": 10.635426153446751,
+        "last_valid": 5.643084393901569
+      },
+      "body_velocity_error_mps": {
+        "samples": 75,
+        "mean": 0.028060072101652622,
+        "p50": 0.023417575284838676,
+        "p95": 0.07064077258110046,
+        "max": 0.1181005910038948,
+        "last_valid": 0.03279953822493553
+      },
+      "wall_seconds": 11.573562865999975
+    },
+    {
+      "episode": 45,
+      "reason": "goal_complete",
+      "success": true,
+      "steps": 216,
+      "tile_index": 38,
+      "terrain_row": 1,
+      "terrain_col": 8,
+      "terrain_type": "maze",
+      "terrain_difficulty": 0.8309582573634475,
+      "terminal_goal_distance_xy_m": 0.15006282062522028,
+      "terminal_base_position": [
+        50.942927741888894,
+        247.64572210332582,
+        0.41300020627410583
+      ],
+      "start_position": [
+        45.9,
+        252.9,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 215,
+        "mean": 0.01116750025142056,
+        "p50": 0.012703304082665562,
+        "p95": 0.016696929638306886,
+        "max": 0.017803269320603155,
+        "last_valid": 0.007844515301544614
+      },
+      "position_error_3d_m": {
+        "samples": 215,
+        "mean": 0.011504146782442161,
+        "p50": 0.012876492753181583,
+        "p95": 0.01671093139999724,
+        "max": 0.01781845354162772,
+        "last_valid": 0.00890823706344769
+      },
+      "goal_vector_error_deg": {
+        "samples": 215,
+        "mean": 0.1731506019523509,
+        "p50": 0.07604152015230833,
+        "p95": 1.0811104334861585,
+        "max": 2.3491271067076602,
+        "last_valid": 1.1096972169851052
+      },
+      "body_velocity_error_mps": {
+        "samples": 215,
+        "mean": 0.03074891002372254,
+        "p50": 0.02439485676586628,
+        "p95": 0.07881256863474843,
+        "max": 0.14849123358726501,
+        "last_valid": 0.011838110163807869
+      },
+      "wall_seconds": 38.16502245399988
+    },
+    {
+      "episode": 46,
+      "reason": "goal_complete",
+      "success": true,
+      "steps": 156,
+      "tile_index": 120,
+      "terrain_row": 4,
+      "terrain_col": 0,
+      "terrain_type": "stairs",
+      "terrain_difficulty": 0.8984085441625809,
+      "terminal_goal_distance_xy_m": 0.0846286497106211,
+      "terminal_base_position": [
+        139.82587511204815,
+        1.0591648516842638,
+        0.40543162865956606
+      ],
+      "start_position": [
+        127.4,
+        29.6,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 155,
+        "mean": 0.00908716116456915,
+        "p50": 0.00850334719877041,
+        "p95": 0.019800393341768103,
+        "max": 0.02145165991274265,
+        "last_valid": 0.015186807781754621
+      },
+      "position_error_3d_m": {
+        "samples": 155,
+        "mean": 0.012719173245339168,
+        "p50": 0.011771604511398148,
+        "p95": 0.026679914149749066,
+        "max": 0.027797043195529017,
+        "last_valid": 0.023429697556528472
+      },
+      "goal_vector_error_deg": {
+        "samples": 155,
+        "mean": 1.6368990524084044,
+        "p50": 0.07412686789696597,
+        "p95": 10.96170530509697,
+        "max": 31.11845914804887,
+        "last_valid": 11.053580809478316
+      },
+      "body_velocity_error_mps": {
+        "samples": 155,
+        "mean": 0.035008997770567096,
+        "p50": 0.023970257490873337,
+        "p95": 0.09885266870260238,
+        "max": 0.25673723220825195,
+        "last_valid": 0.04036707803606987
+      },
+      "wall_seconds": 30.97608644999991
+    },
+    {
+      "episode": 47,
+      "reason": "goal_complete",
+      "success": true,
+      "steps": 82,
+      "tile_index": 53,
+      "terrain_row": 1,
+      "terrain_col": 23,
+      "terrain_type": "non_maze",
+      "terrain_difficulty": 0.6361207809225795,
+      "terminal_goal_distance_xy_m": 0.0995997501292077,
+      "terminal_base_position": [
+        45.59884588112986,
+        707.3004069368106,
+        0.39741515935907357
+      ],
+      "start_position": [
+        43.1,
+        693.1,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 81,
+        "mean": 0.0034822130717520666,
+        "p50": 0.003538012917085542,
+        "p95": 0.0050683389548616,
+        "max": 0.006867203030905349,
+        "last_valid": 0.004433050702086128
+      },
+      "position_error_3d_m": {
+        "samples": 81,
+        "mean": 0.0038047856318309463,
+        "p50": 0.00398937147433806,
+        "p95": 0.0053814331856357625,
+        "max": 0.006948646814586227,
+        "last_valid": 0.004869508090432123
+      },
+      "goal_vector_error_deg": {
+        "samples": 81,
+        "mean": 0.18437544620573967,
+        "p50": 0.03157892104095021,
+        "p95": 0.7078752055672192,
+        "max": 0.7487864247619948,
+        "last_valid": 0.5737987903016447
+      },
+      "body_velocity_error_mps": {
+        "samples": 81,
+        "mean": 0.026199676590845173,
+        "p50": 0.019731588661670685,
+        "p95": 0.06030116602778435,
+        "max": 0.1176757737994194,
+        "last_valid": 0.012577860616147518
+      },
+      "wall_seconds": 13.877572039999905
+    },
+    {
+      "episode": 48,
+      "reason": "goal_complete",
+      "success": true,
+      "steps": 83,
+      "tile_index": 97,
+      "terrain_row": 3,
+      "terrain_col": 7,
+      "terrain_type": "maze",
+      "terrain_difficulty": 0.5896341540788695,
+      "terminal_goal_distance_xy_m": 0.018745329219108254,
+      "terminal_base_position": [
+        115.00044465713836,
+        232.9812599453693,
+        0.387520621678049
+      ],
+      "start_position": [
+        103.6,
+        239.5,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 82,
+        "mean": 0.00512477740828826,
+        "p50": 0.004910688526604723,
+        "p95": 0.007990870640113992,
+        "max": 0.009342820688168631,
+        "last_valid": 0.0067321866822965416
+      },
+      "position_error_3d_m": {
+        "samples": 82,
+        "mean": 0.005502668503135591,
+        "p50": 0.005324381915241521,
+        "p95": 0.00839347808174542,
+        "max": 0.009646332010429482,
+        "last_valid": 0.007469685480769378
+      },
+      "goal_vector_error_deg": {
+        "samples": 82,
+        "mean": 0.6990469421344887,
+        "p50": 0.04729939374369744,
+        "p95": 3.615167583480958,
+        "max": 3.888599388936431,
+        "last_valid": 2.875951183727989
+      },
+      "body_velocity_error_mps": {
+        "samples": 82,
+        "mean": 0.028256411874303368,
+        "p50": 0.02063037920743227,
+        "p95": 0.0699040338397026,
+        "max": 0.11485940217971802,
+        "last_valid": 0.06645730882883072
+      },
+      "wall_seconds": 14.560014225000032
+    },
+    {
+      "episode": 49,
+      "reason": "goal_complete",
+      "success": true,
+      "steps": 147,
+      "tile_index": 33,
+      "terrain_row": 1,
+      "terrain_col": 3,
+      "terrain_type": "stairs",
+      "terrain_difficulty": 0.6519750490313061,
+      "terminal_goal_distance_xy_m": 0.022416785293355692,
+      "terminal_base_position": [
+        56.319961123417,
+        104.11020126535384,
+        0.407051246826803
+      ],
+      "start_position": [
+        31.6,
+        119.2,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 146,
+        "mean": 0.007423481049431216,
+        "p50": 0.006638257994831239,
+        "p95": 0.013507205669742884,
+        "max": 0.015485450761383905,
+        "last_valid": 0.013463146011596509
+      },
+      "position_error_3d_m": {
+        "samples": 146,
+        "mean": 0.01107894497171811,
+        "p50": 0.008513271316595964,
+        "p95": 0.021605699443871997,
+        "max": 0.022949278560196466,
+        "last_valid": 0.021610526454919274
+      },
+      "goal_vector_error_deg": {
+        "samples": 146,
+        "mean": 0.6546090778610562,
+        "p50": 0.06847020280818561,
+        "p95": 4.221589211777479,
+        "max": 5.057581886029285,
+        "last_valid": 3.650430359732888
+      },
+      "body_velocity_error_mps": {
+        "samples": 146,
+        "mean": 0.03591509463188991,
+        "p50": 0.02710764203220606,
+        "p95": 0.0909905917942524,
+        "max": 0.18957088887691498,
+        "last_valid": 0.04732425883412361
+      },
+      "wall_seconds": 24.97404196100001
+    },
+    {
+      "episode": 50,
+      "reason": "goal_complete",
+      "success": true,
+      "steps": 83,
+      "tile_index": 31,
+      "terrain_row": 1,
+      "terrain_col": 1,
+      "terrain_type": "stairs",
+      "terrain_difficulty": 0.8824994287080128,
+      "terminal_goal_distance_xy_m": 0.06318674360848126,
+      "terminal_base_position": [
+        50.62094924483044,
+        49.659612865296666,
+        0.6152171074003188
+      ],
+      "start_position": [
+        57.400000000000006,
+        41.4,
+        0.4659558000000001
+      ],
+      "position_error_xy_m": {
+        "samples": 82,
+        "mean": 0.0030732344896799197,
+        "p50": 0.001667343004667572,
+        "p95": 0.008644219035597917,
+        "max": 0.01009306751646297,
+        "last_valid": 0.00014863835285663476
+      },
+      "position_error_3d_m": {
+        "samples": 82,
+        "mean": 0.0068780436325673365,
+        "p50": 0.006677404401448726,
+        "p95": 0.008936141619929538,
+        "max": 0.010098309101739726,
+        "last_valid": 0.008709734799452667
+      },
+      "goal_vector_error_deg": {
+        "samples": 82,
+        "mean": 0.3783474880234427,
+        "p50": 0.11599713209679122,
+        "p95": 1.3943064974341643,
+        "max": 1.6206596271339897,
+        "last_valid": 0.8410379769102856
+      },
+      "body_velocity_error_mps": {
+        "samples": 82,
+        "mean": 0.0424226721544273,
+        "p50": 0.0321186538785696,
+        "p95": 0.1246174640953541,
+        "max": 0.23591318726539612,
+        "last_valid": 0.037753552198410034
+      },
+      "wall_seconds": 14.229041943000084
+    }
+  ],
+  "wall_seconds": 766.017363411
+}

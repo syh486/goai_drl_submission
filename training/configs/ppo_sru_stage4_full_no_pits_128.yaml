@@ -1,0 +1,35 @@
+description: Primary scratch run - original full SRU terrain distribution with pits removed.
+arguments:
+  algorithm: ppo
+  ppo_preset: sru
+  num_envs: 128
+  iterations: 3000
+  num_steps_per_env: 16
+  learning_rate: 0.001
+  learning_rate_schedule: adaptive
+  verify_rollout_contract: true
+  init_at_random_episode_length: true
+  task_mode: random_goal_sru
+  terrain_profile: stage4_full_no_pits
+  low_level_profile: official_20260828
+  low_level_ready_after_reset: true
+  low_level_checkpoint: src/S10_sdk_deploy/policy/policy_official_20260828.onnx
+  lidar_encoder_checkpoint: checkpoints/lidar_encoder_random_terrain_ft/best.pt
+  terrain_seed: 42
+  surface_seed: 20260905
+  grass_fraction: 0.25
+  gravel_fraction: 0.25
+  terrain_rows: 6
+  terrain_cols: 30
+  reset_mode: fixed
+  max_episode_length: 300
+  contact_threshold: 500.0
+  contact_persistence_steps: 1
+  single_episode_length: 300
+  sensor_backend: warp
+  lidar_horizontal_samples: 900
+  sensor_workers: 8
+  physics_workers: 8
+  save_interval: 25
+  seed: 60
+  log_dir: training/logs/ppo_sru_full_no_pits_scratch_128

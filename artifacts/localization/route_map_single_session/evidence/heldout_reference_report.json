@@ -1,0 +1,60 @@
+{
+  "accepted_anchor_count": 42,
+  "attempted_anchor_count": 42,
+  "causal_windows": [
+    5,
+    7,
+    9
+  ],
+  "config": {
+    "aggregate_radius_frames": 4,
+    "anchor_stride_submaps": 4,
+    "candidate_radius_frames": 8,
+    "candidate_step_frames": 2,
+    "candidates_to_verify": 3,
+    "canonical_prior_rotation_sigma_deg": 3.0,
+    "canonical_prior_translation_sigma_m": 0.3,
+    "cross_rotation_sigma_deg": 1.5,
+    "cross_translation_sigma_m": 0.06,
+    "descriptor_candidate_count": 4,
+    "endpoint_rotation_sigma_deg": 1.0,
+    "endpoint_translation_sigma_m": 0.03,
+    "max_constraint_rotation_deg": 35.0,
+    "max_constraint_translation_m": 3.0,
+    "max_cycle_rotation_deg": 3.5,
+    "max_cycle_translation_m": 0.15,
+    "max_nfev": 400,
+    "max_rmse_m": 0.2,
+    "min_fitness": 0.6,
+    "minimum_constraints": 20,
+    "odometry_rotation_sigma_deg": 2.0,
+    "odometry_translation_sigma_m": 0.12,
+    "optimizer_backend": "gtsam"
+  },
+  "failures": [],
+  "heldout_session": "/home/syh/goai_embodied_future_material/field_data/2026-09-16/path3_heldout_b_20260916/mapping",
+  "heldout_trajectory": "/home/syh/path3_aab_qualification_20260916/heldout_b_glim_first/traj_lidar.txt",
+  "method": "causal odometry-distance scheduling, multi-window, multi-initialization, bidirectional consensus",
+  "pose_diagnostics": {
+    "pose_mode": "lio",
+    "prepared_roll_pitch_p95_deg": [
+      4.494901951077574,
+      20.032869180681427
+    ],
+    "raw_roll_pitch_p95_deg": [
+      4.796379687656439,
+      19.681534193218155
+    ]
+  },
+  "schema_version": 2,
+  "trajectory_alignment": {
+    "first_keyframe_index": 5,
+    "last_keyframe_index": 679,
+    "maximum_timestamp_error_s": 0.0,
+    "pose_count": 675,
+    "skipped_keyframes_end": 1,
+    "skipped_keyframes_start": 5,
+    "source": "/home/syh/path3_aab_qualification_20260916/heldout_b_glim_first/traj_lidar.txt",
+    "source_format": "tum_xyz_quaternion_xyzw"
+  }
+}

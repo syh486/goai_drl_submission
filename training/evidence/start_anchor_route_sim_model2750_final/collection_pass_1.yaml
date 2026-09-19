@@ -1,0 +1,172 @@
+schema_version: 2
+description: simulated independent ground-truth drive / onboard collection
+coordinate_frame: s10_route_map
+initial_map_yaw_deg: 0.0
+initial_base_height_m: 0.425
+collection:
+  source: onboard_kiss_icp_point_plane_eskf
+  start_pose_initialized: true
+  collected_at: '2026-09-12T14:31:40Z'
+  last_saved_at: '2026-09-12T14:32:26Z'
+  position_window_s: 1.0
+  height_source: local_lidar_support_plane_with_clearance_fallback
+  standing_base_clearance_m: 0.425
+  external_localization: false
+initial_alignment:
+  method: dual_lidar_start_anchor_se3
+  anchor_file: collection_pass_1.anchor.npz
+  automatic_capture: true
+  automatic_navigation_alignment: true
+  anchor_sha256: e744060ef4c2c94d7dd74d2fb35423830792c7088faf0c26b136aec59c7dfd7e
+skipped_waypoints: []
+nodes:
+- name: waypoint_00
+  position:
+  - 4.9193
+  - 0.1356
+  - -0.041
+  orientation_wxyz:
+  - 0.9859771
+  - -0.0011339
+  - 0.0045018
+  - -0.166816
+  source: onboard_pose_window_median
+  height_source: local_lidar_support_plane
+  quality: GOOD
+  tags:
+  - simulated
+- name: waypoint_01
+  position:
+  - 9.1896
+  - 1.1842
+  - -0.0408
+  orientation_wxyz:
+  - 0.9966842
+  - -0.0028213
+  - 0.0097263
+  - 0.0807347
+  source: onboard_pose_window_median
+  height_source: local_lidar_support_plane
+  quality: GOOD
+  tags:
+  - simulated
+- name: waypoint_02
+  position:
+  - 6.0714
+  - 0.4166
+  - -0.0411
+  orientation_wxyz:
+  - 0.0572837
+  - -3.8e-05
+  - -0.0015702
+  - 0.9983567
+  source: onboard_pose_window_median
+  height_source: local_lidar_support_plane
+  quality: GOOD
+  tags:
+  - simulated
+- name: waypoint_03
+  position:
+  - 3.6929
+  - -3.0978
+  - -0.0402
+  orientation_wxyz:
+  - 0.7769555
+  - -0.0008555
+  - 0.002147
+  - -0.6295513
+  source: onboard_pose_window_median
+  height_source: local_lidar_support_plane
+  quality: GOOD
+  tags:
+  - simulated
+- name: waypoint_04
+  position:
+  - 1.3579
+  - -4.5738
+  - -0.0417
+  orientation_wxyz:
+  - 0.2725072
+  - -0.0068147
+  - -0.0002068
+  - 0.9621296
+  source: onboard_pose_window_median
+  height_source: local_lidar_support_plane
+  quality: GOOD
+  tags:
+  - simulated
+- name: waypoint_05
+  position:
+  - 0.0041
+  - -1.8326
+  - -0.0395
+  orientation_wxyz:
+  - 0.6494039
+  - -0.0074367
+  - 0.0037112
+  - 0.7603983
+  source: onboard_pose_window_median
+  height_source: local_lidar_support_plane
+  quality: GOOD
+  tags:
+  - simulated
+- name: waypoint_06
+  position:
+  - -3.0957
+  - 1.952
+  - -0.0387
+  orientation_wxyz:
+  - 0.4948485
+  - -0.0087371
+  - 0.002714
+  - 0.8689311
+  source: onboard_pose_window_median
+  height_source: local_lidar_support_plane
+  quality: GOOD
+  tags:
+  - simulated
+- name: waypoint_07
+  position:
+  - -5.6528
+  - 5.3351
+  - -0.0391
+  orientation_wxyz:
+  - 0.6168572
+  - -0.0019059
+  - -0.0002568
+  - 0.7870727
+  source: onboard_pose_window_median
+  height_source: local_lidar_support_plane
+  quality: GOOD
+  tags:
+  - simulated
+- name: waypoint_08
+  position:
+  - -1.7722
+  - 3.4334
+  - -0.0405
+  orientation_wxyz:
+  - 0.8656091
+  - 0.0013698
+  - 0.0067731
+  - -0.5006726
+  source: onboard_pose_window_median
+  height_source: local_lidar_support_plane
+  quality: GOOD
+  tags:
+  - simulated
+- name: waypoint_09
+  position:
+  - -5.2677
+  - 1.7012
+  - -0.0401
+  orientation_wxyz:
+  - 0.2993235
+  - -0.0018143
+  - -0.0019044
+  - 0.9541481
+  source: onboard_pose_window_median
+  height_source: local_lidar_support_plane
+  quality: GOOD
+  tags:
+  - simulated

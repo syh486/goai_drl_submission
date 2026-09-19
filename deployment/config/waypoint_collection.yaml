@@ -1,0 +1,50 @@
+topics:
+  front_cloud: /rslidar_front/points
+  rear_cloud: /rslidar_rear/points
+  odometry: /s10/local_odometry
+  localization_healthy: /s10/localization/healthy
+  diagnostics: /s10/localization/diagnostics
+  collector_command: /s10/waypoints/command
+  collector_status: /s10/waypoints/status
+  collector_count: /s10/waypoints/count
+  mark_service: /s10/waypoints/mark
+  undo_service: /s10/waypoints/undo
+  save_service: /s10/waypoints/save
+  gamepad_key: /GAMEPAD_KEY
+
+collection:
+  output_file: deployment/routes/route.yaml
+  description: route collected onboard
+  # Waypoint 0 is constrained by the freshly captured start anchor; later
+  # points use the newest independent KISS/ESKF poses plus all quality gates.
+  window_s: 5.0
+  min_samples: 3
+  start_min_samples: 1
+  min_healthy_fraction: 0.9
+  max_linear_speed_mps: 0.08
+  max_angular_speed_rps: 0.12
+  max_xy_spread_m: 0.08
+  max_z_spread_m: 0.06
+  max_covariance_trace: 25.0
+  standing_base_clearance_m: 0.425
+  min_waypoint_spacing_m: 0.25
+  max_pose_age_s: 2.0
+  # Verified on the G12 controller on 2026-09-14: A/B publish one
+  # std_msgs/String event per press and do not change the factory motion state.
+  # The first A records waypoint 0; B records every later waypoint; the next A
+  # saves and exits. This mode is only for factory-controller teleoperation,
+  # not the repository low-level DDS runner.
+  gamepad_controls: true
+  gamepad_start_key: G12_KEY_A
+  gamepad_mark_key: G12_KEY_B
+  gamepad_debounce_s: 0.6
+  gamepad_retry_timeout_s: 12.0
+  gamepad_retry_interval_s: 0.25
+  # Save synchronized raw XYZ/ring/timestamp observations beside every mark.
+  save_lidar_observations: true
+  # Three recent pairs remain available within 1.2 seconds while limiting the
+  # duplicate PointCloud2 decode load in the separate collector process.
+  lidar_snapshot_capture_hz: 2.5
+  lidar_pairs_per_waypoint: 3
+  max_lidar_pair_skew_s: 0.03
+  max_lidar_observation_age_s: 1.5

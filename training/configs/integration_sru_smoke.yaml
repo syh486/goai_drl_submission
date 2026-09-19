@@ -1,0 +1,30 @@
+description: One-iteration sensor and training integration smoke for the maintained SRU path.
+arguments:
+  algorithm: ppo
+  ppo_preset: sru
+  device: cuda:0
+  num_envs: 2
+  iterations: 1
+  num_steps_per_env: 2
+  task_mode: random_goal_sru
+  terrain_profile: stage1_flat
+  low_level_profile: official_20260828
+  low_level_ready_after_reset: true
+  low_level_checkpoint: src/S10_sdk_deploy/policy/policy_official_20260828.onnx
+  terrain_seed: 42
+  surface_seed: 20260905
+  grass_fraction: 0.25
+  gravel_fraction: 0.25
+  terrain_rows: 2
+  terrain_cols: 30
+  reset_mode: fixed
+  goal_progress: 0.5
+  max_episode_length: 300
+  contact_threshold: 500.0
+  contact_persistence_steps: 1
+  single_episode_length: 300
+  sensor_backend: warp
+  physics_workers: 2
+  save_interval: 1
+  seed: 42
+  log_dir: /tmp/s10_sru_curriculum_gpu_smoke

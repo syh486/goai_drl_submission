@@ -1,0 +1,1682 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-05T10:14:24.805494+00:00",
+  "controller": {
+    "checkpoint": "/home/syh/goai_embodied_future_material/src/S10_sdk_deploy/policy/policy_official_20260828.onnx",
+    "profile": "official_20260828"
+  },
+  "terrain_contract": {
+    "single_platform_height_m": 0.28,
+    "stair_step_height_m": 0.13999999999999999,
+    "stair_steps": 5,
+    "stair_tread_depth_m": 0.4,
+    "stair_total_height_m": 0.7,
+    "hfield_horizontal_scale_m": 0.1
+  },
+  "test_config": {
+    "platform_heights": [
+      0.29,
+      0.3,
+      0.31,
+      0.32
+    ],
+    "stair_heights": [
+      0.145,
+      0.15,
+      0.155,
+      0.16
+    ],
+    "speeds": [
+      0.4,
+      0.45,
+      0.5
+    ],
+    "yaw_offsets_deg": [
+      -5.0,
+      0.0,
+      5.0
+    ],
+    "max_steps": 160,
+    "stable_steps": 5,
+    "stable_tilt_deg": 30.0,
+    "contact_threshold": 1200.0,
+    "contact_persistence_steps": 1,
+    "seed": 20260905
+  },
+  "reliable_limits": {
+    "platform": {
+      "terrain_required_height_m": 0.28,
+      "maximum_fully_reliable_tested_height_m": 0.31,
+      "terrain_required_passed_at_any_speed": false,
+      "reliable_speeds_at_terrain_height": []
+    },
+    "stairs": {
+      "terrain_required_height_m": 0.13999999999999999,
+      "maximum_fully_reliable_tested_height_m": 0.15,
+      "terrain_required_passed_at_any_speed": false,
+      "reliable_speeds_at_terrain_height": []
+    }
+  },
+  "summaries": [
+    {
+      "kind": "platform",
+      "height_m": 0.29,
+      "speed": 0.4,
+      "trials": 3,
+      "successes": 3,
+      "success_rate": 1.0,
+      "reasons": {
+        "passed": 3
+      },
+      "mean_progress_x": 5.467482504667686,
+      "max_tilt_deg": 29.05596923828125,
+      "max_illegal_contact_force": 257.0303669322844
+    },
+    {
+      "kind": "platform",
+      "height_m": 0.29,
+      "speed": 0.45,
+      "trials": 3,
+      "successes": 3,
+      "success_rate": 1.0,
+      "reasons": {
+        "passed": 3
+      },
+      "mean_progress_x": 5.545628831096242,
+      "max_tilt_deg": 30.967893600463867,
+      "max_illegal_contact_force": 254.38007846158118
+    },
+    {
+      "kind": "platform",
+      "height_m": 0.29,
+      "speed": 0.5,
+      "trials": 3,
+      "successes": 3,
+      "success_rate": 1.0,
+      "reasons": {
+        "passed": 3
+      },
+      "mean_progress_x": 5.617553310078814,
+      "max_tilt_deg": 32.328304290771484,
+      "max_illegal_contact_force": 313.88124696828936
+    },
+    {
+      "kind": "platform",
+      "height_m": 0.3,
+      "speed": 0.4,
+      "trials": 3,
+      "successes": 3,
+      "success_rate": 1.0,
+      "reasons": {
+        "passed": 3
+      },
+      "mean_progress_x": 5.458999994951338,
+      "max_tilt_deg": 28.904891967773438,
+      "max_illegal_contact_force": 282.91502982419564
+    },
+    {
+      "kind": "platform",
+      "height_m": 0.3,
+      "speed": 0.45,
+      "trials": 3,
+      "successes": 3,
+      "success_rate": 1.0,
+      "reasons": {
+        "passed": 3
+      },
+      "mean_progress_x": 5.551924520696983,
+      "max_tilt_deg": 30.843414306640625,
+      "max_illegal_contact_force": 258.1122673617291
+    },
+    {
+      "kind": "platform",
+      "height_m": 0.3,
+      "speed": 0.5,
+      "trials": 3,
+      "successes": 2,
+      "success_rate": 0.6666666666666666,
+      "reasons": {
+        "passed": 2,
+        "probe_timeout": 1
+      },
+      "mean_progress_x": 4.62194835484435,
+      "max_tilt_deg": 31.607322692871094,
+      "max_illegal_contact_force": 349.08159256757506
+    },
+    {
+      "kind": "platform",
+      "height_m": 0.31,
+      "speed": 0.4,
+      "trials": 3,
+      "successes": 2,
+      "success_rate": 0.6666666666666666,
+      "reasons": {
+        "passed": 2,
+        "large_angle": 1
+      },
+      "mean_progress_x": 4.604260448110078,
+      "max_tilt_deg": 70.57221221923828,
+      "max_illegal_contact_force": 1144.6757569023512
+    },
+    {
+      "kind": "platform",
+      "height_m": 0.31,
+      "speed": 0.45,
+      "trials": 3,
+      "successes": 3,
+      "success_rate": 1.0,
+      "reasons": {
+        "passed": 3
+      },
+      "mean_progress_x": 5.564553482064756,
+      "max_tilt_deg": 30.78714370727539,
+      "max_illegal_contact_force": 339.2321905755018
+    },
+    {
+      "kind": "platform",
+      "height_m": 0.31,
+      "speed": 0.5,
+      "trials": 3,
+      "successes": 3,
+      "success_rate": 1.0,
+      "reasons": {
+        "passed": 3
+      },
+      "mean_progress_x": 5.616710636338943,
+      "max_tilt_deg": 29.9263858795166,
+      "max_illegal_contact_force": 419.10349268134945
+    },
+    {
+      "kind": "platform",
+      "height_m": 0.32,
+      "speed": 0.4,
+      "trials": 3,
+      "successes": 1,
+      "success_rate": 0.3333333333333333,
+      "reasons": {
+        "passed": 1,
+        "large_angle": 1,
+        "probe_timeout": 1
+      },
+      "mean_progress_x": 3.8075829512930905,
+      "max_tilt_deg": 69.92525482177734,
+      "max_illegal_contact_force": 887.678693462939
+    },
+    {
+      "kind": "platform",
+      "height_m": 0.32,
+      "speed": 0.45,
+      "trials": 3,
+      "successes": 2,
+      "success_rate": 0.6666666666666666,
+      "reasons": {
+        "passed": 2,
+        "large_angle": 1
+      },
+      "mean_progress_x": 4.7089618130392745,
+      "max_tilt_deg": 166.51092529296875,
+      "max_illegal_contact_force": 577.7436153125598
+    },
+    {
+      "kind": "platform",
+      "height_m": 0.32,
+      "speed": 0.5,
+      "trials": 3,
+      "successes": 2,
+      "success_rate": 0.6666666666666666,
+      "reasons": {
+        "passed": 2,
+        "probe_timeout": 1
+      },
+      "mean_progress_x": 4.732307794566249,
+      "max_tilt_deg": 32.428218841552734,
+      "max_illegal_contact_force": 466.47369039239805
+    },
+    {
+      "kind": "stairs",
+      "height_m": 0.145,
+      "speed": 0.4,
+      "trials": 3,
+      "successes": 2,
+      "success_rate": 0.6666666666666666,
+      "reasons": {
+        "large_angle": 1,
+        "passed": 2
+      },
+      "mean_progress_x": 5.271840974468904,
+      "max_tilt_deg": 51.48714065551758,
+      "max_illegal_contact_force": 577.994094893391
+    },
+    {
+      "kind": "stairs",
+      "height_m": 0.145,
+      "speed": 0.45,
+      "trials": 3,
+      "successes": 3,
+      "success_rate": 1.0,
+      "reasons": {
+        "passed": 3
+      },
+      "mean_progress_x": 6.0340230440436615,
+      "max_tilt_deg": 20.38703155517578,
+      "max_illegal_contact_force": 0.0
+    },
+    {
+      "kind": "stairs",
+      "height_m": 0.145,
+      "speed": 0.5,
+      "trials": 3,
+      "successes": 3,
+      "success_rate": 1.0,
+      "reasons": {
+        "passed": 3
+      },
+      "mean_progress_x": 6.072066274254866,
+      "max_tilt_deg": 22.86766815185547,
+      "max_illegal_contact_force": 0.0
+    },
+    {
+      "kind": "stairs",
+      "height_m": 0.15,
+      "speed": 0.4,
+      "trials": 3,
+      "successes": 1,
+      "success_rate": 0.3333333333333333,
+      "reasons": {
+        "large_angle": 1,
+        "passed": 1,
+        "probe_timeout": 1
+      },
+      "mean_progress_x": 4.462437404226417,
+      "max_tilt_deg": 41.7720832824707,
+      "max_illegal_contact_force": 0.0
+    },
+    {
+      "kind": "stairs",
+      "height_m": 0.15,
+      "speed": 0.45,
+      "trials": 3,
+      "successes": 3,
+      "success_rate": 1.0,
+      "reasons": {
+        "passed": 3
+      },
+      "mean_progress_x": 6.060668405369646,
+      "max_tilt_deg": 20.99659538269043,
+      "max_illegal_contact_force": 0.0
+    },
+    {
+      "kind": "stairs",
+      "height_m": 0.15,
+      "speed": 0.5,
+      "trials": 3,
+      "successes": 2,
+      "success_rate": 0.6666666666666666,
+      "reasons": {
+        "passed": 2,
+        "large_angle": 1
+      },
+      "mean_progress_x": 5.343806541019262,
+      "max_tilt_deg": 55.216426849365234,
+      "max_illegal_contact_force": 888.8840488031731
+    },
+    {
+      "kind": "stairs",
+      "height_m": 0.155,
+      "speed": 0.4,
+      "trials": 3,
+      "successes": 0,
+      "success_rate": 0.0,
+      "reasons": {
+        "large_angle": 3
+      },
+      "mean_progress_x": 3.7758807769264777,
+      "max_tilt_deg": 63.635704040527344,
+      "max_illegal_contact_force": 669.7570435839128
+    },
+    {
+      "kind": "stairs",
+      "height_m": 0.155,
+      "speed": 0.45,
+      "trials": 3,
+      "successes": 1,
+      "success_rate": 0.3333333333333333,
+      "reasons": {
+        "passed": 1,
+        "large_angle": 2
+      },
+      "mean_progress_x": 4.70842407739944,
+      "max_tilt_deg": 76.38720703125,
+      "max_illegal_contact_force": 893.6627671529407
+    },
+    {
+      "kind": "stairs",
+      "height_m": 0.155,
+      "speed": 0.5,
+      "trials": 3,
+      "successes": 1,
+      "success_rate": 0.3333333333333333,
+      "reasons": {
+        "large_angle": 2,
+        "passed": 1
+      },
+      "mean_progress_x": 4.820173615531872,
+      "max_tilt_deg": 60.8237190246582,
+      "max_illegal_contact_force": 695.4328444480956
+    },
+    {
+      "kind": "stairs",
+      "height_m": 0.16,
+      "speed": 0.4,
+      "trials": 3,
+      "successes": 0,
+      "success_rate": 0.0,
+      "reasons": {
+        "probe_timeout": 2,
+        "base_contact": 1
+      },
+      "mean_progress_x": 3.484809613162002,
+      "max_tilt_deg": 31.288938522338867,
+      "max_illegal_contact_force": 1468.7794708014926
+    },
+    {
+      "kind": "stairs",
+      "height_m": 0.16,
+      "speed": 0.45,
+      "trials": 3,
+      "successes": 2,
+      "success_rate": 0.6666666666666666,
+      "reasons": {
+        "large_angle": 1,
+        "passed": 2
+      },
+      "mean_progress_x": 5.280767341013436,
+      "max_tilt_deg": 67.24618530273438,
+      "max_illegal_contact_force": 675.1188740596024
+    },
+    {
+      "kind": "stairs",
+      "height_m": 0.16,
+      "speed": 0.5,
+      "trials": 3,
+      "successes": 0,
+      "success_rate": 0.0,
+      "reasons": {
+        "large_angle": 2,
+        "base_contact": 1
+      },
+      "mean_progress_x": 4.0126146099913385,
+      "max_tilt_deg": 59.67234802246094,
+      "max_illegal_contact_force": 3844.2455205552146
+    }
+  ],
+  "trials": [
+    {
+      "kind": "platform",
+      "height_m": 0.29,
+      "total_height_m": 0.29,
+      "speed": 0.4,
+      "yaw_offset_deg": -5.0,
+      "success": true,
+      "reason": "passed",
+      "steps": 83,
+      "max_x": 1.4563098137405035,
+      "progress_x": 5.4563098137405035,
+      "max_base_z": 0.7117375631055505,
+      "max_tilt_deg": 25.03376007080078,
+      "max_illegal_contact_force": 252.0403300673004,
+      "body_force_peaks": {
+        "hl_hipy": 252.0403300673004
+      }
+    },
+    {
+      "kind": "platform",
+      "height_m": 0.29,
+      "total_height_m": 0.29,
+      "speed": 0.4,
+      "yaw_offset_deg": 0.0,
+      "success": true,
+      "reason": "passed",
+      "steps": 81,
+      "max_x": 1.4678661949060157,
+      "progress_x": 5.467866194906016,
+      "max_base_z": 0.71202338335617,
+      "max_tilt_deg": 26.088010787963867,
+      "max_illegal_contact_force": 203.64627307071933,
+      "body_force_peaks": {
+        "hl_hipy": 203.64627307071933
+      }
+    },
+    {
+      "kind": "platform",
+      "height_m": 0.29,
+      "total_height_m": 0.29,
+      "speed": 0.4,
+      "yaw_offset_deg": 5.0,
+      "success": true,
+      "reason": "passed",
+      "steps": 79,
+      "max_x": 1.4782715053565398,
+      "progress_x": 5.47827150535654,
+      "max_base_z": 0.711808601911093,
+      "max_tilt_deg": 29.05596923828125,
+      "max_illegal_contact_force": 257.0303669322844,
+      "body_force_peaks": {
+        "hl_hipy": 257.0303669322844
+      }
+    },
+    {
+      "kind": "platform",
+      "height_m": 0.29,
+      "total_height_m": 0.29,
+      "speed": 0.45,
+      "yaw_offset_deg": -5.0,
+      "success": true,
+      "reason": "passed",
+      "steps": 77,
+      "max_x": 1.5562450398545726,
+      "progress_x": 5.556245039854573,
+      "max_base_z": 0.7108188594251695,
+      "max_tilt_deg": 28.032569885253906,
+      "max_illegal_contact_force": 246.60914140558467,
+      "body_force_peaks": {
+        "hl_hipy": 246.60914140558467
+      }
+    },
+    {
+      "kind": "platform",
+      "height_m": 0.29,
+      "total_height_m": 0.29,
+      "speed": 0.45,
+      "yaw_offset_deg": 0.0,
+      "success": true,
+      "reason": "passed",
+      "steps": 76,
+      "max_x": 1.5825773035434434,
+      "progress_x": 5.582577303543443,
+      "max_base_z": 0.7108350213450462,
+      "max_tilt_deg": 26.938905715942383,
+      "max_illegal_contact_force": 254.38007846158118,
+      "body_force_peaks": {
+        "hl_hipy": 254.38007846158118
+      }
+    },
+    {
+      "kind": "platform",
+      "height_m": 0.29,
+      "total_height_m": 0.29,
+      "speed": 0.45,
+      "yaw_offset_deg": 5.0,
+      "success": true,
+      "reason": "passed",
+      "steps": 87,
+      "max_x": 1.498064149890712,
+      "progress_x": 5.498064149890712,
+      "max_base_z": 0.7107466243559442,
+      "max_tilt_deg": 30.967893600463867,
+      "max_illegal_contact_force": 231.0879504462489,
+      "body_force_peaks": {
+        "hl_hipy": 231.0879504462489
+      }
+    },
+    {
+      "kind": "platform",
+      "height_m": 0.29,
+      "total_height_m": 0.29,
+      "speed": 0.5,
+      "yaw_offset_deg": -5.0,
+      "success": true,
+      "reason": "passed",
+      "steps": 92,
+      "max_x": 1.5980338941421741,
+      "progress_x": 5.598033894142175,
+      "max_base_z": 0.7107041676215416,
+      "max_tilt_deg": 28.761991500854492,
+      "max_illegal_contact_force": 313.88124696828936,
+      "body_force_peaks": {
+        "hl_hipy": 313.88124696828936
+      }
+    },
+    {
+      "kind": "platform",
+      "height_m": 0.29,
+      "total_height_m": 0.29,
+      "speed": 0.5,
+      "yaw_offset_deg": 0.0,
+      "success": true,
+      "reason": "passed",
+      "steps": 102,
+      "max_x": 1.631660798208631,
+      "progress_x": 5.631660798208631,
+      "max_base_z": 0.7104734037493975,
+      "max_tilt_deg": 30.591014862060547,
+      "max_illegal_contact_force": 229.1030538263013,
+      "body_force_peaks": {
+        "hl_hipy": 229.1030538263013
+      }
+    },
+    {
+      "kind": "platform",
+      "height_m": 0.29,
+      "total_height_m": 0.29,
+      "speed": 0.5,
+      "yaw_offset_deg": 5.0,
+      "success": true,
+      "reason": "passed",
+      "steps": 102,
+      "max_x": 1.6229652378856365,
+      "progress_x": 5.622965237885636,
+      "max_base_z": 0.7102951630700373,
+      "max_tilt_deg": 32.328304290771484,
+      "max_illegal_contact_force": 227.49549714126567,
+      "body_force_peaks": {
+        "hl_hipy": 227.49549714126567
+      }
+    },
+    {
+      "kind": "platform",
+      "height_m": 0.3,
+      "total_height_m": 0.3,
+      "speed": 0.4,
+      "yaw_offset_deg": -5.0,
+      "success": true,
+      "reason": "passed",
+      "steps": 87,
+      "max_x": 1.4528000466997886,
+      "progress_x": 5.452800046699789,
+      "max_base_z": 0.7218369001889072,
+      "max_tilt_deg": 27.188255310058594,
+      "max_illegal_contact_force": 216.02071964142985,
+      "body_force_peaks": {
+        "hl_hipy": 216.02071964142985
+      }
+    },
+    {
+      "kind": "platform",
+      "height_m": 0.3,
+      "total_height_m": 0.3,
+      "speed": 0.4,
+      "yaw_offset_deg": 0.0,
+      "success": true,
+      "reason": "passed",
+      "steps": 84,
+      "max_x": 1.4719380755907014,
+      "progress_x": 5.4719380755907014,
+      "max_base_z": 0.7218196689125465,
+      "max_tilt_deg": 26.910614013671875,
+      "max_illegal_contact_force": 170.79702311347785,
+      "body_force_peaks": {
+        "hl_hipy": 170.79702311347785
+      }
+    },
+    {
+      "kind": "platform",
+      "height_m": 0.3,
+      "total_height_m": 0.3,
+      "speed": 0.4,
+      "yaw_offset_deg": 5.0,
+      "success": true,
+      "reason": "passed",
+      "steps": 81,
+      "max_x": 1.4522618625635226,
+      "progress_x": 5.452261862563523,
+      "max_base_z": 0.7219110639691029,
+      "max_tilt_deg": 28.904891967773438,
+      "max_illegal_contact_force": 282.91502982419564,
+      "body_force_peaks": {
+        "hl_hipy": 282.91502982419564
+      }
+    },
+    {
+      "kind": "platform",
+      "height_m": 0.3,
+      "total_height_m": 0.3,
+      "speed": 0.45,
+      "yaw_offset_deg": -5.0,
+      "success": true,
+      "reason": "passed",
+      "steps": 85,
+      "max_x": 1.5383090314688916,
+      "progress_x": 5.538309031468891,
+      "max_base_z": 0.7213927670778943,
+      "max_tilt_deg": 28.1790828704834,
+      "max_illegal_contact_force": 257.09143678063117,
+      "body_force_peaks": {
+        "hl_hipy": 257.09143678063117
+      }
+    },
+    {
+      "kind": "platform",
+      "height_m": 0.3,
+      "total_height_m": 0.3,
+      "speed": 0.45,
+      "yaw_offset_deg": 0.0,
+      "success": true,
+      "reason": "passed",
+      "steps": 75,
+      "max_x": 1.5447126851130646,
+      "progress_x": 5.544712685113065,
+      "max_base_z": 0.7211914806253042,
+      "max_tilt_deg": 27.44801139831543,
+      "max_illegal_contact_force": 251.8294330048121,
+      "body_force_peaks": {
+        "hl_hipy": 251.8294330048121
+      }
+    },
+    {
+      "kind": "platform",
+      "height_m": 0.3,
+      "total_height_m": 0.3,
+      "speed": 0.45,
+      "yaw_offset_deg": 5.0,
+      "success": true,
+      "reason": "passed",
+      "steps": 82,
+      "max_x": 1.5727518455089915,
+      "progress_x": 5.572751845508991,
+      "max_base_z": 0.721403991349837,
+      "max_tilt_deg": 30.843414306640625,
+      "max_illegal_contact_force": 258.1122673617291,
+      "body_force_peaks": {
+        "hl_hipy": 258.1122673617291
+      }
+    },
+    {
+      "kind": "platform",
+      "height_m": 0.3,
+      "total_height_m": 0.3,
+      "speed": 0.5,
+      "yaw_offset_deg": -5.0,
+      "success": true,
+      "reason": "passed",
+      "steps": 79,
+      "max_x": 1.5582700674076229,
+      "progress_x": 5.558270067407623,
+      "max_base_z": 0.7203476693073938,
+      "max_tilt_deg": 28.926067352294922,
+      "max_illegal_contact_force": 349.08159256757506,
+      "body_force_peaks": {
+        "hl_hipy": 349.08159256757506
+      }
+    },
+    {
+      "kind": "platform",
+      "height_m": 0.3,
+      "total_height_m": 0.3,
+      "speed": 0.5,
+      "yaw_offset_deg": 0.0,
+      "success": false,
+      "reason": "probe_timeout",
+      "steps": 160,
+      "max_x": -1.348927050941208,
+      "progress_x": 2.651072949058792,
+      "max_base_z": 0.4946087448734004,
+      "max_tilt_deg": 30.027433395385742,
+      "max_illegal_contact_force": 0.0,
+      "body_force_peaks": {}
+    },
+    {
+      "kind": "platform",
+      "height_m": 0.3,
+      "total_height_m": 0.3,
+      "speed": 0.5,
+      "yaw_offset_deg": 5.0,
+      "success": true,
+      "reason": "passed",
+      "steps": 103,
+      "max_x": 1.6565020480666346,
+      "progress_x": 5.656502048066635,
+      "max_base_z": 0.7200923161084299,
+      "max_tilt_deg": 31.607322692871094,
+      "max_illegal_contact_force": 332.69505141919325,
+      "body_force_peaks": {
+        "hl_hipy": 332.69505141919325,
+        "hr_hipy": 223.9035351161766
+      }
+    },
+    {
+      "kind": "platform",
+      "height_m": 0.31,
+      "total_height_m": 0.31,
+      "speed": 0.4,
+      "yaw_offset_deg": -5.0,
+      "success": true,
+      "reason": "passed",
+      "steps": 93,
+      "max_x": 1.4644464028273942,
+      "progress_x": 5.464446402827394,
+      "max_base_z": 0.7316649082017047,
+      "max_tilt_deg": 26.850645065307617,
+      "max_illegal_contact_force": 210.6299102849635,
+      "body_force_peaks": {
+        "hl_hipy": 210.6299102849635
+      }
+    },
+    {
+      "kind": "platform",
+      "height_m": 0.31,
+      "total_height_m": 0.31,
+      "speed": 0.4,
+      "yaw_offset_deg": 0.0,
+      "success": true,
+      "reason": "passed",
+      "steps": 82,
+      "max_x": 1.4926786328152366,
+      "progress_x": 5.492678632815236,
+      "max_base_z": 0.7313360949257637,
+      "max_tilt_deg": 27.173173904418945,
+      "max_illegal_contact_force": 277.78832574563063,
+      "body_force_peaks": {
+        "hl_hipy": 277.78832574563063
+      }
+    },
+    {
+      "kind": "platform",
+      "height_m": 0.31,
+      "total_height_m": 0.31,
+      "speed": 0.4,
+      "yaw_offset_deg": 5.0,
+      "success": false,
+      "reason": "large_angle",
+      "steps": 97,
+      "max_x": -1.1443436913123954,
+      "progress_x": 2.8556563086876046,
+      "max_base_z": 0.5053646342634017,
+      "max_tilt_deg": 70.57221221923828,
+      "max_illegal_contact_force": 1144.6757569023512,
+      "body_force_peaks": {
+        "fr_hipy": 226.02723192969606,
+        "hr_hipx": 1144.6757569023512,
+        "hr_hipy": 173.44494751227992
+      }
+    },
+    {
+      "kind": "platform",
+      "height_m": 0.31,
+      "total_height_m": 0.31,
+      "speed": 0.45,
+      "yaw_offset_deg": -5.0,
+      "success": true,
+      "reason": "passed",
+      "steps": 84,
+      "max_x": 1.5561458663764898,
+      "progress_x": 5.5561458663764896,
+      "max_base_z": 0.7307210181573878,
+      "max_tilt_deg": 27.614259719848633,
+      "max_illegal_contact_force": 228.9210242636036,
+      "body_force_peaks": {
+        "hl_hipy": 228.9210242636036
+      }
+    },
+    {
+      "kind": "platform",
+      "height_m": 0.31,
+      "total_height_m": 0.31,
+      "speed": 0.45,
+      "yaw_offset_deg": 0.0,
+      "success": true,
+      "reason": "passed",
+      "steps": 84,
+      "max_x": 1.567493530900993,
+      "progress_x": 5.567493530900993,
+      "max_base_z": 0.7306990213225325,
+      "max_tilt_deg": 27.754636764526367,
+      "max_illegal_contact_force": 253.820832039596,
+      "body_force_peaks": {
+        "hl_hipy": 253.820832039596
+      }
+    },
+    {
+      "kind": "platform",
+      "height_m": 0.31,
+      "total_height_m": 0.31,
+      "speed": 0.45,
+      "yaw_offset_deg": 5.0,
+      "success": true,
+      "reason": "passed",
+      "steps": 92,
+      "max_x": 1.5700210489167852,
+      "progress_x": 5.570021048916785,
+      "max_base_z": 0.7312678864659334,
+      "max_tilt_deg": 30.78714370727539,
+      "max_illegal_contact_force": 339.2321905755018,
+      "body_force_peaks": {
+        "hl_hipy": 339.2321905755018
+      }
+    },
+    {
+      "kind": "platform",
+      "height_m": 0.31,
+      "total_height_m": 0.31,
+      "speed": 0.5,
+      "yaw_offset_deg": -5.0,
+      "success": true,
+      "reason": "passed",
+      "steps": 88,
+      "max_x": 1.6229323727683074,
+      "progress_x": 5.622932372768307,
+      "max_base_z": 0.730326203235213,
+      "max_tilt_deg": 28.114093780517578,
+      "max_illegal_contact_force": 310.2847898517405,
+      "body_force_peaks": {
+        "hl_hipy": 310.2847898517405
+      }
+    },
+    {
+      "kind": "platform",
+      "height_m": 0.31,
+      "total_height_m": 0.31,
+      "speed": 0.5,
+      "yaw_offset_deg": 0.0,
+      "success": true,
+      "reason": "passed",
+      "steps": 88,
+      "max_x": 1.5592039229645107,
+      "progress_x": 5.55920392296451,
+      "max_base_z": 0.7302239152592741,
+      "max_tilt_deg": 29.9263858795166,
+      "max_illegal_contact_force": 299.0982209930868,
+      "body_force_peaks": {
+        "hl_hipy": 299.0982209930868
+      }
+    },
+    {
+      "kind": "platform",
+      "height_m": 0.31,
+      "total_height_m": 0.31,
+      "speed": 0.5,
+      "yaw_offset_deg": 5.0,
+      "success": true,
+      "reason": "passed",
+      "steps": 102,
+      "max_x": 1.6679956132840104,
+      "progress_x": 5.667995613284011,
+      "max_base_z": 0.7301647557315886,
+      "max_tilt_deg": 29.88509178161621,
+      "max_illegal_contact_force": 419.10349268134945,
+      "body_force_peaks": {
+        "hl_hipy": 419.10349268134945
+      }
+    },
+    {
+      "kind": "platform",
+      "height_m": 0.32,
+      "total_height_m": 0.32,
+      "speed": 0.4,
+      "yaw_offset_deg": -5.0,
+      "success": true,
+      "reason": "passed",
+      "steps": 92,
+      "max_x": 1.4558630126637906,
+      "progress_x": 5.455863012663791,
+      "max_base_z": 0.7415296669315422,
+      "max_tilt_deg": 26.87173080444336,
+      "max_illegal_contact_force": 224.8270254760174,
+      "body_force_peaks": {
+        "hl_hipy": 224.8270254760174
+      }
+    },
+    {
+      "kind": "platform",
+      "height_m": 0.32,
+      "total_height_m": 0.32,
+      "speed": 0.4,
+      "yaw_offset_deg": 0.0,
+      "success": false,
+      "reason": "large_angle",
+      "steps": 51,
+      "max_x": -0.9946813781674859,
+      "progress_x": 3.0053186218325143,
+      "max_base_z": 0.49131189278320186,
+      "max_tilt_deg": 69.92525482177734,
+      "max_illegal_contact_force": 887.678693462939,
+      "body_force_peaks": {
+        "fr_hipy": 34.17322439291496,
+        "hl_hipy": 887.678693462939,
+        "hr_hipx": 449.1415588409756,
+        "hr_hipy": 328.01957980253485
+      }
+    },
+    {
+      "kind": "platform",
+      "height_m": 0.32,
+      "total_height_m": 0.32,
+      "speed": 0.4,
+      "yaw_offset_deg": 5.0,
+      "success": false,
+      "reason": "probe_timeout",
+      "steps": 160,
+      "max_x": -1.0384327806170348,
+      "progress_x": 2.961567219382965,
+      "max_base_z": 0.49639169204967143,
+      "max_tilt_deg": 29.035682678222656,
+      "max_illegal_contact_force": 863.1946461113716,
+      "body_force_peaks": {
+        "hl_hipy": 863.1946461113716
+      }
+    },
+    {
+      "kind": "platform",
+      "height_m": 0.32,
+      "total_height_m": 0.32,
+      "speed": 0.45,
+      "yaw_offset_deg": -5.0,
+      "success": true,
+      "reason": "passed",
+      "steps": 101,
+      "max_x": 1.5170148354391817,
+      "progress_x": 5.5170148354391815,
+      "max_base_z": 0.7410231442293889,
+      "max_tilt_deg": 26.689815521240234,
+      "max_illegal_contact_force": 304.3285268869713,
+      "body_force_peaks": {
+        "hl_hipy": 304.3285268869713
+      }
+    },
+    {
+      "kind": "platform",
+      "height_m": 0.32,
+      "total_height_m": 0.32,
+      "speed": 0.45,
+      "yaw_offset_deg": 0.0,
+      "success": false,
+      "reason": "large_angle",
+      "steps": 95,
+      "max_x": -1.0010100261812527,
+      "progress_x": 2.9989899738187473,
+      "max_base_z": 0.4947095689538295,
+      "max_tilt_deg": 166.51092529296875,
+      "max_illegal_contact_force": 577.7436153125598,
+      "body_force_peaks": {
+        "fr_hipy": 314.2354047998833,
+        "hl_hipy": 268.459168802512,
+        "hr_hipx": 577.7436153125598,
+        "hr_hipy": 312.2684938122945
+      }
+    },
+    {
+      "kind": "platform",
+      "height_m": 0.32,
+      "total_height_m": 0.32,
+      "speed": 0.45,
+      "yaw_offset_deg": 5.0,
+      "success": true,
+      "reason": "passed",
+      "steps": 109,
+      "max_x": 1.6108806298598946,
+      "progress_x": 5.610880629859895,
+      "max_base_z": 0.7413849496425017,
+      "max_tilt_deg": 30.805376052856445,
+      "max_illegal_contact_force": 478.21644022135126,
+      "body_force_peaks": {
+        "hl_hipy": 478.21644022135126
+      }
+    },
+    {
+      "kind": "platform",
+      "height_m": 0.32,
+      "total_height_m": 0.32,
+      "speed": 0.5,
+      "yaw_offset_deg": -5.0,
+      "success": true,
+      "reason": "passed",
+      "steps": 105,
+      "max_x": 1.5991172681592374,
+      "progress_x": 5.599117268159238,
+      "max_base_z": 0.7407693040420019,
+      "max_tilt_deg": 27.36656951904297,
+      "max_illegal_contact_force": 291.7769630810659,
+      "body_force_peaks": {
+        "hl_hipy": 291.7769630810659,
+        "hr_hipy": 54.0467124772024
+      }
+    },
+    {
+      "kind": "platform",
+      "height_m": 0.32,
+      "total_height_m": 0.32,
+      "speed": 0.5,
+      "yaw_offset_deg": 0.0,
+      "success": false,
+      "reason": "probe_timeout",
+      "steps": 160,
+      "max_x": -0.9973070733718594,
+      "progress_x": 3.0026929266281406,
+      "max_base_z": 0.5067951306970019,
+      "max_tilt_deg": 32.428218841552734,
+      "max_illegal_contact_force": 336.72305724956055,
+      "body_force_peaks": {
+        "hl_hipy": 336.72305724956055
+      }
+    },
+    {
+      "kind": "platform",
+      "height_m": 0.32,
+      "total_height_m": 0.32,
+      "speed": 0.5,
+      "yaw_offset_deg": 5.0,
+      "success": true,
+      "reason": "passed",
+      "steps": 123,
+      "max_x": 1.5951131889113679,
+      "progress_x": 5.595113188911368,
+      "max_base_z": 0.7402053629936834,
+      "max_tilt_deg": 31.207841873168945,
+      "max_illegal_contact_force": 466.47369039239805,
+      "body_force_peaks": {
+        "hl_hipy": 466.47369039239805,
+        "hr_hipy": 53.178391346869866
+      }
+    },
+    {
+      "kind": "stairs",
+      "height_m": 0.145,
+      "total_height_m": 0.725,
+      "speed": 0.4,
+      "yaw_offset_deg": -5.0,
+      "success": false,
+      "reason": "large_angle",
+      "steps": 130,
+      "max_x": -0.141006429398865,
+      "progress_x": 3.858993570601135,
+      "max_base_z": 0.7658710312512497,
+      "max_tilt_deg": 51.48714065551758,
+      "max_illegal_contact_force": 577.994094893391,
+      "body_force_peaks": {
+        "base_link": 577.994094893391,
+        "fl_hipy": 556.2035800521192
+      }
+    },
+    {
+      "kind": "stairs",
+      "height_m": 0.145,
+      "total_height_m": 0.725,
+      "speed": 0.4,
+      "yaw_offset_deg": 0.0,
+      "success": true,
+      "reason": "passed",
+      "steps": 100,
+      "max_x": 1.9548543241701852,
+      "progress_x": 5.954854324170185,
+      "max_base_z": 1.1333130277480707,
+      "max_tilt_deg": 20.480588912963867,
+      "max_illegal_contact_force": 0.0,
+      "body_force_peaks": {}
+    },
+    {
+      "kind": "stairs",
+      "height_m": 0.145,
+      "total_height_m": 0.725,
+      "speed": 0.4,
+      "yaw_offset_deg": 5.0,
+      "success": true,
+      "reason": "passed",
+      "steps": 93,
+      "max_x": 2.00167502863539,
+      "progress_x": 6.00167502863539,
+      "max_base_z": 1.141488495095802,
+      "max_tilt_deg": 21.275745391845703,
+      "max_illegal_contact_force": 0.0,
+      "body_force_peaks": {}
+    },
+    {
+      "kind": "stairs",
+      "height_m": 0.145,
+      "total_height_m": 0.725,
+      "speed": 0.45,
+      "yaw_offset_deg": -5.0,
+      "success": true,
+      "reason": "passed",
+      "steps": 63,
+      "max_x": 2.0364810343271658,
+      "progress_x": 6.036481034327165,
+      "max_base_z": 1.140864534145855,
+      "max_tilt_deg": 19.225126266479492,
+      "max_illegal_contact_force": 0.0,
+      "body_force_peaks": {}
+    },
+    {
+      "kind": "stairs",
+      "height_m": 0.145,
+      "total_height_m": 0.725,
+      "speed": 0.45,
+      "yaw_offset_deg": 0.0,
+      "success": true,
+      "reason": "passed",
+      "steps": 62,
+      "max_x": 2.0298404306952884,
+      "progress_x": 6.029840430695288,
+      "max_base_z": 1.1369029338044425,
+      "max_tilt_deg": 20.38703155517578,
+      "max_illegal_contact_force": 0.0,
+      "body_force_peaks": {}
+    },
+    {
+      "kind": "stairs",
+      "height_m": 0.145,
+      "total_height_m": 0.725,
+      "speed": 0.45,
+      "yaw_offset_deg": 5.0,
+      "success": true,
+      "reason": "passed",
+      "steps": 61,
+      "max_x": 2.0357476671085286,
+      "progress_x": 6.035747667108529,
+      "max_base_z": 1.1392919435928017,
+      "max_tilt_deg": 19.360107421875,
+      "max_illegal_contact_force": 0.0,
+      "body_force_peaks": {}
+    },
+    {
+      "kind": "stairs",
+      "height_m": 0.145,
+      "total_height_m": 0.725,
+      "speed": 0.5,
+      "yaw_offset_deg": -5.0,
+      "success": true,
+      "reason": "passed",
+      "steps": 55,
+      "max_x": 2.037449752606644,
+      "progress_x": 6.037449752606644,
+      "max_base_z": 1.1376670818302543,
+      "max_tilt_deg": 21.379541397094727,
+      "max_illegal_contact_force": 0.0,
+      "body_force_peaks": {}
+    },
+    {
+      "kind": "stairs",
+      "height_m": 0.145,
+      "total_height_m": 0.725,
+      "speed": 0.5,
+      "yaw_offset_deg": 0.0,
+      "success": true,
+      "reason": "passed",
+      "steps": 57,
+      "max_x": 2.098601853009866,
+      "progress_x": 6.098601853009866,
+      "max_base_z": 1.1375543742802519,
+      "max_tilt_deg": 22.86766815185547,
+      "max_illegal_contact_force": 0.0,
+      "body_force_peaks": {}
+    },
+    {
+      "kind": "stairs",
+      "height_m": 0.145,
+      "total_height_m": 0.725,
+      "speed": 0.5,
+      "yaw_offset_deg": 5.0,
+      "success": true,
+      "reason": "passed",
+      "steps": 70,
+      "max_x": 2.0801472171480895,
+      "progress_x": 6.08014721714809,
+      "max_base_z": 1.141736005948671,
+      "max_tilt_deg": 19.547714233398438,
+      "max_illegal_contact_force": 0.0,
+      "body_force_peaks": {}
+    },
+    {
+      "kind": "stairs",
+      "height_m": 0.15,
+      "total_height_m": 0.75,
+      "speed": 0.4,
+      "yaw_offset_deg": -5.0,
+      "success": false,
+      "reason": "large_angle",
+      "steps": 107,
+      "max_x": 0.08812201416349076,
+      "progress_x": 4.088122014163491,
+      "max_base_z": 0.9208859574123881,
+      "max_tilt_deg": 41.7720832824707,
+      "max_illegal_contact_force": 0.0,
+      "body_force_peaks": {}
+    },
+    {
+      "kind": "stairs",
+      "height_m": 0.15,
+      "total_height_m": 0.75,
+      "speed": 0.4,
+      "yaw_offset_deg": 0.0,
+      "success": true,
+      "reason": "passed",
+      "steps": 81,
+      "max_x": 1.9372970304637187,
+      "progress_x": 5.937297030463719,
+      "max_base_z": 1.1625084335556706,
+      "max_tilt_deg": 23.148971557617188,
+      "max_illegal_contact_force": 0.0,
+      "body_force_peaks": {}
+    },
+    {
+      "kind": "stairs",
+      "height_m": 0.15,
+      "total_height_m": 0.75,
+      "speed": 0.4,
+      "yaw_offset_deg": 5.0,
+      "success": false,
+      "reason": "probe_timeout",
+      "steps": 160,
+      "max_x": -0.6381068319479577,
+      "progress_x": 3.3618931680520423,
+      "max_base_z": 0.6269611824630962,
+      "max_tilt_deg": 19.11173439025879,
+      "max_illegal_contact_force": 0.0,
+      "body_force_peaks": {}
+    },
+    {
+      "kind": "stairs",
+      "height_m": 0.15,
+      "total_height_m": 0.75,
+      "speed": 0.45,
+      "yaw_offset_deg": -5.0,
+      "success": true,
+      "reason": "passed",
+      "steps": 65,
+      "max_x": 2.0909215253450766,
+      "progress_x": 6.090921525345077,
+      "max_base_z": 1.1648556563994192,
+      "max_tilt_deg": 19.77925682067871,
+      "max_illegal_contact_force": 0.0,
+      "body_force_peaks": {}
+    },
+    {
+      "kind": "stairs",
+      "height_m": 0.15,
+      "total_height_m": 0.75,
+      "speed": 0.45,
+      "yaw_offset_deg": 0.0,
+      "success": true,
+      "reason": "passed",
+      "steps": 62,
+      "max_x": 2.0539941821491947,
+      "progress_x": 6.053994182149195,
+      "max_base_z": 1.1639423800718014,
+      "max_tilt_deg": 20.99659538269043,
+      "max_illegal_contact_force": 0.0,
+      "body_force_peaks": {}
+    },
+    {
+      "kind": "stairs",
+      "height_m": 0.15,
+      "total_height_m": 0.75,
+      "speed": 0.45,
+      "yaw_offset_deg": 5.0,
+      "success": true,
+      "reason": "passed",
+      "steps": 63,
+      "max_x": 2.0370895086146663,
+      "progress_x": 6.037089508614667,
+      "max_base_z": 1.165442785414616,
+      "max_tilt_deg": 20.19989013671875,
+      "max_illegal_contact_force": 0.0,
+      "body_force_peaks": {}
+    },
+    {
+      "kind": "stairs",
+      "height_m": 0.15,
+      "total_height_m": 0.75,
+      "speed": 0.5,
+      "yaw_offset_deg": -5.0,
+      "success": true,
+      "reason": "passed",
+      "steps": 58,
+      "max_x": 2.072410789947814,
+      "progress_x": 6.0724107899478135,
+      "max_base_z": 1.160517148665253,
+      "max_tilt_deg": 22.069887161254883,
+      "max_illegal_contact_force": 0.0,
+      "body_force_peaks": {}
+    },
+    {
+      "kind": "stairs",
+      "height_m": 0.15,
+      "total_height_m": 0.75,
+      "speed": 0.5,
+      "yaw_offset_deg": 0.0,
+      "success": false,
+      "reason": "large_angle",
+      "steps": 105,
+      "max_x": -0.12430079486101435,
+      "progress_x": 3.875699205138986,
+      "max_base_z": 0.7579123471516429,
+      "max_tilt_deg": 55.216426849365234,
+      "max_illegal_contact_force": 888.8840488031731,
+      "body_force_peaks": {
+        "base_link": 888.8840488031731,
+        "fl_hipy": 550.9833183694539
+      }
+    },
+    {
+      "kind": "stairs",
+      "height_m": 0.15,
+      "total_height_m": 0.75,
+      "speed": 0.5,
+      "yaw_offset_deg": 5.0,
+      "success": true,
+      "reason": "passed",
+      "steps": 57,
+      "max_x": 2.083309627970985,
+      "progress_x": 6.083309627970985,
+      "max_base_z": 1.1612967022635536,
+      "max_tilt_deg": 19.998491287231445,
+      "max_illegal_contact_force": 0.0,
+      "body_force_peaks": {}
+    },
+    {
+      "kind": "stairs",
+      "height_m": 0.155,
+      "total_height_m": 0.775,
+      "speed": 0.4,
+      "yaw_offset_deg": -5.0,
+      "success": false,
+      "reason": "large_angle",
+      "steps": 104,
+      "max_x": -0.5674492983460273,
+      "progress_x": 3.4325507016539727,
+      "max_base_z": 0.6282291471986339,
+      "max_tilt_deg": 63.635704040527344,
+      "max_illegal_contact_force": 550.1613031406172,
+      "body_force_peaks": {
+        "base_link": 507.6999467916293,
+        "fl_hipy": 550.1613031406172
+      }
+    },
+    {
+      "kind": "stairs",
+      "height_m": 0.155,
+      "total_height_m": 0.775,
+      "speed": 0.4,
+      "yaw_offset_deg": 0.0,
+      "success": false,
+      "reason": "large_angle",
+      "steps": 90,
+      "max_x": 0.13649061640156482,
+      "progress_x": 4.136490616401565,
+      "max_base_z": 0.9466157938028057,
+      "max_tilt_deg": 40.07387924194336,
+      "max_illegal_contact_force": 514.2038576908991,
+      "body_force_peaks": {
+        "fl_hipy": 514.2038576908991,
+        "hl_hipy": 352.5110241791146
+      }
+    },
+    {
+      "kind": "stairs",
+      "height_m": 0.155,
+      "total_height_m": 0.775,
+      "speed": 0.4,
+      "yaw_offset_deg": 5.0,
+      "success": false,
+      "reason": "large_angle",
+      "steps": 94,
+      "max_x": -0.24139898727610531,
+      "progress_x": 3.7586010127238945,
+      "max_base_z": 0.7839145891030596,
+      "max_tilt_deg": 40.83588790893555,
+      "max_illegal_contact_force": 669.7570435839128,
+      "body_force_peaks": {
+        "fl_hipy": 423.12137095001253,
+        "hl_hipy": 286.86198774006516,
+        "hr_hipy": 669.7570435839128
+      }
+    },
+    {
+      "kind": "stairs",
+      "height_m": 0.155,
+      "total_height_m": 0.775,
+      "speed": 0.45,
+      "yaw_offset_deg": -5.0,
+      "success": true,
+      "reason": "passed",
+      "steps": 68,
+      "max_x": 2.0292667315158557,
+      "progress_x": 6.029266731515856,
+      "max_base_z": 1.1892360976814094,
+      "max_tilt_deg": 20.213214874267578,
+      "max_illegal_contact_force": 0.0,
+      "body_force_peaks": {}
+    },
+    {
+      "kind": "stairs",
+      "height_m": 0.155,
+      "total_height_m": 0.775,
+      "speed": 0.45,
+      "yaw_offset_deg": 0.0,
+      "success": false,
+      "reason": "large_angle",
+      "steps": 77,
+      "max_x": 0.2490677924881789,
+      "progress_x": 4.249067792488179,
+      "max_base_z": 0.9401609345408923,
+      "max_tilt_deg": 76.38720703125,
+      "max_illegal_contact_force": 0.0,
+      "body_force_peaks": {}
+    },
+    {
+      "kind": "stairs",
+      "height_m": 0.155,
+      "total_height_m": 0.775,
+      "speed": 0.45,
+      "yaw_offset_deg": 5.0,
+      "success": false,
+      "reason": "large_angle",
+      "steps": 152,
+      "max_x": -0.1530622918057142,
+      "progress_x": 3.846937708194286,
+      "max_base_z": 0.7874742139648074,
+      "max_tilt_deg": 42.25913619995117,
+      "max_illegal_contact_force": 893.6627671529407,
+      "body_force_peaks": {
+        "base_link": 893.6627671529407,
+        "fl_hipy": 522.9665820615432
+      }
+    },
+    {
+      "kind": "stairs",
+      "height_m": 0.155,
+      "total_height_m": 0.775,
+      "speed": 0.5,
+      "yaw_offset_deg": -5.0,
+      "success": false,
+      "reason": "large_angle",
+      "steps": 84,
+      "max_x": 0.25780778788377656,
+      "progress_x": 4.257807787883777,
+      "max_base_z": 0.9320461270061644,
+      "max_tilt_deg": 41.99082946777344,
+      "max_illegal_contact_force": 695.4328444480956,
+      "body_force_peaks": {
+        "base_link": 695.4328444480956,
+        "fl_hipy": 535.0152175378092
+      }
+    },
+    {
+      "kind": "stairs",
+      "height_m": 0.155,
+      "total_height_m": 0.775,
+      "speed": 0.5,
+      "yaw_offset_deg": 0.0,
+      "success": false,
+      "reason": "large_angle",
+      "steps": 69,
+      "max_x": 0.163416664345338,
+      "progress_x": 4.163416664345338,
+      "max_base_z": 0.9473093579903059,
+      "max_tilt_deg": 60.8237190246582,
+      "max_illegal_contact_force": 383.7325922299052,
+      "body_force_peaks": {
+        "hr_hipy": 383.7325922299052
+      }
+    },
+    {
+      "kind": "stairs",
+      "height_m": 0.155,
+      "total_height_m": 0.775,
+      "speed": 0.5,
+      "yaw_offset_deg": 5.0,
+      "success": true,
+      "reason": "passed",
+      "steps": 62,
+      "max_x": 2.0392963943665006,
+      "progress_x": 6.039296394366501,
+      "max_base_z": 1.1881493090586734,
+      "max_tilt_deg": 20.72370147705078,
+      "max_illegal_contact_force": 0.0,
+      "body_force_peaks": {}
+    },
+    {
+      "kind": "stairs",
+      "height_m": 0.16,
+      "total_height_m": 0.8,
+      "speed": 0.4,
+      "yaw_offset_deg": -5.0,
+      "success": false,
+      "reason": "probe_timeout",
+      "steps": 160,
+      "max_x": -0.6524040918684467,
+      "progress_x": 3.347595908131553,
+      "max_base_z": 0.6443731489057505,
+      "max_tilt_deg": 21.8995418548584,
+      "max_illegal_contact_force": 0.0,
+      "body_force_peaks": {}
+    },
+    {
+      "kind": "stairs",
+      "height_m": 0.16,
+      "total_height_m": 0.8,
+      "speed": 0.4,
+      "yaw_offset_deg": 0.0,
+      "success": false,
+      "reason": "probe_timeout",
+      "steps": 160,
+      "max_x": -0.655835573721943,
+      "progress_x": 3.344164426278057,
+      "max_base_z": 0.6425604601430382,
+      "max_tilt_deg": 24.945119857788086,
+      "max_illegal_contact_force": 0.0,
+      "body_force_peaks": {}
+    },
+    {
+      "kind": "stairs",
+      "height_m": 0.16,
+      "total_height_m": 0.8,
+      "speed": 0.4,
+      "yaw_offset_deg": 5.0,
+      "success": false,
+      "reason": "base_contact",
+      "steps": 111,
+      "max_x": -0.2373314949236032,
+      "progress_x": 3.762668505076397,
+      "max_base_z": 0.7909321046121587,
+      "max_tilt_deg": 31.288938522338867,
+      "max_illegal_contact_force": 1468.7794708014926,
+      "body_force_peaks": {
+        "base_link": 1468.7794708014926
+      }
+    },
+    {
+      "kind": "stairs",
+      "height_m": 0.16,
+      "total_height_m": 0.8,
+      "speed": 0.45,
+      "yaw_offset_deg": -5.0,
+      "success": false,
+      "reason": "large_angle",
+      "steps": 82,
+      "max_x": -0.1718237351352501,
+      "progress_x": 3.8281762648647497,
+      "max_base_z": 0.805156796344115,
+      "max_tilt_deg": 67.24618530273438,
+      "max_illegal_contact_force": 675.1188740596024,
+      "body_force_peaks": {
+        "base_link": 675.1188740596024,
+        "fl_hipy": 578.0803321261274
+      }
+    },
+    {
+      "kind": "stairs",
+      "height_m": 0.16,
+      "total_height_m": 0.8,
+      "speed": 0.45,
+      "yaw_offset_deg": 0.0,
+      "success": true,
+      "reason": "passed",
+      "steps": 65,
+      "max_x": 2.0162084021162547,
+      "progress_x": 6.016208402116255,
+      "max_base_z": 1.2131508791361965,
+      "max_tilt_deg": 22.098949432373047,
+      "max_illegal_contact_force": 0.0,
+      "body_force_peaks": {}
+    },
+    {
+      "kind": "stairs",
+      "height_m": 0.16,
+      "total_height_m": 0.8,
+      "speed": 0.45,
+      "yaw_offset_deg": 5.0,
+      "success": true,
+      "reason": "passed",
+      "steps": 65,
+      "max_x": 1.9979173560593042,
+      "progress_x": 5.997917356059304,
+      "max_base_z": 1.2158165112577677,
+      "max_tilt_deg": 22.281192779541016,
+      "max_illegal_contact_force": 0.0,
+      "body_force_peaks": {}
+    },
+    {
+      "kind": "stairs",
+      "height_m": 0.16,
+      "total_height_m": 0.8,
+      "speed": 0.5,
+      "yaw_offset_deg": -5.0,
+      "success": false,
+      "reason": "large_angle",
+      "steps": 65,
+      "max_x": -0.2898933787711302,
+      "progress_x": 3.71010662122887,
+      "max_base_z": 0.7971605565629788,
+      "max_tilt_deg": 59.67234802246094,
+      "max_illegal_contact_force": 0.0,
+      "body_force_peaks": {}
+    },
+    {
+      "kind": "stairs",
+      "height_m": 0.16,
+      "total_height_m": 0.8,
+      "speed": 0.5,
+      "yaw_offset_deg": 0.0,
+      "success": false,
+      "reason": "large_angle",
+      "steps": 77,
+      "max_x": 0.1137980116124192,
+      "progress_x": 4.1137980116124195,
+      "max_base_z": 0.9576439132426472,
+      "max_tilt_deg": 46.011104583740234,
+      "max_illegal_contact_force": 346.70504189164774,
+      "body_force_peaks": {
+        "hr_hipy": 346.70504189164774
+      }
+    },
+    {
+      "kind": "stairs",
+      "height_m": 0.16,
+      "total_height_m": 0.8,
+      "speed": 0.5,
+      "yaw_offset_deg": 5.0,
+      "success": false,
+      "reason": "base_contact",
+      "steps": 82,
+      "max_x": 0.2139391971327265,
+      "progress_x": 4.213939197132727,
+      "max_base_z": 0.9535593544089602,
+      "max_tilt_deg": 36.793785095214844,
+      "max_illegal_contact_force": 3844.2455205552146,
+      "body_force_peaks": {
+        "base_link": 3844.2455205552146,
+        "fl_hipy": 563.642514508751
+      }
+    }
+  ]
+}

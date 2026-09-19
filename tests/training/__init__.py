@@ -1,0 +1,1 @@
+"""Training-side smoke tests."""

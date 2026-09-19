@@ -1,0 +1,290 @@
+{
+  "accepted_constraints": 38,
+  "accepted_route_indices": [
+    4,
+    8,
+    12,
+    20,
+    24,
+    28,
+    32,
+    36,
+    40,
+    44,
+    48,
+    52,
+    56,
+    60,
+    64,
+    72,
+    76,
+    80,
+    84,
+    88,
+    92,
+    96,
+    100,
+    104,
+    108,
+    112,
+    116,
+    120,
+    124,
+    128,
+    132,
+    136,
+    140,
+    144,
+    148,
+    152,
+    156,
+    160
+  ],
+  "attempted_constraints": 42,
+  "config": {
+    "aggregate_radius_frames": 4,
+    "anchor_stride_submaps": 4,
+    "candidate_radius_frames": 8,
+    "candidate_step_frames": 2,
+    "candidates_to_verify": 3,
+    "cross_rotation_sigma_deg": 1.5,
+    "cross_translation_sigma_m": 0.06,
+    "descriptor_candidate_count": 4,
+    "endpoint_rotation_sigma_deg": 1.0,
+    "endpoint_translation_sigma_m": 0.03,
+    "max_constraint_rotation_deg": 35.0,
+    "max_constraint_translation_m": 3.0,
+    "max_cycle_rotation_deg": 3.5,
+    "max_cycle_translation_m": 0.15,
+    "max_nfev": 400,
+    "max_rmse_m": 0.2,
+    "min_fitness": 0.6,
+    "minimum_constraints": 20,
+    "odometry_rotation_sigma_deg": 2.0,
+    "odometry_translation_sigma_m": 0.12
+  },
+  "rejected_constraints": 4,
+  "rejections": [
+    {
+      "anchor_progress_fraction": 0.0,
+      "candidate_audit": [
+        {
+          "cost": 0.25019028493183065,
+          "descriptor_distance": 0.4865289505757168,
+          "fitness": 0.748557789379561,
+          "registered": true,
+          "rmse_m": 0.17475762174569895,
+          "support_frame": 4
+        },
+        {
+          "cost": 0.30564951127683404,
+          "descriptor_distance": 0.5572705590893924,
+          "fitness": 0.5761484137410453,
+          "registered": true,
+          "rmse_m": 0.1784940353991476,
+          "support_frame": 6
+        },
+        {
+          "cost": 0.3422738456607587,
+          "descriptor_distance": 0.5983396894695533,
+          "fitness": 0.4694247409663163,
+          "registered": true,
+          "rmse_m": 0.18310126795065357,
+          "support_frame": 8
+        }
+      ],
+      "candidate_center_frame": 0,
+      "reason": "no bidirectionally consistent registration",
+      "route_index": 0
+    },
+    {
+      "anchor_progress_fraction": 0.09966050474773058,
+      "candidate_audit": [
+        {
+          "cost": 0.3230798949701786,
+          "descriptor_distance": 0.7281519449359166,
+          "fitness": 0.5822683706070287,
+          "registered": true,
+          "rmse_m": 0.1977604061522872,
+          "support_frame": 119
+        },
+        {
+          "cost": 0.38212160059904865,
+          "descriptor_distance": 0.7349160599783732,
+          "fitness": 0.41834123328215056,
+          "registered": true,
+          "rmse_m": 0.2076239705836938,
+          "support_frame": 117
+        },
+        {
+          "cost": 0.2300514907861031,
+          "descriptor_distance": 0.7895997785053995,
+          "fitness": 0.8312060432404272,
+          "registered": true,
+          "rmse_m": 0.17941330375823128,
+          "support_frame": 121
+        },
+        {
+          "cost": 0.15680307892766127,
+          "descriptor_distance": 0.7986430888306031,
+          "fitness": 0.9389768046824193,
+          "registered": true,
+          "rmse_m": 0.13849612033238706,
+          "support_frame": 131
+        },
+        {
+          "descriptor_distance": 0.8043207994892115,
+          "registered": false,
+          "support_frame": 129
+        },
+        {
+          "descriptor_distance": 0.8084777266433756,
+          "registered": false,
+          "support_frame": 133
+        },
+        {
+          "descriptor_distance": 0.8195232853636089,
+          "registered": false,
+          "support_frame": 123
+        },
+        {
+          "descriptor_distance": 0.8569494367500446,
+          "registered": false,
+          "support_frame": 127
+        },
+        {
+          "cost": 0.19361254962254598,
+          "descriptor_distance": 0.8719021750445205,
+          "fitness": 0.9031390134529148,
+          "registered": true,
+          "rmse_m": 0.1645542536584204,
+          "support_frame": 125
+        }
+      ],
+      "candidate_center_frame": 125,
+      "reason": "no bidirectionally consistent registration",
+      "route_index": 16
+    },
+    {
+      "anchor_progress_fraction": 0.4217299180862594,
+      "candidate_audit": [
+        {
+          "cost": 0.3034553785210175,
+          "descriptor_distance": 0.5234229743684408,
+          "fitness": 0.6423855649964383,
+          "registered": true,
+          "rmse_m": 0.196171048019949,
+          "support_frame": 435
+        },
+        {
+          "cost": 0.29772798753700236,
+          "descriptor_distance": 0.5547502082485776,
+          "fitness": 0.6315395235437535,
+          "registered": true,
+          "rmse_m": 0.18718984460012844,
+          "support_frame": 433
+        },
+        {
+          "cost": 0.3411231903731192,
+          "descriptor_distance": 0.5677046383124567,
+          "fitness": 0.5811540637652194,
+          "registered": true,
+          "rmse_m": 0.21546940950268503,
+          "support_frame": 437
+        },
+        {
+          "cost": 0.3576856878752309,
+          "descriptor_distance": 0.5941527028122237,
+          "fitness": 0.4718981065948626,
+          "registered": true,
+          "rmse_m": 0.1992551198536897,
+          "support_frame": 431
+        },
+        {
+          "descriptor_distance": 0.6185874395937324,
+          "registered": false,
+          "support_frame": 439
+        },
+        {
+          "descriptor_distance": 0.6291080895911635,
+          "registered": false,
+          "support_frame": 429
+        },
+        {
+          "descriptor_distance": 0.6448585680118545,
+          "registered": false,
+          "support_frame": 427
+        },
+        {
+          "descriptor_distance": 0.6453429306214429,
+          "registered": false,
+          "support_frame": 423
+        },
+        {
+          "descriptor_distance": 0.6479841253629726,
+          "registered": false,
+          "support_frame": 425
+        }
+      ],
+      "candidate_center_frame": 431,
+      "reason": "no bidirectionally consistent registration",
+      "route_index": 68
+    },
+    {
+      "anchor_progress_fraction": 1.0,
+      "candidate_audit": [
+        {
+          "cost": 0.27395213628211246,
+          "descriptor_distance": 0.5895867842481368,
+          "fitness": 0.5860260924871632,
+          "registered": true,
+          "rmse_m": 0.14975996402826142,
+          "support_frame": 862
+        },
+        {
+          "cost": 0.3755543323436711,
+          "descriptor_distance": 0.6410845345690502,
+          "fitness": 0.34143170614404234,
+          "registered": true,
+          "rmse_m": 0.17798384418688384,
+          "support_frame": 860
+        },
+        {
+          "cost": 0.38220126889232053,
+          "descriptor_distance": 0.6857448515036441,
+          "fitness": 0.36903073286052007,
+          "registered": true,
+          "rmse_m": 0.19291048875047653,
+          "support_frame": 858
+        }
+      ],
+      "candidate_center_frame": 866,
+      "reason": "no bidirectionally consistent registration",
+      "route_index": 161
+    }
+  ],
+  "schema_version": 1,
+  "support_pose_diagnostics": {
+    "pose_mode": "lio",
+    "prepared_roll_pitch_p95_deg": [
+      8.558233586272648,
+      20.351242834085546
+    ],
+    "raw_roll_pitch_p95_deg": [
+      8.20241146911852,
+      20.761532595991547
+    ]
+  },
+  "support_session": "/home/syh/goai_embodied_future_material/field_data/2026-09-16/path3_map_a/mapping",
+  "support_trajectory": "/home/syh/path3_aab_qualification_20260916/map_a1_glim/traj_lidar.txt",
+  "support_trajectory_alignment": {
+    "first_keyframe_index": 2,
+    "last_keyframe_index": 868,
+    "maximum_timestamp_error_s": 0.0,
+    "pose_count": 867,
+    "skipped_keyframes_end": 1,
+    "skipped_keyframes_start": 2,
+    "source": "/home/syh/path3_aab_qualification_20260916/map_a1_glim/traj_lidar.txt",
+    "source_format": "tum_xyz_quaternion_xyzw"
+  }
+}

@@ -1,0 +1,4310 @@
+{
+  "canonical_route_poses": "canonical_route_poses.npy",
+  "canonical_route_trajectory": "canonical_route_trajectory.npz",
+  "config": {
+    "anchor_spacing_m": 2,
+    "descriptor_rings": 20,
+    "descriptor_sectors": 60,
+    "fine_submap_voxel_m": 0.08,
+    "max_sensor_range_m": 25,
+    "submap_aggregate_radius_frames": 4,
+    "submap_voxel_m": 0.2,
+    "trajectory_pose_mode": "lio"
+  },
+  "coordinate_frame": "reference_lap_odom",
+  "map_type": "ordered_topometric_route_submaps",
+  "purpose": "runtime localization against ordered query-shaped local submaps; global point-cloud visualization is deliberately not authoritative",
+  "reference_endpoint_offset": {
+    "interpretation": "diagnostic only; the terminal robot heading and elevation may differ, and no surveyed loop-closure truth is available",
+    "rotation_rpy_deg": [
+      -0.33165419687459746,
+      -0.935237582823479,
+      32.30447497729935
+    ],
+    "translation_norm_m": 0.1028080668576821,
+    "translation_xy_m": 0.10037706000080338,
+    "translation_xyz_m": [
+      0.08188961809361937,
+      0.058048640146742866,
+      0.02222486077816347
+    ]
+  },
+  "reference_frames": 779,
+  "reference_path_length_m": 322.1772888515532,
+  "reference_session_frame_counts": [
+    779
+  ],
+  "reference_sessions": [
+    "field_data/2026-09-16/path3_map_a_repeat_20260916/mapping"
+  ],
+  "reference_trajectories": [
+    "canonical_route_trajectory.npz"
+  ],
+  "route_anchor_count": 163,
+  "schema_version": 3,
+  "submap_count": 163,
+  "submaps": [
+    {
+      "anchor_frame": 2,
+      "anchor_position_m": [
+        0,
+        0,
+        0
+      ],
+      "anchor_progress_fraction": 0,
+      "anchor_progress_m": 0,
+      "anchor_quaternion_xyzw": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "canonical_anchor_frame": 2,
+      "canonical_trajectory_frame": 0,
+      "file": "submaps/submap_0000.npz",
+      "fine_point_count": 61216,
+      "point_count": 28124,
+      "reference_session": 0,
+      "route_index": 0,
+      "submap_id": 0,
+      "trajectory_frame": 0,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 12,
+      "anchor_position_m": [
+        1.830845016934878,
+        0.7863535834567305,
+        0.06620158304705177
+      ],
+      "anchor_progress_fraction": 0.006437617162016426,
+      "anchor_progress_m": 2.0740540439226822,
+      "anchor_quaternion_xyzw": [
+        -0.004134982088662998,
+        -0.00685583529430678,
+        0.3051522588957591,
+        0.9522699188446305
+      ],
+      "canonical_anchor_frame": 12,
+      "canonical_trajectory_frame": 10,
+      "file": "submaps/submap_0001.npz",
+      "fine_point_count": 92121,
+      "point_count": 36247,
+      "reference_session": 0,
+      "route_index": 1,
+      "submap_id": 1,
+      "trajectory_frame": 10,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 18,
+      "anchor_position_m": [
+        3.5361756573739633,
+        1.8286197657978982,
+        0.11973449924391626
+      ],
+      "anchor_progress_fraction": 0.012688702376140658,
+      "anchor_progress_m": 4.088011730589258,
+      "anchor_quaternion_xyzw": [
+        0.0008281442457337617,
+        -0.012344826888832204,
+        0.1780428985830696,
+        0.983944940375391
+      ],
+      "canonical_anchor_frame": 18,
+      "canonical_trajectory_frame": 16,
+      "file": "submaps/submap_0002.npz",
+      "fine_point_count": 108550,
+      "point_count": 47476,
+      "reference_session": 0,
+      "route_index": 2,
+      "submap_id": 2,
+      "trajectory_frame": 16,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 23,
+      "anchor_position_m": [
+        5.476412197067804,
+        2.473208860505799,
+        0.19357950777159422
+      ],
+      "anchor_progress_fraction": 0.019040549230547574,
+      "anchor_progress_m": 6.134432529342345,
+      "anchor_quaternion_xyzw": [
+        0.000983190701535265,
+        -0.008171348895953019,
+        0.22606433667774184,
+        0.9740776037235009
+      ],
+      "canonical_anchor_frame": 23,
+      "canonical_trajectory_frame": 21,
+      "file": "submaps/submap_0003.npz",
+      "fine_point_count": 109594,
+      "point_count": 45761,
+      "reference_session": 0,
+      "route_index": 3,
+      "submap_id": 3,
+      "trajectory_frame": 21,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 27,
+      "anchor_position_m": [
+        7.194887977465866,
+        2.7105006388454194,
+        0.22371574019254395
+      ],
+      "anchor_progress_fraction": 0.024486528747692526,
+      "anchor_progress_m": 7.889003445317197,
+      "anchor_quaternion_xyzw": [
+        0.0024521127407511503,
+        -0.00908557955105313,
+        0.02262750183552935,
+        0.9996996726757548
+      ],
+      "canonical_anchor_frame": 27,
+      "canonical_trajectory_frame": 25,
+      "file": "submaps/submap_0004.npz",
+      "fine_point_count": 103418,
+      "point_count": 45307,
+      "reference_session": 0,
+      "route_index": 4,
+      "submap_id": 4,
+      "trajectory_frame": 25,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 32,
+      "anchor_position_m": [
+        9.252847444064265,
+        2.7031676175332375,
+        0.27539118794505457
+      ],
+      "anchor_progress_fraction": 0.03087652917132826,
+      "anchor_progress_m": 9.947716457564434,
+      "anchor_quaternion_xyzw": [
+        0.010900321183768023,
+        -0.016200222521246956,
+        0.0045333509201492695,
+        0.9997990720728778
+      ],
+      "canonical_anchor_frame": 32,
+      "canonical_trajectory_frame": 30,
+      "file": "submaps/submap_0005.npz",
+      "fine_point_count": 93325,
+      "point_count": 40246,
+      "reference_session": 0,
+      "route_index": 5,
+      "submap_id": 5,
+      "trajectory_frame": 30,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 44,
+      "anchor_position_m": [
+        11.286130509406917,
+        2.546828356400549,
+        0.3497157195981928
+      ],
+      "anchor_progress_fraction": 0.037262191074824876,
+      "anchor_progress_m": 12.005031697155623,
+      "anchor_quaternion_xyzw": [
+        0.00569651883128396,
+        -0.013954491326769647,
+        -0.08644599899229313,
+        0.9961425154581247
+      ],
+      "canonical_anchor_frame": 44,
+      "canonical_trajectory_frame": 42,
+      "file": "submaps/submap_0006.npz",
+      "fine_point_count": 61322,
+      "point_count": 19238,
+      "reference_session": 0,
+      "route_index": 6,
+      "submap_id": 6,
+      "trajectory_frame": 42,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 57,
+      "anchor_position_m": [
+        13.274396094142226,
+        2.355769981062083,
+        0.761024891227485
+      ],
+      "anchor_progress_fraction": 0.04375952484477683,
+      "anchor_progress_m": 14.098325075922384,
+      "anchor_quaternion_xyzw": [
+        -0.016844084146701986,
+        -0.14341493789641013,
+        -0.16940916972935938,
+        0.9749097217840412
+      ],
+      "canonical_anchor_frame": 57,
+      "canonical_trajectory_frame": 55,
+      "file": "submaps/submap_0007.npz",
+      "fine_point_count": 105638,
+      "point_count": 53903,
+      "reference_session": 0,
+      "route_index": 7,
+      "submap_id": 7,
+      "trajectory_frame": 55,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 63,
+      "anchor_position_m": [
+        14.981789051703934,
+        2.102878793369809,
+        1.2755921808191126
+      ],
+      "anchor_progress_fraction": 0.049648495662335895,
+      "anchor_progress_m": 15.99561772804948,
+      "anchor_quaternion_xyzw": [
+        -0.02002748601564696,
+        -0.14774826164867938,
+        0.04978459658009807,
+        0.9875681469787506
+      ],
+      "canonical_anchor_frame": 63,
+      "canonical_trajectory_frame": 61,
+      "file": "submaps/submap_0008.npz",
+      "fine_point_count": 115454,
+      "point_count": 57195,
+      "reference_session": 0,
+      "route_index": 8,
+      "submap_id": 8,
+      "trajectory_frame": 61,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 70,
+      "anchor_position_m": [
+        16.77761077879999,
+        2.2737524759285246,
+        1.844998401267753
+      ],
+      "anchor_progress_fraction": 0.05580137708680046,
+      "anchor_progress_m": 17.977936384008554,
+      "anchor_quaternion_xyzw": [
+        -0.04330193168768795,
+        -0.12916459308892195,
+        -0.014258826016871623,
+        0.9905746496276333
+      ],
+      "canonical_anchor_frame": 70,
+      "canonical_trajectory_frame": 68,
+      "file": "submaps/submap_0009.npz",
+      "fine_point_count": 132036,
+      "point_count": 67314,
+      "reference_session": 0,
+      "route_index": 9,
+      "submap_id": 9,
+      "trajectory_frame": 68,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 77,
+      "anchor_position_m": [
+        18.44658069687713,
+        2.4111883528229483,
+        2.2700447677369837
+      ],
+      "anchor_progress_fraction": 0.061987474107170995,
+      "anchor_progress_m": 19.970956350604204,
+      "anchor_quaternion_xyzw": [
+        0.0028641349586368985,
+        -0.006636364122140378,
+        0.2982020719383898,
+        0.9544753950175082
+      ],
+      "canonical_anchor_frame": 77,
+      "canonical_trajectory_frame": 75,
+      "file": "submaps/submap_0010.npz",
+      "fine_point_count": 120826,
+      "point_count": 62457,
+      "reference_session": 0,
+      "route_index": 10,
+      "submap_id": 10,
+      "trajectory_frame": 75,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 83,
+      "anchor_position_m": [
+        20.11838862085625,
+        3.510469891818951,
+        2.3789423575180364
+      ],
+      "anchor_progress_fraction": 0.0682185605619933,
+      "anchor_progress_m": 21.978470891218493,
+      "anchor_quaternion_xyzw": [
+        0.006478530450076571,
+        -0.02969345436410629,
+        0.2995369630427621,
+        0.953600511316061
+      ],
+      "canonical_anchor_frame": 83,
+      "canonical_trajectory_frame": 81,
+      "file": "submaps/submap_0011.npz",
+      "fine_point_count": 92883,
+      "point_count": 43096,
+      "reference_session": 0,
+      "route_index": 11,
+      "submap_id": 11,
+      "trajectory_frame": 81,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 89,
+      "anchor_position_m": [
+        21.501751041150072,
+        4.594746951953731,
+        2.998360613003215
+      ],
+      "anchor_progress_fraction": 0.07413296189370398,
+      "anchor_progress_m": 23.883956677449056,
+      "anchor_quaternion_xyzw": [
+        0.07120827679928947,
+        -0.19303610478101368,
+        0.40247567619172964,
+        0.8920088416827825
+      ],
+      "canonical_anchor_frame": 89,
+      "canonical_trajectory_frame": 87,
+      "file": "submaps/submap_0012.npz",
+      "fine_point_count": 84374,
+      "point_count": 41903,
+      "reference_session": 0,
+      "route_index": 12,
+      "submap_id": 12,
+      "trajectory_frame": 87,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 94,
+      "anchor_position_m": [
+        22.855782230454228,
+        5.81209941250655,
+        3.5303077126715965
+      ],
+      "anchor_progress_fraction": 0.08012225643704238,
+      "anchor_progress_m": 25.813571355555222,
+      "anchor_quaternion_xyzw": [
+        0.03269572157062201,
+        -0.1169050289483004,
+        0.237719119696273,
+        0.9637187474198073
+      ],
+      "canonical_anchor_frame": 94,
+      "canonical_trajectory_frame": 92,
+      "file": "submaps/submap_0013.npz",
+      "fine_point_count": 82993,
+      "point_count": 40808,
+      "reference_session": 0,
+      "route_index": 13,
+      "submap_id": 13,
+      "trajectory_frame": 92,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 104,
+      "anchor_position_m": [
+        23.65256661050223,
+        7.468767252260594,
+        3.767194866845143
+      ],
+      "anchor_progress_fraction": 0.08671753097914994,
+      "anchor_progress_m": 27.938419026763107,
+      "anchor_quaternion_xyzw": [
+        -0.01520132574578636,
+        -0.04791150520876451,
+        0.816003483013333,
+        0.5758573808455617
+      ],
+      "canonical_anchor_frame": 104,
+      "canonical_trajectory_frame": 102,
+      "file": "submaps/submap_0014.npz",
+      "fine_point_count": 68308,
+      "point_count": 33763,
+      "reference_session": 0,
+      "route_index": 14,
+      "submap_id": 14,
+      "trajectory_frame": 102,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 112,
+      "anchor_position_m": [
+        23.5366491796631,
+        9.317637400845385,
+        4.0716792537017925
+      ],
+      "anchor_progress_fraction": 0.09330833079918335,
+      "anchor_progress_m": 30.061825044144776,
+      "anchor_quaternion_xyzw": [
+        0.03999586549629056,
+        -0.13890614579355928,
+        0.5777417436414403,
+        0.8033180509973179
+      ],
+      "canonical_anchor_frame": 112,
+      "canonical_trajectory_frame": 110,
+      "file": "submaps/submap_0015.npz",
+      "fine_point_count": 74248,
+      "point_count": 37293,
+      "reference_session": 0,
+      "route_index": 15,
+      "submap_id": 15,
+      "trajectory_frame": 110,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 119,
+      "anchor_position_m": [
+        24.30239231446229,
+        11.052721964677858,
+        4.638998732580391
+      ],
+      "anchor_progress_fraction": 0.09957729603006656,
+      "anchor_progress_m": 32.08154326613538,
+      "anchor_quaternion_xyzw": [
+        0.03655033690558769,
+        -0.14840395153225486,
+        0.5491264285096733,
+        0.8216449997133256
+      ],
+      "canonical_anchor_frame": 119,
+      "canonical_trajectory_frame": 117,
+      "file": "submaps/submap_0016.npz",
+      "fine_point_count": 74531,
+      "point_count": 36661,
+      "reference_session": 0,
+      "route_index": 16,
+      "submap_id": 16,
+      "trajectory_frame": 117,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 125,
+      "anchor_position_m": [
+        24.636941886092934,
+        12.639043831544466,
+        5.1642627414915285
+      ],
+      "anchor_progress_fraction": 0.10508937967764649,
+      "anchor_progress_m": 33.85741143163566,
+      "anchor_quaternion_xyzw": [
+        0.07954043502772568,
+        -0.156514158363128,
+        0.5850386707915266,
+        0.7917742046227356
+      ],
+      "canonical_anchor_frame": 125,
+      "canonical_trajectory_frame": 123,
+      "file": "submaps/submap_0017.npz",
+      "fine_point_count": 75556,
+      "point_count": 36056,
+      "reference_session": 0,
+      "route_index": 17,
+      "submap_id": 17,
+      "trajectory_frame": 123,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 131,
+      "anchor_position_m": [
+        25.577499580205846,
+        14.731290346778158,
+        5.735056479216823
+      ],
+      "anchor_progress_fraction": 0.11261852943983536,
+      "anchor_progress_m": 36.283132489374985,
+      "anchor_quaternion_xyzw": [
+        0.007270395595533713,
+        -0.1488094177539795,
+        0.45619672334449496,
+        0.8773183277154035
+      ],
+      "canonical_anchor_frame": 131,
+      "canonical_trajectory_frame": 129,
+      "file": "submaps/submap_0018.npz",
+      "fine_point_count": 89929,
+      "point_count": 43630,
+      "reference_session": 0,
+      "route_index": 18,
+      "submap_id": 18,
+      "trajectory_frame": 129,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 135,
+      "anchor_position_m": [
+        26.366961142178944,
+        16.0604296133117,
+        6.06447384087127
+      ],
+      "anchor_progress_fraction": 0.11756394817415253,
+      "anchor_progress_m": 37.87643408943297,
+      "anchor_quaternion_xyzw": [
+        -0.0016342620163341925,
+        -0.04303879696133266,
+        0.4800389071528636,
+        0.8761892710843173
+      ],
+      "canonical_anchor_frame": 135,
+      "canonical_trajectory_frame": 133,
+      "file": "submaps/submap_0019.npz",
+      "fine_point_count": 85443,
+      "point_count": 38825,
+      "reference_session": 0,
+      "route_index": 19,
+      "submap_id": 19,
+      "trajectory_frame": 133,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 140,
+      "anchor_position_m": [
+        27.768431616838612,
+        18.090057834553335,
+        6.195368264693924
+      ],
+      "anchor_progress_fraction": 0.12523430186828827,
+      "anchor_progress_m": 40.34764784714212,
+      "anchor_quaternion_xyzw": [
+        -0.013430799933645411,
+        -0.04263831661166858,
+        0.5116474148162077,
+        0.8580317654268733
+      ],
+      "canonical_anchor_frame": 140,
+      "canonical_trajectory_frame": 138,
+      "file": "submaps/submap_0020.npz",
+      "fine_point_count": 72059,
+      "point_count": 28514,
+      "reference_session": 0,
+      "route_index": 20,
+      "submap_id": 20,
+      "trajectory_frame": 138,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 144,
+      "anchor_position_m": [
+        28.65449229797057,
+        19.463638492521646,
+        6.252032184626115
+      ],
+      "anchor_progress_fraction": 0.13031098626167645,
+      "anchor_progress_m": 41.983240261358915,
+      "anchor_quaternion_xyzw": [
+        -0.003249431976629463,
+        -0.01067450405990543,
+        0.486975593565894,
+        0.8733443006203507
+      ],
+      "canonical_anchor_frame": 144,
+      "canonical_trajectory_frame": 142,
+      "file": "submaps/submap_0021.npz",
+      "fine_point_count": 69549,
+      "point_count": 26055,
+      "reference_session": 0,
+      "route_index": 21,
+      "submap_id": 21,
+      "trajectory_frame": 142,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 152,
+      "anchor_position_m": [
+        29.724013579482136,
+        21.144379553846342,
+        6.343774596976905
+      ],
+      "anchor_progress_fraction": 0.136513878413708,
+      "anchor_progress_m": 43.98167123793902,
+      "anchor_quaternion_xyzw": [
+        -0.008605502656132224,
+        -0.023464808685152536,
+        0.47625881497581296,
+        0.8789498786820775
+      ],
+      "canonical_anchor_frame": 152,
+      "canonical_trajectory_frame": 150,
+      "file": "submaps/submap_0022.npz",
+      "fine_point_count": 70118,
+      "point_count": 26195,
+      "reference_session": 0,
+      "route_index": 22,
+      "submap_id": 22,
+      "trajectory_frame": 150,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 157,
+      "anchor_position_m": [
+        30.820345612047372,
+        22.721702130251405,
+        6.437554864590616
+      ],
+      "anchor_progress_fraction": 0.14249169517306026,
+      "anchor_progress_m": 45.90758803471851,
+      "anchor_quaternion_xyzw": [
+        0.006331556115613262,
+        -0.01871686687859054,
+        0.3672451490244879,
+        0.9299142921847077
+      ],
+      "canonical_anchor_frame": 157,
+      "canonical_trajectory_frame": 155,
+      "file": "submaps/submap_0023.npz",
+      "fine_point_count": 73283,
+      "point_count": 31430,
+      "reference_session": 0,
+      "route_index": 23,
+      "submap_id": 23,
+      "trajectory_frame": 155,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 161,
+      "anchor_position_m": [
+        32.32938881011116,
+        24.071579508497603,
+        6.5316454432325015
+      ],
+      "anchor_progress_fraction": 0.14880657289988608,
+      "anchor_progress_m": 47.942098220176305,
+      "anchor_quaternion_xyzw": [
+        -0.009899741129410876,
+        -0.049656715333269326,
+        0.2660632832471518,
+        0.9626248153126052
+      ],
+      "canonical_anchor_frame": 161,
+      "canonical_trajectory_frame": 159,
+      "file": "submaps/submap_0024.npz",
+      "fine_point_count": 76421,
+      "point_count": 34446,
+      "reference_session": 0,
+      "route_index": 24,
+      "submap_id": 24,
+      "trajectory_frame": 159,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 165,
+      "anchor_position_m": [
+        33.86221816089906,
+        25.011701233597062,
+        6.895549595668114
+      ],
+      "anchor_progress_fraction": 0.15453629478990383,
+      "anchor_progress_m": 49.78808448457563,
+      "anchor_quaternion_xyzw": [
+        0.00457277664201892,
+        -0.01924805016789115,
+        0.20384253688516388,
+        0.9788037711588249
+      ],
+      "canonical_anchor_frame": 165,
+      "canonical_trajectory_frame": 163,
+      "file": "submaps/submap_0025.npz",
+      "fine_point_count": 80028,
+      "point_count": 33564,
+      "reference_session": 0,
+      "route_index": 25,
+      "submap_id": 25,
+      "trajectory_frame": 163,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 169,
+      "anchor_position_m": [
+        35.967839497802835,
+        26.07410037063764,
+        7.007757057113395
+      ],
+      "anchor_progress_fraction": 0.16187969064501423,
+      "anchor_progress_m": 52.153959852138826,
+      "anchor_quaternion_xyzw": [
+        -0.020518362332540594,
+        -0.023981556602892563,
+        0.29951189179410226,
+        0.9535704003501844
+      ],
+      "canonical_anchor_frame": 169,
+      "canonical_trajectory_frame": 167,
+      "file": "submaps/submap_0026.npz",
+      "fine_point_count": 83599,
+      "point_count": 35981,
+      "reference_session": 0,
+      "route_index": 26,
+      "submap_id": 26,
+      "trajectory_frame": 167,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 172,
+      "anchor_position_m": [
+        37.266312139899455,
+        27.33684065104464,
+        7.099467642106109
+      ],
+      "anchor_progress_fraction": 0.16755994756622355,
+      "anchor_progress_m": 53.98400962699432,
+      "anchor_quaternion_xyzw": [
+        -0.020818174185715965,
+        -0.0260901010368414,
+        0.5227323591678391,
+        0.8518431727320973
+      ],
+      "canonical_anchor_frame": 172,
+      "canonical_trajectory_frame": 170,
+      "file": "submaps/submap_0027.npz",
+      "fine_point_count": 85190,
+      "point_count": 38469,
+      "reference_session": 0,
+      "route_index": 27,
+      "submap_id": 27,
+      "trajectory_frame": 170,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 175,
+      "anchor_position_m": [
+        38.07581564900651,
+        28.91394925718367,
+        7.233987132823698
+      ],
+      "anchor_progress_fraction": 0.17307828869973163,
+      "anchor_progress_m": 55.76189381234596,
+      "anchor_quaternion_xyzw": [
+        0.0030359958876928507,
+        -0.011512707599531016,
+        0.5015089677973221,
+        0.8650705147625609
+      ],
+      "canonical_anchor_frame": 175,
+      "canonical_trajectory_frame": 173,
+      "file": "submaps/submap_0028.npz",
+      "fine_point_count": 85217,
+      "point_count": 41688,
+      "reference_session": 0,
+      "route_index": 28,
+      "submap_id": 28,
+      "trajectory_frame": 173,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 179,
+      "anchor_position_m": [
+        39.31423461585679,
+        30.74846037058565,
+        7.424940561686167
+      ],
+      "anchor_progress_fraction": 0.1799786139966235,
+      "anchor_progress_m": 57.98502190869236,
+      "anchor_quaternion_xyzw": [
+        0.014019607592237719,
+        -0.12579968555527193,
+        0.47347675432928454,
+        0.871663726919367
+      ],
+      "canonical_anchor_frame": 179,
+      "canonical_trajectory_frame": 177,
+      "file": "submaps/submap_0029.npz",
+      "fine_point_count": 89087,
+      "point_count": 44699,
+      "reference_session": 0,
+      "route_index": 29,
+      "submap_id": 29,
+      "trajectory_frame": 177,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 186,
+      "anchor_position_m": [
+        40.68089819280102,
+        32.27316082954705,
+        7.719383448179524
+      ],
+      "anchor_progress_fraction": 0.18652117178744165,
+      "anchor_progress_m": 60.09288543989277,
+      "anchor_quaternion_xyzw": [
+        -0.013766774913057861,
+        -0.0192319333344423,
+        0.3981126313513026,
+        0.9170315923714158
+      ],
+      "canonical_anchor_frame": 186,
+      "canonical_trajectory_frame": 184,
+      "file": "submaps/submap_0030.npz",
+      "fine_point_count": 95682,
+      "point_count": 42853,
+      "reference_session": 0,
+      "route_index": 30,
+      "submap_id": 30,
+      "trajectory_frame": 184,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 190,
+      "anchor_position_m": [
+        42.14681449238677,
+        33.772305939058654,
+        7.790474939320735
+      ],
+      "anchor_progress_fraction": 0.19303331415514743,
+      "anchor_progress_m": 62.19094981253555,
+      "anchor_quaternion_xyzw": [
+        -0.008839109444873596,
+        -0.009007455663629338,
+        0.4025399420873888,
+        0.9153154270037029
+      ],
+      "canonical_anchor_frame": 190,
+      "canonical_trajectory_frame": 188,
+      "file": "submaps/submap_0031.npz",
+      "fine_point_count": 95234,
+      "point_count": 41099,
+      "reference_session": 0,
+      "route_index": 31,
+      "submap_id": 31,
+      "trajectory_frame": 188,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 193,
+      "anchor_position_m": [
+        43.29382205726343,
+        35.02325648261138,
+        7.837228220757487
+      ],
+      "anchor_progress_fraction": 0.1983049163922517,
+      "anchor_progress_m": 63.88934032918959,
+      "anchor_quaternion_xyzw": [
+        0.01326425794653688,
+        -0.003323731112428898,
+        0.38480349751018644,
+        0.922897221025477
+      ],
+      "canonical_anchor_frame": 193,
+      "canonical_trajectory_frame": 191,
+      "file": "submaps/submap_0032.npz",
+      "fine_point_count": 96695,
+      "point_count": 41143,
+      "reference_session": 0,
+      "route_index": 32,
+      "submap_id": 32,
+      "trajectory_frame": 191,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 197,
+      "anchor_position_m": [
+        45.02076376298799,
+        36.22216929206624,
+        7.912979787025744
+      ],
+      "anchor_progress_fraction": 0.20484943457658747,
+      "anchor_progress_m": 65.99783545465857,
+      "anchor_quaternion_xyzw": [
+        0.023676769529447333,
+        -0.015745935870604733,
+        0.2346490858719762,
+        0.9716641820030489
+      ],
+      "canonical_anchor_frame": 197,
+      "canonical_trajectory_frame": 195,
+      "file": "submaps/submap_0033.npz",
+      "fine_point_count": 98074,
+      "point_count": 47461,
+      "reference_session": 0,
+      "route_index": 33,
+      "submap_id": 33,
+      "trajectory_frame": 195,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 201,
+      "anchor_position_m": [
+        46.77972974603887,
+        35.618672369149316,
+        7.8749562736327
+      ],
+      "anchor_progress_fraction": 0.21109889727313444,
+      "anchor_progress_m": 68.011270403011,
+      "anchor_quaternion_xyzw": [
+        0.023849469794577194,
+        0.00436246540739886,
+        -0.33162042490194815,
+        0.9431013018090572
+      ],
+      "canonical_anchor_frame": 201,
+      "canonical_trajectory_frame": 199,
+      "file": "submaps/submap_0034.npz",
+      "fine_point_count": 91849,
+      "point_count": 42524,
+      "reference_session": 0,
+      "route_index": 34,
+      "submap_id": 34,
+      "trajectory_frame": 199,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 206,
+      "anchor_position_m": [
+        48.41816460443636,
+        34.28933267191762,
+        7.791023274616702
+      ],
+      "anchor_progress_fraction": 0.21765461811575032,
+      "anchor_progress_m": 70.1233747705526,
+      "anchor_quaternion_xyzw": [
+        0.01498144140197329,
+        -0.006028458942732665,
+        -0.3202089239511943,
+        0.9472093005868942
+      ],
+      "canonical_anchor_frame": 206,
+      "canonical_trajectory_frame": 204,
+      "file": "submaps/submap_0035.npz",
+      "fine_point_count": 79642,
+      "point_count": 31489,
+      "reference_session": 0,
+      "route_index": 35,
+      "submap_id": 35,
+      "trajectory_frame": 204,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 211,
+      "anchor_position_m": [
+        49.921550162710936,
+        33.11333275671096,
+        7.705805484860263
+      ],
+      "anchor_progress_fraction": 0.22359987269591106,
+      "anchor_progress_m": 72.03880077272106,
+      "anchor_quaternion_xyzw": [
+        0.0263094515941855,
+        -0.010925782371481707,
+        -0.38477245612333294,
+        0.9225717300271031
+      ],
+      "canonical_anchor_frame": 211,
+      "canonical_trajectory_frame": 209,
+      "file": "submaps/submap_0036.npz",
+      "fine_point_count": 79714,
+      "point_count": 39449,
+      "reference_session": 0,
+      "route_index": 36,
+      "submap_id": 36,
+      "trajectory_frame": 209,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 217,
+      "anchor_position_m": [
+        51.53221224010477,
+        31.702183387345812,
+        7.79617787060302
+      ],
+      "anchor_progress_fraction": 0.23032093216382538,
+      "anchor_progress_m": 74.20417349030376,
+      "anchor_quaternion_xyzw": [
+        0.023267927971385976,
+        -0.058408970121214966,
+        -0.43020465689041,
+        0.900539254517593
+      ],
+      "canonical_anchor_frame": 217,
+      "canonical_trajectory_frame": 215,
+      "file": "submaps/submap_0037.npz",
+      "fine_point_count": 83083,
+      "point_count": 43127,
+      "reference_session": 0,
+      "route_index": 37,
+      "submap_id": 37,
+      "trajectory_frame": 215,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 223,
+      "anchor_position_m": [
+        52.611914541920186,
+        30.253153065126536,
+        7.391724046824105
+      ],
+      "anchor_progress_fraction": 0.2361453551928015,
+      "anchor_progress_m": 76.08067031090384,
+      "anchor_quaternion_xyzw": [
+        0.04153856040486878,
+        0.0010840229869264013,
+        -0.602561153082153,
+        0.7969902318660883
+      ],
+      "canonical_anchor_frame": 223,
+      "canonical_trajectory_frame": 221,
+      "file": "submaps/submap_0038.npz",
+      "fine_point_count": 83142,
+      "point_count": 43804,
+      "reference_session": 0,
+      "route_index": 38,
+      "submap_id": 38,
+      "trajectory_frame": 221,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 230,
+      "anchor_position_m": [
+        51.77959591169082,
+        28.63112903148546,
+        7.2795863751042535
+      ],
+      "anchor_progress_fraction": 0.24202626607808225,
+      "anchor_progress_m": 77.97536623590118,
+      "anchor_quaternion_xyzw": [
+        -0.00966600660765834,
+        -0.006512422087706058,
+        0.8534442876990856,
+        -0.5210537443187722
+      ],
+      "canonical_anchor_frame": 230,
+      "canonical_trajectory_frame": 228,
+      "file": "submaps/submap_0039.npz",
+      "fine_point_count": 92681,
+      "point_count": 42243,
+      "reference_session": 0,
+      "route_index": 39,
+      "submap_id": 39,
+      "trajectory_frame": 228,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 237,
+      "anchor_position_m": [
+        51.138579869258066,
+        26.9574655391674,
+        7.182290771102079
+      ],
+      "anchor_progress_fraction": 0.24790166375730543,
+      "anchor_progress_m": 79.86828593111801,
+      "anchor_quaternion_xyzw": [
+        -0.01759037041340495,
+        0.015801593567212315,
+        -0.5073661413290552,
+        0.8614061104626092
+      ],
+      "canonical_anchor_frame": 237,
+      "canonical_trajectory_frame": 235,
+      "file": "submaps/submap_0040.npz",
+      "fine_point_count": 89360,
+      "point_count": 45094,
+      "reference_session": 0,
+      "route_index": 40,
+      "submap_id": 40,
+      "trajectory_frame": 235,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 244,
+      "anchor_position_m": [
+        52.335654586997414,
+        25.18286573442578,
+        7.170276573277211
+      ],
+      "anchor_progress_fraction": 0.2546380687289562,
+      "anchor_progress_m": 82.0386026214906,
+      "anchor_quaternion_xyzw": [
+        0.07177374560454237,
+        -0.03958143085902128,
+        -0.5388078289847827,
+        0.8384318476762151
+      ],
+      "canonical_anchor_frame": 244,
+      "canonical_trajectory_frame": 242,
+      "file": "submaps/submap_0041.npz",
+      "fine_point_count": 86848,
+      "point_count": 42859,
+      "reference_session": 0,
+      "route_index": 41,
+      "submap_id": 41,
+      "trajectory_frame": 242,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 253,
+      "anchor_position_m": [
+        53.999066713604115,
+        24.52338894547141,
+        7.045429536783332
+      ],
+      "anchor_progress_fraction": 0.26088058499359473,
+      "anchor_progress_m": 84.04979958724354,
+      "anchor_quaternion_xyzw": [
+        0.04323886298767674,
+        -0.02236965555322251,
+        -0.44691205355527014,
+        0.8932522687488538
+      ],
+      "canonical_anchor_frame": 253,
+      "canonical_trajectory_frame": 251,
+      "file": "submaps/submap_0042.npz",
+      "fine_point_count": 74629,
+      "point_count": 37229,
+      "reference_session": 0,
+      "route_index": 42,
+      "submap_id": 42,
+      "trajectory_frame": 251,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 260,
+      "anchor_position_m": [
+        54.52610284193302,
+        22.76184722262403,
+        7.002029900286475
+      ],
+      "anchor_progress_fraction": 0.2666799834683475,
+      "anchor_progress_m": 85.91823406480923,
+      "anchor_quaternion_xyzw": [
+        0.03978590118832529,
+        0.00862460688406596,
+        -0.5508219189267451,
+        0.8336293611987203
+      ],
+      "canonical_anchor_frame": 260,
+      "canonical_trajectory_frame": 258,
+      "file": "submaps/submap_0043.npz",
+      "fine_point_count": 78308,
+      "point_count": 37453,
+      "reference_session": 0,
+      "route_index": 43,
+      "submap_id": 43,
+      "trajectory_frame": 258,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 267,
+      "anchor_position_m": [
+        54.84116872674514,
+        20.619011217469538,
+        6.7639842458589365
+      ],
+      "anchor_progress_fraction": 0.2735525680988589,
+      "anchor_progress_m": 88.13242474847024,
+      "anchor_quaternion_xyzw": [
+        0.04618230209411203,
+        0.004533080227219368,
+        -0.5692737683702385,
+        0.8208373912063763
+      ],
+      "canonical_anchor_frame": 267,
+      "canonical_trajectory_frame": 265,
+      "file": "submaps/submap_0044.npz",
+      "fine_point_count": 81381,
+      "point_count": 41132,
+      "reference_session": 0,
+      "route_index": 44,
+      "submap_id": 44,
+      "trajectory_frame": 265,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 273,
+      "anchor_position_m": [
+        56.0374396319695,
+        19.21394236904517,
+        6.791710496526775
+      ],
+      "anchor_progress_fraction": 0.2794400327867396,
+      "anchor_progress_m": 90.0292321598209,
+      "anchor_quaternion_xyzw": [
+        -0.014752575762505717,
+        -0.027436460575415166,
+        -0.5484177502720268,
+        0.8356240621990455
+      ],
+      "canonical_anchor_frame": 273,
+      "canonical_trajectory_frame": 271,
+      "file": "submaps/submap_0045.npz",
+      "fine_point_count": 101422,
+      "point_count": 54290,
+      "reference_session": 0,
+      "route_index": 45,
+      "submap_id": 45,
+      "trajectory_frame": 271,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 278,
+      "anchor_position_m": [
+        56.74006434991316,
+        17.676981077414535,
+        7.042929350997063
+      ],
+      "anchor_progress_fraction": 0.2848492476114561,
+      "anchor_progress_m": 91.77195832686368,
+      "anchor_quaternion_xyzw": [
+        -0.03717873461245069,
+        -0.06405365568484522,
+        -0.5902454254077836,
+        0.8038191392789853
+      ],
+      "canonical_anchor_frame": 278,
+      "canonical_trajectory_frame": 276,
+      "file": "submaps/submap_0046.npz",
+      "fine_point_count": 122409,
+      "point_count": 64796,
+      "reference_session": 0,
+      "route_index": 46,
+      "submap_id": 46,
+      "trajectory_frame": 276,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 282,
+      "anchor_position_m": [
+        57.519135188964015,
+        15.779323791246608,
+        6.99512519279742
+      ],
+      "anchor_progress_fraction": 0.2912369274114228,
+      "anchor_progress_m": 93.82992368686881,
+      "anchor_quaternion_xyzw": [
+        0.011380729216170709,
+        0.020887118046899165,
+        -0.47503293297210575,
+        0.8796464743828183
+      ],
+      "canonical_anchor_frame": 282,
+      "canonical_trajectory_frame": 280,
+      "file": "submaps/submap_0047.npz",
+      "fine_point_count": 125350,
+      "point_count": 63765,
+      "reference_session": 0,
+      "route_index": 47,
+      "submap_id": 47,
+      "trajectory_frame": 280,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 286,
+      "anchor_position_m": [
+        59.03505960299375,
+        14.122302879575988,
+        6.91224715261354
+      ],
+      "anchor_progress_fraction": 0.29822182175065026,
+      "anchor_progress_m": 96.08029800799567,
+      "anchor_quaternion_xyzw": [
+        0.04045365468807128,
+        0.020934482581291526,
+        -0.4294968785227058,
+        0.9019188880385443
+      ],
+      "canonical_anchor_frame": 286,
+      "canonical_trajectory_frame": 284,
+      "file": "submaps/submap_0048.npz",
+      "fine_point_count": 115446,
+      "point_count": 52451,
+      "reference_session": 0,
+      "route_index": 48,
+      "submap_id": 48,
+      "trajectory_frame": 284,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 291,
+      "anchor_position_m": [
+        60.25857743613543,
+        12.394964527477681,
+        6.807395666685677
+      ],
+      "anchor_progress_fraction": 0.3048088923021005,
+      "anchor_progress_m": 98.20250253973582,
+      "anchor_quaternion_xyzw": [
+        0.04274760811264889,
+        0.009591444048672087,
+        -0.5071596541311437,
+        0.8607378993766264
+      ],
+      "canonical_anchor_frame": 291,
+      "canonical_trajectory_frame": 289,
+      "file": "submaps/submap_0049.npz",
+      "fine_point_count": 117033,
+      "point_count": 53522,
+      "reference_session": 0,
+      "route_index": 49,
+      "submap_id": 49,
+      "trajectory_frame": 289,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 295,
+      "anchor_position_m": [
+        61.21155481672847,
+        10.669838038312811,
+        6.72368690708095
+      ],
+      "anchor_progress_fraction": 0.31094401227659907,
+      "anchor_progress_m": 100.17909885989876,
+      "anchor_quaternion_xyzw": [
+        0.019016016846295832,
+        0.02631866353737248,
+        -0.4664808329582792,
+        0.883935151204803
+      ],
+      "canonical_anchor_frame": 295,
+      "canonical_trajectory_frame": 293,
+      "file": "submaps/submap_0050.npz",
+      "fine_point_count": 123946,
+      "point_count": 56378,
+      "reference_session": 0,
+      "route_index": 50,
+      "submap_id": 50,
+      "trajectory_frame": 293,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 298,
+      "anchor_position_m": [
+        62.10533987792011,
+        9.370438206746888,
+        6.674634886589548
+      ],
+      "anchor_progress_fraction": 0.3158418464163862,
+      "anchor_progress_m": 101.75706978429996,
+      "anchor_quaternion_xyzw": [
+        0.01954542633641646,
+        0.028593156642144284,
+        -0.4512650782517844,
+        0.8917175768442475
+      ],
+      "canonical_anchor_frame": 298,
+      "canonical_trajectory_frame": 296,
+      "file": "submaps/submap_0051.npz",
+      "fine_point_count": 127733,
+      "point_count": 56463,
+      "reference_session": 0,
+      "route_index": 51,
+      "submap_id": 51,
+      "trajectory_frame": 296,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 302,
+      "anchor_position_m": [
+        63.29673473128494,
+        7.711731649579541,
+        6.6079142057068925
+      ],
+      "anchor_progress_fraction": 0.32219235953056946,
+      "anchor_progress_m": 103.80306088224377,
+      "anchor_quaternion_xyzw": [
+        0.030653963204939905,
+        0.018722787271705874,
+        -0.4954628424484581,
+        0.8678861466399281
+      ],
+      "canonical_anchor_frame": 302,
+      "canonical_trajectory_frame": 300,
+      "file": "submaps/submap_0052.npz",
+      "fine_point_count": 132318,
+      "point_count": 62625,
+      "reference_session": 0,
+      "route_index": 52,
+      "submap_id": 52,
+      "trajectory_frame": 300,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 306,
+      "anchor_position_m": [
+        64.18611738448209,
+        5.614937746250037,
+        6.551589874011484
+      ],
+      "anchor_progress_fraction": 0.3292695966807795,
+      "anchor_progress_m": 106.08318595985791,
+      "anchor_quaternion_xyzw": [
+        0.013104865280824633,
+        0.029206572912022617,
+        -0.525338458621713,
+        0.8502909751947677
+      ],
+      "canonical_anchor_frame": 306,
+      "canonical_trajectory_frame": 304,
+      "file": "submaps/submap_0053.npz",
+      "fine_point_count": 129981,
+      "point_count": 60861,
+      "reference_session": 0,
+      "route_index": 53,
+      "submap_id": 53,
+      "trajectory_frame": 304,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 309,
+      "anchor_position_m": [
+        64.97010685402186,
+        4.11649625196139,
+        6.500672829337181
+      ],
+      "anchor_progress_fraction": 0.3345219485794055,
+      "anchor_progress_m": 107.77537445465155,
+      "anchor_quaternion_xyzw": [
+        0.021673014286687168,
+        0.014862632022943849,
+        -0.5131971039129576,
+        0.8578683553765302
+      ],
+      "canonical_anchor_frame": 309,
+      "canonical_trajectory_frame": 307,
+      "file": "submaps/submap_0054.npz",
+      "fine_point_count": 125999,
+      "point_count": 62926,
+      "reference_session": 0,
+      "route_index": 54,
+      "submap_id": 54,
+      "trajectory_frame": 307,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 313,
+      "anchor_position_m": [
+        66.00936792461025,
+        1.8954774121441285,
+        6.442261759217232
+      ],
+      "anchor_progress_fraction": 0.3421476320619145,
+      "anchor_progress_m": 110.23219648468638,
+      "anchor_quaternion_xyzw": [
+        0.02859268692272025,
+        0.008971749279148051,
+        -0.5319933139838734,
+        0.846218104182289
+      ],
+      "canonical_anchor_frame": 313,
+      "canonical_trajectory_frame": 311,
+      "file": "submaps/submap_0055.npz",
+      "fine_point_count": 117053,
+      "point_count": 59944,
+      "reference_session": 0,
+      "route_index": 55,
+      "submap_id": 55,
+      "trajectory_frame": 311,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 317,
+      "anchor_position_m": [
+        66.5375412877311,
+        0.1157743375745824,
+        6.369251076123084
+      ],
+      "anchor_progress_fraction": 0.34794473524952335,
+      "anchor_progress_m": 112.0998914728629,
+      "anchor_quaternion_xyzw": [
+        -0.028303126171572934,
+        -0.004284772376801945,
+        0.7418146513039353,
+        -0.6699937289896197
+      ],
+      "canonical_anchor_frame": 317,
+      "canonical_trajectory_frame": 315,
+      "file": "submaps/submap_0056.npz",
+      "fine_point_count": 117813,
+      "point_count": 65792,
+      "reference_session": 0,
+      "route_index": 56,
+      "submap_id": 56,
+      "trajectory_frame": 315,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 321,
+      "anchor_position_m": [
+        66.45968742094004,
+        -1.5421786844993226,
+        6.549985091569161
+      ],
+      "anchor_progress_fraction": 0.3532344904699583,
+      "anchor_progress_m": 113.80413046847097,
+      "anchor_quaternion_xyzw": [
+        0.006779062191042406,
+        0.0015673043610392385,
+        0.7738596869840791,
+        -0.6333188555015181
+      ],
+      "canonical_anchor_frame": 321,
+      "canonical_trajectory_frame": 319,
+      "file": "submaps/submap_0057.npz",
+      "fine_point_count": 126504,
+      "point_count": 71771,
+      "reference_session": 0,
+      "route_index": 57,
+      "submap_id": 57,
+      "trajectory_frame": 319,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 328,
+      "anchor_position_m": [
+        66.0913817106073,
+        -3.8157541519294034,
+        6.708280814836256
+      ],
+      "anchor_progress_fraction": 0.36060949801470793,
+      "anchor_progress_m": 116.18019040449816,
+      "anchor_quaternion_xyzw": [
+        0.07803756364147525,
+        0.08358054987212078,
+        0.7526650813818265,
+        -0.6483977988954504
+      ],
+      "canonical_anchor_frame": 328,
+      "canonical_trajectory_frame": 326,
+      "file": "submaps/submap_0058.npz",
+      "fine_point_count": 137905,
+      "point_count": 72240,
+      "reference_session": 0,
+      "route_index": 58,
+      "submap_id": 58,
+      "trajectory_frame": 326,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 332,
+      "anchor_position_m": [
+        65.66276787217704,
+        -5.550579315085827,
+        6.724273695995267
+      ],
+      "anchor_progress_fraction": 0.36622528100863316,
+      "anchor_progress_m": 117.98946814425965,
+      "anchor_quaternion_xyzw": [
+        -0.025608651433654754,
+        -0.004473554639097665,
+        0.8020961420765593,
+        -0.5966288319772525
+      ],
+      "canonical_anchor_frame": 332,
+      "canonical_trajectory_frame": 330,
+      "file": "submaps/submap_0059.npz",
+      "fine_point_count": 142871,
+      "point_count": 74491,
+      "reference_session": 0,
+      "route_index": 59,
+      "submap_id": 59,
+      "trajectory_frame": 330,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 337,
+      "anchor_position_m": [
+        64.39729727250375,
+        -7.105598229102657,
+        6.615303393970992
+      ],
+      "anchor_progress_fraction": 0.37279770572263776,
+      "anchor_progress_m": 120.1069541197986,
+      "anchor_quaternion_xyzw": [
+        -0.02065539565881097,
+        0.0027970956834522825,
+        0.988474374450856,
+        -0.1499464635791881
+      ],
+      "canonical_anchor_frame": 337,
+      "canonical_trajectory_frame": 335,
+      "file": "submaps/submap_0060.npz",
+      "fine_point_count": 144565,
+      "point_count": 74259,
+      "reference_session": 0,
+      "route_index": 60,
+      "submap_id": 60,
+      "trajectory_frame": 335,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 341,
+      "anchor_position_m": [
+        62.51026103506833,
+        -7.662083143894723,
+        6.564382465161865
+      ],
+      "anchor_progress_fraction": 0.37891094103199335,
+      "anchor_progress_m": 122.07649969787838,
+      "anchor_quaternion_xyzw": [
+        -0.01370869119962006,
+        -0.012897567967661247,
+        0.9764906781301559,
+        -0.2147363035236966
+      ],
+      "canonical_anchor_frame": 341,
+      "canonical_trajectory_frame": 339,
+      "file": "submaps/submap_0061.npz",
+      "fine_point_count": 137441,
+      "point_count": 62257,
+      "reference_session": 0,
+      "route_index": 61,
+      "submap_id": 61,
+      "trajectory_frame": 339,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 346,
+      "anchor_position_m": [
+        60.528740292106704,
+        -8.388872477830137,
+        6.478645624178163
+      ],
+      "anchor_progress_fraction": 0.3854679246957104,
+      "anchor_progress_m": 124.18901091769865,
+      "anchor_quaternion_xyzw": [
+        -0.014041995487167861,
+        -0.011339001313803372,
+        0.9710312911677084,
+        -0.23826976515100912
+      ],
+      "canonical_anchor_frame": 346,
+      "canonical_trajectory_frame": 344,
+      "file": "submaps/submap_0062.npz",
+      "fine_point_count": 131099,
+      "point_count": 56887,
+      "reference_session": 0,
+      "route_index": 62,
+      "submap_id": 62,
+      "trajectory_frame": 344,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 349,
+      "anchor_position_m": [
+        59.00616848344033,
+        -8.725697865893387,
+        6.391459415172875
+      ],
+      "anchor_progress_fraction": 0.39031855098248963,
+      "anchor_progress_m": 125.75177254400526,
+      "anchor_quaternion_xyzw": [
+        -0.017145536358958217,
+        0.002153947474023373,
+        0.9922179471324227,
+        -0.12330829851053661
+      ],
+      "canonical_anchor_frame": 349,
+      "canonical_trajectory_frame": 347,
+      "file": "submaps/submap_0063.npz",
+      "fine_point_count": 129585,
+      "point_count": 60758,
+      "reference_session": 0,
+      "route_index": 63,
+      "submap_id": 63,
+      "trajectory_frame": 347,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 354,
+      "anchor_position_m": [
+        56.872312606617136,
+        -8.272537000751319,
+        6.3147536319921445
+      ],
+      "anchor_progress_fraction": 0.39719122561383496,
+      "anchor_progress_m": 127.96599222389095,
+      "anchor_quaternion_xyzw": [
+        -0.005878451049990014,
+        -0.016983869094636662,
+        0.9860874760074889,
+        0.16525278111126968
+      ],
+      "canonical_anchor_frame": 354,
+      "canonical_trajectory_frame": 352,
+      "file": "submaps/submap_0064.npz",
+      "fine_point_count": 120316,
+      "point_count": 53529,
+      "reference_session": 0,
+      "route_index": 64,
+      "submap_id": 64,
+      "trajectory_frame": 352,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 358,
+      "anchor_position_m": [
+        55.03610867663093,
+        -7.834094606454974,
+        6.250818845857897
+      ],
+      "anchor_progress_fraction": 0.4030641726194744,
+      "anchor_progress_m": 129.8581223677367,
+      "anchor_quaternion_xyzw": [
+        -0.009388900203210659,
+        -0.03809859288029518,
+        0.999136996942122,
+        0.013623770219497218
+      ],
+      "canonical_anchor_frame": 358,
+      "canonical_trajectory_frame": 356,
+      "file": "submaps/submap_0065.npz",
+      "fine_point_count": 115872,
+      "point_count": 49594,
+      "reference_session": 0,
+      "route_index": 65,
+      "submap_id": 65,
+      "trajectory_frame": 356,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 363,
+      "anchor_position_m": [
+        52.86514691444165,
+        -8.23596118920277,
+        6.147621454262714
+      ],
+      "anchor_progress_fraction": 0.4099882532161655,
+      "anchor_progress_m": 132.0889038821683,
+      "anchor_quaternion_xyzw": [
+        -0.019072086318832202,
+        -0.016126380110135372,
+        0.9899849573929099,
+        -0.13894595900474624
+      ],
+      "canonical_anchor_frame": 363,
+      "canonical_trajectory_frame": 361,
+      "file": "submaps/submap_0066.npz",
+      "fine_point_count": 112554,
+      "point_count": 48245,
+      "reference_session": 0,
+      "route_index": 66,
+      "submap_id": 66,
+      "trajectory_frame": 361,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 367,
+      "anchor_position_m": [
+        51.20050790020163,
+        -8.74811899110157,
+        6.092390716306755
+      ],
+      "anchor_progress_fraction": 0.41540329107900287,
+      "anchor_progress_m": 133.83350609984575,
+      "anchor_quaternion_xyzw": [
+        -0.01667494017855625,
+        -0.03279198281337422,
+        0.9778862433925513,
+        -0.20587648534209316
+      ],
+      "canonical_anchor_frame": 367,
+      "canonical_trajectory_frame": 365,
+      "file": "submaps/submap_0067.npz",
+      "fine_point_count": 110604,
+      "point_count": 46106,
+      "reference_session": 0,
+      "route_index": 67,
+      "submap_id": 67,
+      "trajectory_frame": 365,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 372,
+      "anchor_position_m": [
+        49.31624980864989,
+        -9.564584252665087,
+        5.995594007013905
+      ],
+      "anchor_progress_fraction": 0.42178712619948283,
+      "anchor_progress_m": 135.8902327914373,
+      "anchor_quaternion_xyzw": [
+        -0.020594744996635866,
+        -0.019933807451283973,
+        0.980928387665147,
+        -0.19224463080063764
+      ],
+      "canonical_anchor_frame": 372,
+      "canonical_trajectory_frame": 370,
+      "file": "submaps/submap_0068.npz",
+      "fine_point_count": 108304,
+      "point_count": 42827,
+      "reference_session": 0,
+      "route_index": 68,
+      "submap_id": 68,
+      "trajectory_frame": 370,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 376,
+      "anchor_position_m": [
+        47.36841437670176,
+        -10.396415613518593,
+        5.923451536939473
+      ],
+      "anchor_progress_fraction": 0.4283681262104736,
+      "anchor_progress_m": 138.01048153291035,
+      "anchor_quaternion_xyzw": [
+        -0.02442039927424829,
+        -0.017111911806406352,
+        0.9767152930312637,
+        -0.21245720259023604
+      ],
+      "canonical_anchor_frame": 376,
+      "canonical_trajectory_frame": 374,
+      "file": "submaps/submap_0069.npz",
+      "fine_point_count": 111493,
+      "point_count": 42546,
+      "reference_session": 0,
+      "route_index": 69,
+      "submap_id": 69,
+      "trajectory_frame": 374,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 380,
+      "anchor_position_m": [
+        45.42891438871217,
+        -11.319057247339929,
+        5.837437306408852
+      ],
+      "anchor_progress_fraction": 0.4350475533812011,
+      "anchor_progress_m": 140.16244126985674,
+      "anchor_quaternion_xyzw": [
+        -0.019832650792413944,
+        -0.02954653654373196,
+        0.9630092455161638,
+        -0.26710833231332376
+      ],
+      "canonical_anchor_frame": 380,
+      "canonical_trajectory_frame": 378,
+      "file": "submaps/submap_0070.npz",
+      "fine_point_count": 114148,
+      "point_count": 42633,
+      "reference_session": 0,
+      "route_index": 70,
+      "submap_id": 70,
+      "trajectory_frame": 378,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 384,
+      "anchor_position_m": [
+        43.835589772163736,
+        -12.172348344862268,
+        5.76464532839117
+      ],
+      "anchor_progress_fraction": 0.44066216119541474,
+      "anchor_progress_m": 141.97134039340483,
+      "anchor_quaternion_xyzw": [
+        -0.017455731724988814,
+        -0.020086985842576423,
+        0.9679731944390876,
+        -0.2496391501289282
+      ],
+      "canonical_anchor_frame": 384,
+      "canonical_trajectory_frame": 382,
+      "file": "submaps/submap_0071.npz",
+      "fine_point_count": 118626,
+      "point_count": 44226,
+      "reference_session": 0,
+      "route_index": 71,
+      "submap_id": 71,
+      "trajectory_frame": 382,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 387,
+      "anchor_position_m": [
+        42.26211410266379,
+        -13.051455618417261,
+        5.729293270135886
+      ],
+      "anchor_progress_fraction": 0.4462579209623035,
+      "anchor_progress_m": 143.77416710416566,
+      "anchor_quaternion_xyzw": [
+        -0.019286957732087374,
+        -0.017930612361787366,
+        0.9654513280442151,
+        -0.2592493772016304
+      ],
+      "canonical_anchor_frame": 387,
+      "canonical_trajectory_frame": 385,
+      "file": "submaps/submap_0072.npz",
+      "fine_point_count": 123687,
+      "point_count": 44874,
+      "reference_session": 0,
+      "route_index": 72,
+      "submap_id": 72,
+      "trajectory_frame": 385,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 391,
+      "anchor_position_m": [
+        40.319569359403154,
+        -14.184651304878326,
+        5.679838723800288
+      ],
+      "anchor_progress_fraction": 0.45324008609495886,
+      "anchor_progress_m": 146.0236621369184,
+      "anchor_quaternion_xyzw": [
+        -0.020914582526398134,
+        -0.013854480852986836,
+        0.9620060942756474,
+        -0.2718729633018969
+      ],
+      "canonical_anchor_frame": 391,
+      "canonical_trajectory_frame": 389,
+      "file": "submaps/submap_0073.npz",
+      "fine_point_count": 133779,
+      "point_count": 49215,
+      "reference_session": 0,
+      "route_index": 73,
+      "submap_id": 73,
+      "trajectory_frame": 389,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 395,
+      "anchor_position_m": [
+        38.475786815538115,
+        -15.302050082953171,
+        5.618740493224475
+      ],
+      "anchor_progress_fraction": 0.45993477713755543,
+      "anchor_progress_m": 148.18053954672095,
+      "anchor_quaternion_xyzw": [
+        -0.023023444044201747,
+        -0.013192322307087988,
+        0.958091446711667,
+        -0.28523089488068126
+      ],
+      "canonical_anchor_frame": 395,
+      "canonical_trajectory_frame": 393,
+      "file": "submaps/submap_0074.npz",
+      "fine_point_count": 140818,
+      "point_count": 55894,
+      "reference_session": 0,
+      "route_index": 74,
+      "submap_id": 74,
+      "trajectory_frame": 393,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 399,
+      "anchor_position_m": [
+        37.07213170769584,
+        -16.17780011788143,
+        5.573892899484706
+      ],
+      "anchor_progress_fraction": 0.4650727698464542,
+      "anchor_progress_m": 149.835884107813,
+      "anchor_quaternion_xyzw": [
+        -0.024439646906497924,
+        0.004508486482499512,
+        0.9700512393925758,
+        -0.2416256819165764
+      ],
+      "canonical_anchor_frame": 399,
+      "canonical_trajectory_frame": 397,
+      "file": "submaps/submap_0075.npz",
+      "fine_point_count": 147858,
+      "point_count": 67983,
+      "reference_session": 0,
+      "route_index": 75,
+      "submap_id": 75,
+      "trajectory_frame": 397,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 404,
+      "anchor_position_m": [
+        35.05897747746365,
+        -17.17876960762989,
+        5.527809948634307
+      ],
+      "anchor_progress_fraction": 0.47205676030614513,
+      "anchor_progress_m": 152.08596721948135,
+      "anchor_quaternion_xyzw": [
+        -0.021830146594510037,
+        -0.00896140565825542,
+        0.9604324607592739,
+        -0.2775114884616059
+      ],
+      "canonical_anchor_frame": 404,
+      "canonical_trajectory_frame": 402,
+      "file": "submaps/submap_0076.npz",
+      "fine_point_count": 141831,
+      "point_count": 61311,
+      "reference_session": 0,
+      "route_index": 76,
+      "submap_id": 76,
+      "trajectory_frame": 402,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 408,
+      "anchor_position_m": [
+        33.28246854308061,
+        -18.115256377692564,
+        5.487759303565776
+      ],
+      "anchor_progress_fraction": 0.47829569743699984,
+      "anchor_progress_m": 154.0960110696154,
+      "anchor_quaternion_xyzw": [
+        -0.021891818681545713,
+        0.001539441516324518,
+        0.9754883469106592,
+        -0.21895402128333105
+      ],
+      "canonical_anchor_frame": 408,
+      "canonical_trajectory_frame": 406,
+      "file": "submaps/submap_0077.npz",
+      "fine_point_count": 138491,
+      "point_count": 62326,
+      "reference_session": 0,
+      "route_index": 77,
+      "submap_id": 77,
+      "trajectory_frame": 406,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 412,
+      "anchor_position_m": [
+        31.309080216571378,
+        -18.372738244707502,
+        5.444555043809241
+      ],
+      "anchor_progress_fraction": 0.48458129998647087,
+      "anchor_progress_m": 156.12108945780238,
+      "anchor_quaternion_xyzw": [
+        -0.018452659523036444,
+        -0.03422125274360159,
+        0.9965034610980081,
+        -0.07395442675645582
+      ],
+      "canonical_anchor_frame": 412,
+      "canonical_trajectory_frame": 410,
+      "file": "submaps/submap_0078.npz",
+      "fine_point_count": 133319,
+      "point_count": 62462,
+      "reference_session": 0,
+      "route_index": 78,
+      "submap_id": 78,
+      "trajectory_frame": 410,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 415,
+      "anchor_position_m": [
+        29.578978257892523,
+        -18.631801389809276,
+        5.433978584124031
+      ],
+      "anchor_progress_fraction": 0.49001345569683824,
+      "anchor_progress_m": 157.87120665718803,
+      "anchor_quaternion_xyzw": [
+        -0.012541408559666607,
+        -0.03143319186684045,
+        0.9938622242199747,
+        -0.10532116021449235
+      ],
+      "canonical_anchor_frame": 415,
+      "canonical_trajectory_frame": 413,
+      "file": "submaps/submap_0079.npz",
+      "fine_point_count": 128353,
+      "point_count": 56500,
+      "reference_session": 0,
+      "route_index": 79,
+      "submap_id": 79,
+      "trajectory_frame": 413,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 420,
+      "anchor_position_m": [
+        27.470639219134277,
+        -19.434119656564185,
+        5.40634330272679
+      ],
+      "anchor_progress_fraction": 0.4970371288744123,
+      "anchor_progress_m": 160.13407463931821,
+      "anchor_quaternion_xyzw": [
+        -0.01689669504678242,
+        -0.024467584174697098,
+        0.9523409959386154,
+        -0.3035827176830002
+      ],
+      "canonical_anchor_frame": 420,
+      "canonical_trajectory_frame": 418,
+      "file": "submaps/submap_0080.npz",
+      "fine_point_count": 128534,
+      "point_count": 53690,
+      "reference_session": 0,
+      "route_index": 80,
+      "submap_id": 80,
+      "trajectory_frame": 418,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 424,
+      "anchor_position_m": [
+        26.0169409990103,
+        -20.285230247960094,
+        5.364644264257809
+      ],
+      "anchor_progress_fraction": 0.5022727803480277,
+      "anchor_progress_m": 161.82088263645926,
+      "anchor_quaternion_xyzw": [
+        -0.021786213574110036,
+        0.015453480935599,
+        0.9792330511200461,
+        -0.20097060088281993
+      ],
+      "canonical_anchor_frame": 424,
+      "canonical_trajectory_frame": 422,
+      "file": "submaps/submap_0081.npz",
+      "fine_point_count": 133942,
+      "point_count": 60139,
+      "reference_session": 0,
+      "route_index": 81,
+      "submap_id": 81,
+      "trajectory_frame": 422,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 429,
+      "anchor_position_m": [
+        23.9597727024506,
+        -20.655199722710304,
+        5.3299935638141305
+      ],
+      "anchor_progress_fraction": 0.5087736922860807,
+      "anchor_progress_m": 163.91532881972387,
+      "anchor_quaternion_xyzw": [
+        -0.020023471883836037,
+        -0.007589007502364112,
+        0.9935146738923629,
+        -0.11166942419211419
+      ],
+      "canonical_anchor_frame": 429,
+      "canonical_trajectory_frame": 427,
+      "file": "submaps/submap_0082.npz",
+      "fine_point_count": 122367,
+      "point_count": 48311,
+      "reference_session": 0,
+      "route_index": 82,
+      "submap_id": 82,
+      "trajectory_frame": 427,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 433,
+      "anchor_position_m": [
+        22.08076190615863,
+        -21.037322346498552,
+        5.298025967183528
+      ],
+      "anchor_progress_fraction": 0.5147263150304457,
+      "anchor_progress_m": 165.8331286770595,
+      "anchor_quaternion_xyzw": [
+        -0.021376393696881484,
+        -0.006065910354257866,
+        0.9924897044690488,
+        -0.12029314630115112
+      ],
+      "canonical_anchor_frame": 433,
+      "canonical_trajectory_frame": 431,
+      "file": "submaps/submap_0083.npz",
+      "fine_point_count": 119670,
+      "point_count": 47732,
+      "reference_session": 0,
+      "route_index": 83,
+      "submap_id": 83,
+      "trajectory_frame": 431,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 437,
+      "anchor_position_m": [
+        19.965343681623114,
+        -21.468294795360784,
+        5.246374011786959
+      ],
+      "anchor_progress_fraction": 0.5214382742125396,
+      "anchor_progress_m": 167.99556948922879,
+      "anchor_quaternion_xyzw": [
+        -0.02080663128498745,
+        0.009165668760385028,
+        0.9987932138117105,
+        -0.043533787503731686
+      ],
+      "canonical_anchor_frame": 437,
+      "canonical_trajectory_frame": 435,
+      "file": "submaps/submap_0084.npz",
+      "fine_point_count": 121834,
+      "point_count": 51802,
+      "reference_session": 0,
+      "route_index": 84,
+      "submap_id": 84,
+      "trajectory_frame": 435,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 441,
+      "anchor_position_m": [
+        17.920551353562278,
+        -21.828440326119722,
+        5.219505269556627
+      ],
+      "anchor_progress_fraction": 0.527885238920371,
+      "anchor_progress_m": 170.07263510011956,
+      "anchor_quaternion_xyzw": [
+        -0.019988062216223998,
+        0.00819149266053937,
+        0.9975169498790404,
+        -0.06703216780657285
+      ],
+      "canonical_anchor_frame": 441,
+      "canonical_trajectory_frame": 439,
+      "file": "submaps/submap_0085.npz",
+      "fine_point_count": 118768,
+      "point_count": 52201,
+      "reference_session": 0,
+      "route_index": 85,
+      "submap_id": 85,
+      "trajectory_frame": 439,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 444,
+      "anchor_position_m": [
+        16.224281495249173,
+        -22.128934964729446,
+        5.200654629978034
+      ],
+      "anchor_progress_fraction": 0.5332379079878633,
+      "anchor_progress_m": 171.7971435084038,
+      "anchor_quaternion_xyzw": [
+        -0.015717875796582452,
+        -0.0069175264903520405,
+        0.993923566054041,
+        -0.10872461105985526
+      ],
+      "canonical_anchor_frame": 444,
+      "canonical_trajectory_frame": 442,
+      "file": "submaps/submap_0086.npz",
+      "fine_point_count": 114519,
+      "point_count": 47251,
+      "reference_session": 0,
+      "route_index": 86,
+      "submap_id": 86,
+      "trajectory_frame": 442,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 448,
+      "anchor_position_m": [
+        14.011189769668977,
+        -22.50022032075888,
+        5.1893222670458705
+      ],
+      "anchor_progress_fraction": 0.5402060593478301,
+      "anchor_progress_m": 174.04212362186516,
+      "anchor_quaternion_xyzw": [
+        -0.019398633261682032,
+        -0.0063778832144649215,
+        0.9946814704626467,
+        -0.10095438549933465
+      ],
+      "canonical_anchor_frame": 448,
+      "canonical_trajectory_frame": 446,
+      "file": "submaps/submap_0087.npz",
+      "fine_point_count": 114503,
+      "point_count": 43179,
+      "reference_session": 0,
+      "route_index": 87,
+      "submap_id": 87,
+      "trajectory_frame": 446,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 452,
+      "anchor_position_m": [
+        11.969185460804159,
+        -22.962813047137754,
+        5.160631614492867
+      ],
+      "anchor_progress_fraction": 0.5467059117816399,
+      "anchor_progress_m": 176.13622845692515,
+      "anchor_quaternion_xyzw": [
+        -0.01997950016517683,
+        0.0021416818376588974,
+        0.994897762619405,
+        -0.09886695457511545
+      ],
+      "canonical_anchor_frame": 452,
+      "canonical_trajectory_frame": 450,
+      "file": "submaps/submap_0088.npz",
+      "fine_point_count": 118815,
+      "point_count": 47914,
+      "reference_session": 0,
+      "route_index": 88,
+      "submap_id": 88,
+      "trajectory_frame": 450,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 455,
+      "anchor_position_m": [
+        10.290309531213975,
+        -23.19007979622629,
+        5.164681361699554
+      ],
+      "anchor_progress_fraction": 0.5519665282262203,
+      "anchor_progress_m": 177.83107960072797,
+      "anchor_quaternion_xyzw": [
+        -0.01300167236733301,
+        -0.00814829992762217,
+        0.9945561797906252,
+        -0.10306583800765264
+      ],
+      "canonical_anchor_frame": 455,
+      "canonical_trajectory_frame": 453,
+      "file": "submaps/submap_0089.npz",
+      "fine_point_count": 116128,
+      "point_count": 47230,
+      "reference_session": 0,
+      "route_index": 89,
+      "submap_id": 89,
+      "trajectory_frame": 453,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 460,
+      "anchor_position_m": [
+        7.8810685855262825,
+        -23.66934054936308,
+        5.176733346711464
+      ],
+      "anchor_progress_fraction": 0.5595913764208487,
+      "anchor_progress_m": 180.28763251997802,
+      "anchor_quaternion_xyzw": [
+        -0.019775232997949997,
+        -0.008073694166750803,
+        0.9911517437620442,
+        -0.13100372689293105
+      ],
+      "canonical_anchor_frame": 460,
+      "canonical_trajectory_frame": 458,
+      "file": "submaps/submap_0090.npz",
+      "fine_point_count": 112202,
+      "point_count": 44554,
+      "reference_session": 0,
+      "route_index": 90,
+      "submap_id": 90,
+      "trajectory_frame": 458,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 463,
+      "anchor_position_m": [
+        6.430410718460369,
+        -24.007963355286666,
+        5.167210742543143
+      ],
+      "anchor_progress_fraction": 0.5642160516488225,
+      "anchor_progress_m": 181.77759784674555,
+      "anchor_quaternion_xyzw": [
+        -0.011497996248518204,
+        0.012662767582293032,
+        0.9966024363284279,
+        -0.08056695540770682
+      ],
+      "canonical_anchor_frame": 463,
+      "canonical_trajectory_frame": 461,
+      "file": "submaps/submap_0091.npz",
+      "fine_point_count": 113436,
+      "point_count": 47580,
+      "reference_session": 0,
+      "route_index": 91,
+      "submap_id": 91,
+      "trajectory_frame": 461,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 467,
+      "anchor_position_m": [
+        4.034318026134051,
+        -24.261307017705445,
+        5.164084533933545
+      ],
+      "anchor_progress_fraction": 0.5717023511111112,
+      "anchor_progress_m": 184.18951351103658,
+      "anchor_quaternion_xyzw": [
+        -0.015246775764097331,
+        -0.012767049282250137,
+        0.995419564651595,
+        -0.09351164948953164
+      ],
+      "canonical_anchor_frame": 467,
+      "canonical_trajectory_frame": 465,
+      "file": "submaps/submap_0092.npz",
+      "fine_point_count": 108811,
+      "point_count": 50576,
+      "reference_session": 0,
+      "route_index": 92,
+      "submap_id": 92,
+      "trajectory_frame": 465,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 470,
+      "anchor_position_m": [
+        2.364930779177684,
+        -24.399434370915547,
+        5.151283461733752
+      ],
+      "anchor_progress_fraction": 0.5769085967633945,
+      "anchor_progress_m": 185.86684762038436,
+      "anchor_quaternion_xyzw": [
+        -0.010368813371403895,
+        0.009326514100742688,
+        0.9993581193394315,
+        -0.032997774990934176
+      ],
+      "canonical_anchor_frame": 470,
+      "canonical_trajectory_frame": 468,
+      "file": "submaps/submap_0093.npz",
+      "fine_point_count": 103360,
+      "point_count": 46733,
+      "reference_session": 0,
+      "route_index": 93,
+      "submap_id": 93,
+      "trajectory_frame": 468,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 474,
+      "anchor_position_m": [
+        -0.10124220890644417,
+        -24.56382577118168,
+        5.143934616522096
+      ],
+      "anchor_progress_fraction": 0.5845948981949799,
+      "anchor_progress_m": 188.3431993769084,
+      "anchor_quaternion_xyzw": [
+        -0.009049640696714968,
+        0.01633128481028258,
+        0.9988482904377645,
+        0.04419825595270765
+      ],
+      "canonical_anchor_frame": 474,
+      "canonical_trajectory_frame": 472,
+      "file": "submaps/submap_0094.npz",
+      "fine_point_count": 100941,
+      "point_count": 45588,
+      "reference_session": 0,
+      "route_index": 94,
+      "submap_id": 94,
+      "trajectory_frame": 472,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 477,
+      "anchor_position_m": [
+        -1.6915281406846647,
+        -24.352038334242838,
+        5.158428612709401
+      ],
+      "anchor_progress_fraction": 0.5895772407847728,
+      "anchor_progress_m": 189.9483970046175,
+      "anchor_quaternion_xyzw": [
+        -0.01268456300889447,
+        -0.007522920844095119,
+        0.9998805791247446,
+        -0.004618983915580122
+      ],
+      "canonical_anchor_frame": 477,
+      "canonical_trajectory_frame": 475,
+      "file": "submaps/submap_0095.npz",
+      "fine_point_count": 95938,
+      "point_count": 40131,
+      "reference_session": 0,
+      "route_index": 95,
+      "submap_id": 95,
+      "trajectory_frame": 475,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 481,
+      "anchor_position_m": [
+        -3.767662697218584,
+        -24.370375107888435,
+        5.175661223755076
+      ],
+      "anchor_progress_fraction": 0.5960237576469583,
+      "anchor_progress_m": 192.02531832981222,
+      "anchor_quaternion_xyzw": [
+        -0.01763734414808431,
+        -0.007197176950642038,
+        0.9995369889205136,
+        -0.023726198917154846
+      ],
+      "canonical_anchor_frame": 481,
+      "canonical_trajectory_frame": 479,
+      "file": "submaps/submap_0096.npz",
+      "fine_point_count": 89226,
+      "point_count": 32162,
+      "reference_session": 0,
+      "route_index": 96,
+      "submap_id": 96,
+      "trajectory_frame": 479,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 485,
+      "anchor_position_m": [
+        -5.673286056464281,
+        -24.46803760577377,
+        5.175604596870744
+      ],
+      "anchor_progress_fraction": 0.6019468059685219,
+      "anchor_progress_m": 193.93358997979036,
+      "anchor_quaternion_xyzw": [
+        -0.021087984229104045,
+        -0.008818546673247054,
+        0.9991028794777695,
+        -0.03565061535168984
+      ],
+      "canonical_anchor_frame": 485,
+      "canonical_trajectory_frame": 483,
+      "file": "submaps/submap_0097.npz",
+      "fine_point_count": 87960,
+      "point_count": 31688,
+      "reference_session": 0,
+      "route_index": 97,
+      "submap_id": 97,
+      "trajectory_frame": 483,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 489,
+      "anchor_position_m": [
+        -7.4843947822324495,
+        -24.643186809776182,
+        5.141944630611682
+      ],
+      "anchor_progress_fraction": 0.6075963449584623,
+      "anchor_progress_m": 195.75374313483047,
+      "anchor_quaternion_xyzw": [
+        -0.01866814725352142,
+        -0.005905386596695923,
+        0.9985495870619695,
+        -0.05015325378910649
+      ],
+      "canonical_anchor_frame": 489,
+      "canonical_trajectory_frame": 487,
+      "file": "submaps/submap_0098.npz",
+      "fine_point_count": 98816,
+      "point_count": 40769,
+      "reference_session": 0,
+      "route_index": 98,
+      "submap_id": 98,
+      "trajectory_frame": 487,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 493,
+      "anchor_position_m": [
+        -9.786163096434969,
+        -24.687110800628993,
+        5.116654073689631
+      ],
+      "anchor_progress_fraction": 0.61475866250851,
+      "anchor_progress_m": 198.06127918499874,
+      "anchor_quaternion_xyzw": [
+        -0.01833140894027589,
+        -0.0012661433250569015,
+        0.9997934693225582,
+        -0.008681879249780894
+      ],
+      "canonical_anchor_frame": 493,
+      "canonical_trajectory_frame": 491,
+      "file": "submaps/submap_0099.npz",
+      "fine_point_count": 106555,
+      "point_count": 45657,
+      "reference_session": 0,
+      "route_index": 99,
+      "submap_id": 99,
+      "trajectory_frame": 491,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 496,
+      "anchor_position_m": [
+        -11.436694474470293,
+        -24.582407569408627,
+        5.092092025615209
+      ],
+      "anchor_progress_fraction": 0.6199021915934537,
+      "anchor_progress_m": 199.71840744071503,
+      "anchor_quaternion_xyzw": [
+        -0.015374717507146403,
+        0.01017003859470728,
+        0.9971792273971684,
+        0.07275834539174178
+      ],
+      "canonical_anchor_frame": 496,
+      "canonical_trajectory_frame": 494,
+      "file": "submaps/submap_0100.npz",
+      "fine_point_count": 109814,
+      "point_count": 51159,
+      "reference_session": 0,
+      "route_index": 100,
+      "submap_id": 100,
+      "trajectory_frame": 494,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 500,
+      "anchor_position_m": [
+        -13.615182793362091,
+        -23.962631504430643,
+        5.073147634806496
+      ],
+      "anchor_progress_fraction": 0.6269593654414197,
+      "anchor_progress_m": 201.9920685780068,
+      "anchor_quaternion_xyzw": [
+        -0.007410884443764224,
+        0.014442466881327803,
+        0.9726480663926308,
+        0.2317158451310983
+      ],
+      "canonical_anchor_frame": 500,
+      "canonical_trajectory_frame": 498,
+      "file": "submaps/submap_0101.npz",
+      "fine_point_count": 106599,
+      "point_count": 48182,
+      "reference_session": 0,
+      "route_index": 101,
+      "submap_id": 101,
+      "trajectory_frame": 498,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 504,
+      "anchor_position_m": [
+        -15.331575883962152,
+        -23.230102255577037,
+        5.055360320257603
+      ],
+      "anchor_progress_fraction": 0.6327521605978816,
+      "anchor_progress_m": 203.8583756163881,
+      "anchor_quaternion_xyzw": [
+        -0.011431300615085805,
+        0.011372542031672064,
+        0.978086840925104,
+        0.2075719688761843
+      ],
+      "canonical_anchor_frame": 504,
+      "canonical_trajectory_frame": 502,
+      "file": "submaps/submap_0102.npz",
+      "fine_point_count": 101926,
+      "point_count": 40893,
+      "reference_session": 0,
+      "route_index": 102,
+      "submap_id": 102,
+      "trajectory_frame": 502,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 508,
+      "anchor_position_m": [
+        -17.358341175884853,
+        -22.45691826163353,
+        5.054711577396838
+      ],
+      "anchor_progress_fraction": 0.6394854481482757,
+      "anchor_progress_m": 206.02768794443196,
+      "anchor_quaternion_xyzw": [
+        -0.011076320276986367,
+        0.011098992883210809,
+        0.9834435433102023,
+        0.18053510630227662
+      ],
+      "canonical_anchor_frame": 508,
+      "canonical_trajectory_frame": 506,
+      "file": "submaps/submap_0103.npz",
+      "fine_point_count": 100261,
+      "point_count": 40583,
+      "reference_session": 0,
+      "route_index": 103,
+      "submap_id": 103,
+      "trajectory_frame": 506,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 512,
+      "anchor_position_m": [
+        -19.125481907763906,
+        -21.77955034365481,
+        5.036463480024695
+      ],
+      "anchor_progress_fraction": 0.6453601051801217,
+      "anchor_progress_m": 207.92036901988482,
+      "anchor_quaternion_xyzw": [
+        -0.010028233529750004,
+        0.018117429998628157,
+        0.9779919930222757,
+        0.20761227046307887
+      ],
+      "canonical_anchor_frame": 512,
+      "canonical_trajectory_frame": 510,
+      "file": "submaps/submap_0104.npz",
+      "fine_point_count": 106391,
+      "point_count": 48620,
+      "reference_session": 0,
+      "route_index": 104,
+      "submap_id": 104,
+      "trajectory_frame": 510,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 516,
+      "anchor_position_m": [
+        -20.767223528290273,
+        -20.979333062932138,
+        5.017143715487604
+      ],
+      "anchor_progress_fraction": 0.6510383146093605,
+      "anchor_progress_m": 209.74975913932832,
+      "anchor_quaternion_xyzw": [
+        -0.019930452158855385,
+        0.013350432201624953,
+        0.9726227040724931,
+        0.23114847730297775
+      ],
+      "canonical_anchor_frame": 516,
+      "canonical_trajectory_frame": 514,
+      "file": "submaps/submap_0105.npz",
+      "fine_point_count": 107064,
+      "point_count": 47860,
+      "reference_session": 0,
+      "route_index": 105,
+      "submap_id": 105,
+      "trajectory_frame": 514,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 520,
+      "anchor_position_m": [
+        -22.790405961004385,
+        -20.113127261628584,
+        4.999496611246425
+      ],
+      "anchor_progress_fraction": 0.6578701261852732,
+      "anchor_progress_m": 211.95081367080053,
+      "anchor_quaternion_xyzw": [
+        -0.016167719307066127,
+        0.012538585709291816,
+        0.9834060730256927,
+        0.18026060095596141
+      ],
+      "canonical_anchor_frame": 520,
+      "canonical_trajectory_frame": 518,
+      "file": "submaps/submap_0106.npz",
+      "fine_point_count": 103544,
+      "point_count": 45497,
+      "reference_session": 0,
+      "route_index": 106,
+      "submap_id": 106,
+      "trajectory_frame": 518,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 524,
+      "anchor_position_m": [
+        -24.566422469786104,
+        -19.28074652566822,
+        4.981028293866125
+      ],
+      "anchor_progress_fraction": 0.6639608366369831,
+      "anchor_progress_m": 213.91310225131224,
+      "anchor_quaternion_xyzw": [
+        -0.016045769976536128,
+        0.008186278293134801,
+        0.9756326847801478,
+        0.2186695737917103
+      ],
+      "canonical_anchor_frame": 524,
+      "canonical_trajectory_frame": 522,
+      "file": "submaps/submap_0107.npz",
+      "fine_point_count": 100951,
+      "point_count": 46324,
+      "reference_session": 0,
+      "route_index": 107,
+      "submap_id": 107,
+      "trajectory_frame": 522,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 528,
+      "anchor_position_m": [
+        -26.490561456137105,
+        -18.36952745098907,
+        4.954421875373798
+      ],
+      "anchor_progress_fraction": 0.6705715323387079,
+      "anchor_progress_m": 216.04291826991656,
+      "anchor_quaternion_xyzw": [
+        -0.006102329502961804,
+        0.0030667310100901952,
+        0.9727749484073722,
+        0.23165115256908062
+      ],
+      "canonical_anchor_frame": 528,
+      "canonical_trajectory_frame": 526,
+      "file": "submaps/submap_0108.npz",
+      "fine_point_count": 103416,
+      "point_count": 49508,
+      "reference_session": 0,
+      "route_index": 108,
+      "submap_id": 108,
+      "trajectory_frame": 526,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 532,
+      "anchor_position_m": [
+        -28.41357131234653,
+        -17.009101801265615,
+        4.933728789164014
+      ],
+      "anchor_progress_fraction": 0.6779020040182604,
+      "anchor_progress_m": 218.40462976163786,
+      "anchor_quaternion_xyzw": [
+        -0.018893047291991715,
+        -0.004543049760780933,
+        0.9466547339499481,
+        0.32166322163568334
+      ],
+      "canonical_anchor_frame": 532,
+      "canonical_trajectory_frame": 530,
+      "file": "submaps/submap_0109.npz",
+      "fine_point_count": 102245,
+      "point_count": 49383,
+      "reference_session": 0,
+      "route_index": 109,
+      "submap_id": 109,
+      "trajectory_frame": 530,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 535,
+      "anchor_position_m": [
+        -29.65711497408409,
+        -16.073409324437783,
+        4.921936979796304
+      ],
+      "anchor_progress_fraction": 0.6827328486133012,
+      "anchor_progress_m": 219.9610181761313,
+      "anchor_quaternion_xyzw": [
+        -0.0134846907484397,
+        -0.0037843219374149163,
+        0.9539656395787725,
+        0.2995887189564331
+      ],
+      "canonical_anchor_frame": 535,
+      "canonical_trajectory_frame": 533,
+      "file": "submaps/submap_0110.npz",
+      "fine_point_count": 98898,
+      "point_count": 44378,
+      "reference_session": 0,
+      "route_index": 110,
+      "submap_id": 110,
+      "trajectory_frame": 533,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 539,
+      "anchor_position_m": [
+        -31.260594254347705,
+        -14.60316329071563,
+        4.872326262026372
+      ],
+      "anchor_progress_fraction": 0.6895202828293279,
+      "anchor_progress_m": 222.14777533010903,
+      "anchor_quaternion_xyzw": [
+        -0.008969587925900859,
+        0.024537420719540282,
+        0.8872850137355386,
+        0.46048101576199274
+      ],
+      "canonical_anchor_frame": 539,
+      "canonical_trajectory_frame": 537,
+      "file": "submaps/submap_0111.npz",
+      "fine_point_count": 94359,
+      "point_count": 41511,
+      "reference_session": 0,
+      "route_index": 111,
+      "submap_id": 111,
+      "trajectory_frame": 537,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 543,
+      "anchor_position_m": [
+        -32.43529287628308,
+        -13.359864462550137,
+        4.849425463990738
+      ],
+      "anchor_progress_fraction": 0.6948381490313086,
+      "anchor_progress_m": 223.8610710455385,
+      "anchor_quaternion_xyzw": [
+        -0.01931783900453532,
+        0.001900892517593276,
+        0.9301609153769014,
+        0.3666386220913397
+      ],
+      "canonical_anchor_frame": 543,
+      "canonical_trajectory_frame": 541,
+      "file": "submaps/submap_0112.npz",
+      "fine_point_count": 88068,
+      "point_count": 35634,
+      "reference_session": 0,
+      "route_index": 112,
+      "submap_id": 112,
+      "trajectory_frame": 541,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 547,
+      "anchor_position_m": [
+        -33.851896394329,
+        -12.088820651600903,
+        4.819653519939697
+      ],
+      "anchor_progress_fraction": 0.7007471476245066,
+      "anchor_progress_m": 225.76481619212268,
+      "anchor_quaternion_xyzw": [
+        -0.019875304983483773,
+        0.013195861174518849,
+        0.940434252868564,
+        0.33913752008768105
+      ],
+      "canonical_anchor_frame": 547,
+      "canonical_trajectory_frame": 545,
+      "file": "submaps/submap_0113.npz",
+      "fine_point_count": 87538,
+      "point_count": 32597,
+      "reference_session": 0,
+      "route_index": 113,
+      "submap_id": 113,
+      "trajectory_frame": 545,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 551,
+      "anchor_position_m": [
+        -35.18360043078889,
+        -10.396244788901047,
+        4.771693613274727
+      ],
+      "anchor_progress_fraction": 0.7074526369153382,
+      "anchor_progress_m": 227.92517255226593,
+      "anchor_quaternion_xyzw": [
+        -0.00572269708058067,
+        0.024115608245602896,
+        0.873219883736908,
+        0.4866957189287465
+      ],
+      "canonical_anchor_frame": 551,
+      "canonical_trajectory_frame": 549,
+      "file": "submaps/submap_0114.npz",
+      "fine_point_count": 89469,
+      "point_count": 36080,
+      "reference_session": 0,
+      "route_index": 114,
+      "submap_id": 114,
+      "trajectory_frame": 549,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 555,
+      "anchor_position_m": [
+        -36.1314331373295,
+        -8.847231408383283,
+        4.7358575102223694
+      ],
+      "anchor_progress_fraction": 0.7130941878148456,
+      "anchor_progress_m": 229.74275212598724,
+      "anchor_quaternion_xyzw": [
+        -0.01867581317446301,
+        0.01365765218773144,
+        0.8774834217925411,
+        0.4790485643629933
+      ],
+      "canonical_anchor_frame": 555,
+      "canonical_trajectory_frame": 553,
+      "file": "submaps/submap_0115.npz",
+      "fine_point_count": 83783,
+      "point_count": 32355,
+      "reference_session": 0,
+      "route_index": 115,
+      "submap_id": 115,
+      "trajectory_frame": 553,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 559,
+      "anchor_position_m": [
+        -37.38133115833593,
+        -7.095713324760036,
+        4.691495779391394
+      ],
+      "anchor_progress_fraction": 0.7197795094926298,
+      "anchor_progress_m": 231.8966109392363,
+      "anchor_quaternion_xyzw": [
+        -0.0012552960072634363,
+        0.030069863968853465,
+        0.8613443678302914,
+        0.5071292808740827
+      ],
+      "canonical_anchor_frame": 559,
+      "canonical_trajectory_frame": 557,
+      "file": "submaps/submap_0116.npz",
+      "fine_point_count": 81165,
+      "point_count": 30973,
+      "reference_session": 0,
+      "route_index": 116,
+      "submap_id": 116,
+      "trajectory_frame": 557,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 563,
+      "anchor_position_m": [
+        -38.38251232437333,
+        -5.200877643397382,
+        4.657865623488037
+      ],
+      "anchor_progress_fraction": 0.7264337596564574,
+      "anchor_progress_m": 234.04045921635824,
+      "anchor_quaternion_xyzw": [
+        -0.0018395820629958958,
+        0.024208363377833636,
+        0.8342609917177419,
+        0.5508349741787735
+      ],
+      "canonical_anchor_frame": 563,
+      "canonical_trajectory_frame": 561,
+      "file": "submaps/submap_0117.npz",
+      "fine_point_count": 83041,
+      "point_count": 31461,
+      "reference_session": 0,
+      "route_index": 117,
+      "submap_id": 117,
+      "trajectory_frame": 561,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 567,
+      "anchor_position_m": [
+        -39.15400251419173,
+        -3.5786251777501183,
+        4.6270995619690325
+      ],
+      "anchor_progress_fraction": 0.7320115140447041,
+      "anchor_progress_m": 235.83748500304344,
+      "anchor_quaternion_xyzw": [
+        -0.013115955816737971,
+        0.011110285996538035,
+        0.8662202575518679,
+        0.4993665974560817
+      ],
+      "canonical_anchor_frame": 567,
+      "canonical_trajectory_frame": 565,
+      "file": "submaps/submap_0118.npz",
+      "fine_point_count": 87899,
+      "point_count": 33674,
+      "reference_session": 0,
+      "route_index": 118,
+      "submap_id": 118,
+      "trajectory_frame": 565,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 571,
+      "anchor_position_m": [
+        -40.020188118898176,
+        -1.818013079013957,
+        4.582468913737735
+      ],
+      "anchor_progress_fraction": 0.7381178955936983,
+      "anchor_progress_m": 237.80482245519156,
+      "anchor_quaternion_xyzw": [
+        -0.0029138435685207723,
+        0.02365533883302761,
+        0.8142871062110361,
+        0.579972795154057
+      ],
+      "canonical_anchor_frame": 571,
+      "canonical_trajectory_frame": 569,
+      "file": "submaps/submap_0119.npz",
+      "fine_point_count": 97363,
+      "point_count": 39340,
+      "reference_session": 0,
+      "route_index": 119,
+      "submap_id": 119,
+      "trajectory_frame": 569,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 574,
+      "anchor_position_m": [
+        -40.74652208588632,
+        0.018270854140018892,
+        4.54368309898713
+      ],
+      "anchor_progress_fraction": 0.7442526707598985,
+      "anchor_progress_m": 239.78130768595176,
+      "anchor_quaternion_xyzw": [
+        0.00044576359352048537,
+        0.02294123391165667,
+        0.8080049362658916,
+        0.5887287355407256
+      ],
+      "canonical_anchor_frame": 574,
+      "canonical_trajectory_frame": 572,
+      "file": "submaps/submap_0120.npz",
+      "fine_point_count": 97966,
+      "point_count": 39936,
+      "reference_session": 0,
+      "route_index": 120,
+      "submap_id": 120,
+      "trajectory_frame": 572,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 578,
+      "anchor_position_m": [
+        -41.189582710468585,
+        2.109244086284451,
+        4.4896178767969905
+      ],
+      "anchor_progress_fraction": 0.7508953488816151,
+      "anchor_progress_m": 241.92142771391994,
+      "anchor_quaternion_xyzw": [
+        -0.004851969134071904,
+        0.021997163346832334,
+        0.7746519440043654,
+        0.6319865100225417
+      ],
+      "canonical_anchor_frame": 578,
+      "canonical_trajectory_frame": 576,
+      "file": "submaps/submap_0121.npz",
+      "fine_point_count": 89994,
+      "point_count": 34518,
+      "reference_session": 0,
+      "route_index": 121,
+      "submap_id": 121,
+      "trajectory_frame": 576,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 581,
+      "anchor_position_m": [
+        -41.74767021646082,
+        3.982519720586376,
+        4.431856455545086
+      ],
+      "anchor_progress_fraction": 0.7569651739843252,
+      "anchor_progress_m": 243.87698750931415,
+      "anchor_quaternion_xyzw": [
+        -0.015539633484829578,
+        0.017222759484634923,
+        0.8071819717895725,
+        0.5898467265017154
+      ],
+      "canonical_anchor_frame": 581,
+      "canonical_trajectory_frame": 579,
+      "file": "submaps/submap_0122.npz",
+      "fine_point_count": 87632,
+      "point_count": 35375,
+      "reference_session": 0,
+      "route_index": 122,
+      "submap_id": 122,
+      "trajectory_frame": 579,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 585,
+      "anchor_position_m": [
+        -42.24932685594378,
+        5.901280771788787,
+        4.359079611102354
+      ],
+      "anchor_progress_fraction": 0.7631361921050932,
+      "anchor_progress_m": 245.86514939691702,
+      "anchor_quaternion_xyzw": [
+        -0.011297165476527447,
+        0.0250772955785827,
+        0.7488432650249992,
+        0.6621761606440987
+      ],
+      "canonical_anchor_frame": 585,
+      "canonical_trajectory_frame": 583,
+      "file": "submaps/submap_0123.npz",
+      "fine_point_count": 87493,
+      "point_count": 39114,
+      "reference_session": 0,
+      "route_index": 123,
+      "submap_id": 123,
+      "trajectory_frame": 583,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 589,
+      "anchor_position_m": [
+        -42.26986130734721,
+        8.200885067839542,
+        4.269535408259413
+      ],
+      "anchor_progress_fraction": 0.7703207906434436,
+      "anchor_progress_m": 248.1798638754896,
+      "anchor_quaternion_xyzw": [
+        -0.036249300469396714,
+        0.007498762790712048,
+        0.7023005099187073,
+        0.7109175413084219
+      ],
+      "canonical_anchor_frame": 589,
+      "canonical_trajectory_frame": 587,
+      "file": "submaps/submap_0124.npz",
+      "fine_point_count": 84326,
+      "point_count": 36844,
+      "reference_session": 0,
+      "route_index": 124,
+      "submap_id": 124,
+      "trajectory_frame": 587,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 592,
+      "anchor_position_m": [
+        -42.226571813481286,
+        9.790085334894204,
+        4.209241880302124
+      ],
+      "anchor_progress_fraction": 0.7752601484875505,
+      "anchor_progress_m": 249.7712127943716,
+      "anchor_quaternion_xyzw": [
+        -0.028471580712429286,
+        -0.0051913402028935084,
+        0.7131100719315183,
+        0.7004544556132526
+      ],
+      "canonical_anchor_frame": 592,
+      "canonical_trajectory_frame": 590,
+      "file": "submaps/submap_0125.npz",
+      "fine_point_count": 83173,
+      "point_count": 35428,
+      "reference_session": 0,
+      "route_index": 125,
+      "submap_id": 125,
+      "trajectory_frame": 590,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 596,
+      "anchor_position_m": [
+        -42.28963013676007,
+        12.183669706536586,
+        4.148429337345035
+      ],
+      "anchor_progress_fraction": 0.7826959911863917,
+      "anchor_progress_m": 252.16687243541085,
+      "anchor_quaternion_xyzw": [
+        -0.01981370082986563,
+        0.00692244372883704,
+        0.7160900741527395,
+        0.6976922693653482
+      ],
+      "canonical_anchor_frame": 596,
+      "canonical_trajectory_frame": 594,
+      "file": "submaps/submap_0126.npz",
+      "fine_point_count": 81995,
+      "point_count": 30357,
+      "reference_session": 0,
+      "route_index": 126,
+      "submap_id": 126,
+      "trajectory_frame": 594,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 600,
+      "anchor_position_m": [
+        -42.370640143129606,
+        14.329676819548862,
+        4.093592978413215
+      ],
+      "anchor_progress_fraction": 0.789366619042766,
+      "anchor_progress_m": 254.31599723311516,
+      "anchor_quaternion_xyzw": [
+        -0.019718327226611234,
+        0.003494420515487248,
+        0.7418469671056231,
+        0.6702701350894531
+      ],
+      "canonical_anchor_frame": 600,
+      "canonical_trajectory_frame": 598,
+      "file": "submaps/submap_0127.npz",
+      "fine_point_count": 87899,
+      "point_count": 34872,
+      "reference_session": 0,
+      "route_index": 127,
+      "submap_id": 127,
+      "trajectory_frame": 598,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 604,
+      "anchor_position_m": [
+        -42.27392431928837,
+        15.838292700650618,
+        4.048150721656182
+      ],
+      "anchor_progress_fraction": 0.7940711607706259,
+      "anchor_progress_m": 255.83169373228608,
+      "anchor_quaternion_xyzw": [
+        -0.012480657693617943,
+        0.01096969914408378,
+        0.6664612314923631,
+        0.745354496734209
+      ],
+      "canonical_anchor_frame": 604,
+      "canonical_trajectory_frame": 602,
+      "file": "submaps/submap_0128.npz",
+      "fine_point_count": 96983,
+      "point_count": 43836,
+      "reference_session": 0,
+      "route_index": 128,
+      "submap_id": 128,
+      "trajectory_frame": 602,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 608,
+      "anchor_position_m": [
+        -41.10237365361598,
+        17.598841708363814,
+        4.056721326807197
+      ],
+      "anchor_progress_fraction": 0.8009709070906794,
+      "anchor_progress_m": 258.0546352954444,
+      "anchor_quaternion_xyzw": [
+        -0.026159351081633097,
+        -0.013057574936971815,
+        0.4294817014313715,
+        0.9026021583307716
+      ],
+      "canonical_anchor_frame": 608,
+      "canonical_trajectory_frame": 606,
+      "file": "submaps/submap_0129.npz",
+      "fine_point_count": 91927,
+      "point_count": 38764,
+      "reference_session": 0,
+      "route_index": 129,
+      "submap_id": 129,
+      "trajectory_frame": 606,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 612,
+      "anchor_position_m": [
+        -39.67980324863262,
+        18.812193870424867,
+        4.057282408320647
+      ],
+      "anchor_progress_fraction": 0.8067758304334749,
+      "anchor_progress_m": 259.92484976001737,
+      "anchor_quaternion_xyzw": [
+        -0.006260676637831399,
+        0.0023478731312418957,
+        0.3829930678932057,
+        0.9237270166913744
+      ],
+      "canonical_anchor_frame": 612,
+      "canonical_trajectory_frame": 610,
+      "file": "submaps/submap_0130.npz",
+      "fine_point_count": 80577,
+      "point_count": 31898,
+      "reference_session": 0,
+      "route_index": 130,
+      "submap_id": 130,
+      "trajectory_frame": 610,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 617,
+      "anchor_position_m": [
+        -37.63141756665746,
+        19.545188057472696,
+        4.073214525214556
+      ],
+      "anchor_progress_fraction": 0.8137777368529453,
+      "anchor_progress_m": 262.18070498703463,
+      "anchor_quaternion_xyzw": [
+        0.0056829795542408254,
+        -0.026112830955649202,
+        -0.02006501290375905,
+        0.9994414535429474
+      ],
+      "canonical_anchor_frame": 617,
+      "canonical_trajectory_frame": 615,
+      "file": "submaps/submap_0131.npz",
+      "fine_point_count": 72949,
+      "point_count": 31576,
+      "reference_session": 0,
+      "route_index": 131,
+      "submap_id": 131,
+      "trajectory_frame": 615,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 623,
+      "anchor_position_m": [
+        -36.10885455538415,
+        18.359927043587934,
+        4.105676215455814
+      ],
+      "anchor_progress_fraction": 0.8197969324002649,
+      "anchor_progress_m": 264.1199530895374,
+      "anchor_quaternion_xyzw": [
+        -0.007556832199392997,
+        -0.01660332279587377,
+        -0.31066377829284303,
+        0.950344801014906
+      ],
+      "canonical_anchor_frame": 623,
+      "canonical_trajectory_frame": 621,
+      "file": "submaps/submap_0132.npz",
+      "fine_point_count": 70470,
+      "point_count": 30174,
+      "reference_session": 0,
+      "route_index": 132,
+      "submap_id": 132,
+      "trajectory_frame": 621,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 629,
+      "anchor_position_m": [
+        -34.71893867486818,
+        17.236187020553174,
+        3.8275442778377067
+      ],
+      "anchor_progress_fraction": 0.8255368107044598,
+      "anchor_progress_m": 265.96921151992075,
+      "anchor_quaternion_xyzw": [
+        0.09124798991781437,
+        0.20466632003436636,
+        -0.3203304424718261,
+        0.9204205068366049
+      ],
+      "canonical_anchor_frame": 629,
+      "canonical_trajectory_frame": 627,
+      "file": "submaps/submap_0133.npz",
+      "fine_point_count": 53568,
+      "point_count": 22755,
+      "reference_session": 0,
+      "route_index": 133,
+      "submap_id": 133,
+      "trajectory_frame": 627,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 635,
+      "anchor_position_m": [
+        -33.3802864245316,
+        15.826501441311088,
+        3.4056444048690797
+      ],
+      "anchor_progress_fraction": 0.8318352686855115,
+      "anchor_progress_m": 267.9984316362014,
+      "anchor_quaternion_xyzw": [
+        0.0031804357622289368,
+        -0.020696253698899717,
+        -0.41598149973743986,
+        0.909131971601144
+      ],
+      "canonical_anchor_frame": 635,
+      "canonical_trajectory_frame": 633,
+      "file": "submaps/submap_0134.npz",
+      "fine_point_count": 49464,
+      "point_count": 24319,
+      "reference_session": 0,
+      "route_index": 134,
+      "submap_id": 134,
+      "trajectory_frame": 633,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 640,
+      "anchor_position_m": [
+        -32.14749384792518,
+        14.126124925889803,
+        3.3959264121301453
+      ],
+      "anchor_progress_fraction": 0.8383615809610266,
+      "anchor_progress_m": 270.1010612313255,
+      "anchor_quaternion_xyzw": [
+        -0.002094168693544791,
+        -0.0015548605975258985,
+        -0.4335354755199609,
+        0.9011327251474595
+      ],
+      "canonical_anchor_frame": 640,
+      "canonical_trajectory_frame": 638,
+      "file": "submaps/submap_0135.npz",
+      "fine_point_count": 56406,
+      "point_count": 26364,
+      "reference_session": 0,
+      "route_index": 135,
+      "submap_id": 135,
+      "trajectory_frame": 638,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 645,
+      "anchor_position_m": [
+        -31.11809948372412,
+        12.86660860243335,
+        2.7462688562453246
+      ],
+      "anchor_progress_fraction": 0.843836697062053,
+      "anchor_progress_m": 271.86501929290165,
+      "anchor_quaternion_xyzw": [
+        0.09977167930771545,
+        0.17753195757981824,
+        -0.43456573417210026,
+        0.8773144468943045
+      ],
+      "canonical_anchor_frame": 645,
+      "canonical_trajectory_frame": 643,
+      "file": "submaps/submap_0136.npz",
+      "fine_point_count": 45216,
+      "point_count": 21257,
+      "reference_session": 0,
+      "route_index": 136,
+      "submap_id": 136,
+      "trajectory_frame": 643,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 651,
+      "anchor_position_m": [
+        -30.01567053003186,
+        11.182417199461,
+        2.5238111720598275
+      ],
+      "anchor_progress_fraction": 0.8503117856637663,
+      "anchor_progress_m": 273.95114578367526,
+      "anchor_quaternion_xyzw": [
+        0.0098799909427769,
+        -0.047870340023740035,
+        -0.488854078276867,
+        0.8709951242556166
+      ],
+      "canonical_anchor_frame": 651,
+      "canonical_trajectory_frame": 649,
+      "file": "submaps/submap_0137.npz",
+      "fine_point_count": 53022,
+      "point_count": 24244,
+      "reference_session": 0,
+      "route_index": 137,
+      "submap_id": 137,
+      "trajectory_frame": 649,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 656,
+      "anchor_position_m": [
+        -29.346016884535967,
+        9.244585287029341,
+        2.191404266854413
+      ],
+      "anchor_progress_fraction": 0.8570125168268291,
+      "anchor_progress_m": 276.10996918311395,
+      "anchor_quaternion_xyzw": [
+        0.1638130093822908,
+        0.13989353928894013,
+        -0.6668177943258239,
+        0.7134067036359936
+      ],
+      "canonical_anchor_frame": 656,
+      "canonical_trajectory_frame": 654,
+      "file": "submaps/submap_0138.npz",
+      "fine_point_count": 50808,
+      "point_count": 24683,
+      "reference_session": 0,
+      "route_index": 138,
+      "submap_id": 138,
+      "trajectory_frame": 654,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 661,
+      "anchor_position_m": [
+        -29.093635299634265,
+        7.5113002716075705,
+        1.6543511806068265
+      ],
+      "anchor_progress_fraction": 0.8628539000214803,
+      "anchor_progress_m": 277.9919301839097,
+      "anchor_quaternion_xyzw": [
+        -0.0010376389586414863,
+        -0.03247353415328414,
+        -0.6713665811360361,
+        0.7404129298024835
+      ],
+      "canonical_anchor_frame": 661,
+      "canonical_trajectory_frame": 659,
+      "file": "submaps/submap_0139.npz",
+      "fine_point_count": 56666,
+      "point_count": 26589,
+      "reference_session": 0,
+      "route_index": 139,
+      "submap_id": 139,
+      "trajectory_frame": 659,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 666,
+      "anchor_position_m": [
+        -28.929384763198765,
+        5.513014144847226,
+        1.7430092004810744
+      ],
+      "anchor_progress_fraction": 0.8691183161817175,
+      "anchor_progress_m": 280.01018279865275,
+      "anchor_quaternion_xyzw": [
+        0.0055059871845785195,
+        -0.04542144219936133,
+        -0.6960976322218059,
+        0.7164877271166957
+      ],
+      "canonical_anchor_frame": 666,
+      "canonical_trajectory_frame": 664,
+      "file": "submaps/submap_0140.npz",
+      "fine_point_count": 72252,
+      "point_count": 33896,
+      "reference_session": 0,
+      "route_index": 140,
+      "submap_id": 140,
+      "trajectory_frame": 664,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 672,
+      "anchor_position_m": [
+        -28.917327533293474,
+        3.748578952921368,
+        1.0102586443317716
+      ],
+      "anchor_progress_fraction": 0.8750873790134356,
+      "anchor_progress_m": 281.93327927876027,
+      "anchor_quaternion_xyzw": [
+        -0.19301100710216293,
+        -0.09608763422328029,
+        0.71562322634693,
+        -0.6643773894403635
+      ],
+      "canonical_anchor_frame": 672,
+      "canonical_trajectory_frame": 670,
+      "file": "submaps/submap_0141.npz",
+      "fine_point_count": 56400,
+      "point_count": 28300,
+      "reference_session": 0,
+      "route_index": 141,
+      "submap_id": 141,
+      "trajectory_frame": 670,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 677,
+      "anchor_position_m": [
+        -29.047996673953637,
+        1.705757469726895,
+        0.9112022375769515
+      ],
+      "anchor_progress_fraction": 0.8815420546016904,
+      "anchor_progress_m": 284.0128291602005,
+      "anchor_quaternion_xyzw": [
+        -0.003511011914128303,
+        0.04838383541400705,
+        0.7453809915275958,
+        -0.6648713068972876
+      ],
+      "canonical_anchor_frame": 677,
+      "canonical_trajectory_frame": 675,
+      "file": "submaps/submap_0142.npz",
+      "fine_point_count": 63219,
+      "point_count": 28746,
+      "reference_session": 0,
+      "route_index": 142,
+      "submap_id": 142,
+      "trajectory_frame": 675,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 682,
+      "anchor_position_m": [
+        -29.137988324506214,
+        -0.3452222671861051,
+        0.6025912701559161
+      ],
+      "anchor_progress_fraction": 0.8881745354574101,
+      "anchor_progress_m": 286.1496638606561,
+      "anchor_quaternion_xyzw": [
+        0.1461213800379301,
+        0.1546040861553704,
+        -0.6219549777459249,
+        0.7536034265427272
+      ],
+      "canonical_anchor_frame": 682,
+      "canonical_trajectory_frame": 680,
+      "file": "submaps/submap_0143.npz",
+      "fine_point_count": 61650,
+      "point_count": 29491,
+      "reference_session": 0,
+      "route_index": 143,
+      "submap_id": 143,
+      "trajectory_frame": 680,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 688,
+      "anchor_position_m": [
+        -28.91523417154328,
+        -1.8959244571180411,
+        0.11332880436046575
+      ],
+      "anchor_progress_fraction": 0.8934572787171621,
+      "anchor_progress_m": 287.8516437617818,
+      "anchor_quaternion_xyzw": [
+        -0.012947266674962274,
+        0.0026369147233309864,
+        -0.6464912328056062,
+        0.7628069879542773
+      ],
+      "canonical_anchor_frame": 688,
+      "canonical_trajectory_frame": 686,
+      "file": "submaps/submap_0144.npz",
+      "fine_point_count": 61665,
+      "point_count": 28508,
+      "reference_session": 0,
+      "route_index": 144,
+      "submap_id": 144,
+      "trajectory_frame": 686,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 694,
+      "anchor_position_m": [
+        -28.197951968619353,
+        -3.930321696913361,
+        0.19861417361098097
+      ],
+      "anchor_progress_fraction": 0.9002342278807715,
+      "anchor_progress_m": 290.0350228699983,
+      "anchor_quaternion_xyzw": [
+        -0.016157122209195598,
+        -0.0038457667188548372,
+        -0.42317555218342495,
+        0.905895473834876
+      ],
+      "canonical_anchor_frame": 694,
+      "canonical_trajectory_frame": 692,
+      "file": "submaps/submap_0145.npz",
+      "fine_point_count": 81827,
+      "point_count": 36581,
+      "reference_session": 0,
+      "route_index": 145,
+      "submap_id": 145,
+      "trajectory_frame": 692,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 700,
+      "anchor_position_m": [
+        -27.247177451083363,
+        -5.350425168637361,
+        -0.5005182068221403
+      ],
+      "anchor_progress_fraction": 0.906040942854557,
+      "anchor_progress_m": 291.90581455738624,
+      "anchor_quaternion_xyzw": [
+        0.08320811322421261,
+        0.16807435400573129,
+        -0.4891554251036362,
+        0.8517948059896254
+      ],
+      "canonical_anchor_frame": 700,
+      "canonical_trajectory_frame": 698,
+      "file": "submaps/submap_0146.npz",
+      "fine_point_count": 70610,
+      "point_count": 34382,
+      "reference_session": 0,
+      "route_index": 146,
+      "submap_id": 146,
+      "trajectory_frame": 698,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 706,
+      "anchor_position_m": [
+        -25.893853941423,
+        -6.903357539792438,
+        -0.5175871827023095
+      ],
+      "anchor_progress_fraction": 0.91248519020008,
+      "anchor_progress_m": 293.98200469585566,
+      "anchor_quaternion_xyzw": [
+        -0.0063645837984197175,
+        0.004167085685160314,
+        -0.3119957167603143,
+        0.9500530512519726
+      ],
+      "canonical_anchor_frame": 706,
+      "canonical_trajectory_frame": 704,
+      "file": "submaps/submap_0147.npz",
+      "fine_point_count": 74272,
+      "point_count": 32141,
+      "reference_session": 0,
+      "route_index": 147,
+      "submap_id": 147,
+      "trajectory_frame": 704,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 711,
+      "anchor_position_m": [
+        -24.27581532946886,
+        -7.918002303683927,
+        -0.48795425142814275
+      ],
+      "anchor_progress_fraction": 0.9184488654884164,
+      "anchor_progress_m": 295.9033654318429,
+      "anchor_quaternion_xyzw": [
+        -0.023195095009600306,
+        -0.00805161516143503,
+        -0.20511016899648202,
+        0.9784308752461883
+      ],
+      "canonical_anchor_frame": 711,
+      "canonical_trajectory_frame": 709,
+      "file": "submaps/submap_0148.npz",
+      "fine_point_count": 89507,
+      "point_count": 40001,
+      "reference_session": 0,
+      "route_index": 148,
+      "submap_id": 148,
+      "trajectory_frame": 709,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 716,
+      "anchor_position_m": [
+        -22.149711747121973,
+        -7.940017437377147,
+        -0.4204917324033285
+      ],
+      "anchor_progress_fraction": 0.9251276034408255,
+      "anchor_progress_m": 298.0551031183,
+      "anchor_quaternion_xyzw": [
+        -0.009890889268040437,
+        -0.012020195139106992,
+        0.11205244867732798,
+        0.9935803611000572
+      ],
+      "canonical_anchor_frame": 716,
+      "canonical_trajectory_frame": 714,
+      "file": "submaps/submap_0149.npz",
+      "fine_point_count": 92633,
+      "point_count": 36169,
+      "reference_session": 0,
+      "route_index": 149,
+      "submap_id": 149,
+      "trajectory_frame": 714,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 720,
+      "anchor_position_m": [
+        -20.211332563832865,
+        -7.517170838220066,
+        -0.3705906837154529
+      ],
+      "anchor_progress_fraction": 0.9312884974030281,
+      "anchor_progress_m": 300.04000323194435,
+      "anchor_quaternion_xyzw": [
+        -0.012897319677426156,
+        -0.008089882291857293,
+        0.10542484597570244,
+        0.994310723466584
+      ],
+      "canonical_anchor_frame": 720,
+      "canonical_trajectory_frame": 718,
+      "file": "submaps/submap_0150.npz",
+      "fine_point_count": 96394,
+      "point_count": 35486,
+      "reference_session": 0,
+      "route_index": 150,
+      "submap_id": 150,
+      "trajectory_frame": 718,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 723,
+      "anchor_position_m": [
+        -18.511482272603708,
+        -7.124638043732853,
+        -0.3133372795446474
+      ],
+      "anchor_progress_fraction": 0.9367082314259708,
+      "anchor_progress_m": 301.78611844575255,
+      "anchor_quaternion_xyzw": [
+        -0.008570541909986346,
+        -0.010156027987647774,
+        0.1151774568493228,
+        0.9932560366494662
+      ],
+      "canonical_anchor_frame": 723,
+      "canonical_trajectory_frame": 721,
+      "file": "submaps/submap_0151.npz",
+      "fine_point_count": 99367,
+      "point_count": 35454,
+      "reference_session": 0,
+      "route_index": 151,
+      "submap_id": 151,
+      "trajectory_frame": 721,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 728,
+      "anchor_position_m": [
+        -16.253712804560124,
+        -6.60199338149013,
+        -0.2484198481315065
+      ],
+      "anchor_progress_fraction": 0.9439055453964061,
+      "anchor_progress_m": 304.10492954776083,
+      "anchor_quaternion_xyzw": [
+        -0.011052879881133616,
+        -0.009806419371013559,
+        0.12352054992774318,
+        0.9922319999531365
+      ],
+      "canonical_anchor_frame": 728,
+      "canonical_trajectory_frame": 726,
+      "file": "submaps/submap_0152.npz",
+      "fine_point_count": 102620,
+      "point_count": 35882,
+      "reference_session": 0,
+      "route_index": 152,
+      "submap_id": 152,
+      "trajectory_frame": 726,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 732,
+      "anchor_position_m": [
+        -14.402253779603996,
+        -6.125440611278302,
+        -0.19618060141549384
+      ],
+      "anchor_progress_fraction": 0.9498459256226932,
+      "anchor_progress_m": 306.0187851438134,
+      "anchor_quaternion_xyzw": [
+        -0.010487782297890755,
+        -0.013041651092555565,
+        0.13420507706311385,
+        0.990812252169772
+      ],
+      "canonical_anchor_frame": 732,
+      "canonical_trajectory_frame": 730,
+      "file": "submaps/submap_0153.npz",
+      "fine_point_count": 104337,
+      "point_count": 38312,
+      "reference_session": 0,
+      "route_index": 153,
+      "submap_id": 153,
+      "trajectory_frame": 730,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 736,
+      "anchor_position_m": [
+        -12.640813614394268,
+        -5.639670243801866,
+        -0.1444384302156857
+      ],
+      "anchor_progress_fraction": 0.9555207138849342,
+      "anchor_progress_m": 307.84707304094877,
+      "anchor_quaternion_xyzw": [
+        -0.009299083266823795,
+        -0.007112632907967445,
+        0.13686201986366636,
+        0.9905209361857782
+      ],
+      "canonical_anchor_frame": 736,
+      "canonical_trajectory_frame": 734,
+      "file": "submaps/submap_0154.npz",
+      "fine_point_count": 92560,
+      "point_count": 34447,
+      "reference_session": 0,
+      "route_index": 154,
+      "submap_id": 154,
+      "trajectory_frame": 734,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 741,
+      "anchor_position_m": [
+        -10.52639315309818,
+        -4.963442372926904,
+        -0.07220309408295073
+      ],
+      "anchor_progress_fraction": 0.9624160142558003,
+      "anchor_progress_m": 310.0685822202515,
+      "anchor_quaternion_xyzw": [
+        -0.024779170344505393,
+        -0.010266905153016698,
+        0.17677181507982093,
+        0.9838863291910314
+      ],
+      "canonical_anchor_frame": 741,
+      "canonical_trajectory_frame": 739,
+      "file": "submaps/submap_0155.npz",
+      "fine_point_count": 70612,
+      "point_count": 31025,
+      "reference_session": 0,
+      "route_index": 155,
+      "submap_id": 155,
+      "trajectory_frame": 739,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 748,
+      "anchor_position_m": [
+        -8.811404581219705,
+        -4.203530577878189,
+        -0.031574782538136295
+      ],
+      "anchor_progress_fraction": 0.9682439503223077,
+      "anchor_progress_m": 311.9462108617591,
+      "anchor_quaternion_xyzw": [
+        -0.03268254890792387,
+        -0.020475418939887097,
+        0.2703795410315729,
+        0.9619810351600874
+      ],
+      "canonical_anchor_frame": 748,
+      "canonical_trajectory_frame": 746,
+      "file": "submaps/submap_0156.npz",
+      "fine_point_count": 94031,
+      "point_count": 45321,
+      "reference_session": 0,
+      "route_index": 156,
+      "submap_id": 156,
+      "trajectory_frame": 746,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 752,
+      "anchor_position_m": [
+        -7.182589078847361,
+        -3.0496097951683834,
+        0.0087469295099317
+      ],
+      "anchor_progress_fraction": 0.9744482492344906,
+      "anchor_progress_m": 313.9450950645108,
+      "anchor_quaternion_xyzw": [
+        0.01038044597487749,
+        -0.00951557246822559,
+        0.23440411549725398,
+        0.9720372476710524
+      ],
+      "canonical_anchor_frame": 752,
+      "canonical_trajectory_frame": 750,
+      "file": "submaps/submap_0157.npz",
+      "fine_point_count": 112759,
+      "point_count": 56678,
+      "reference_session": 0,
+      "route_index": 157,
+      "submap_id": 157,
+      "trajectory_frame": 750,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 757,
+      "anchor_position_m": [
+        -5.267909949953544,
+        -2.029230830316697,
+        0.0626631459842823
+      ],
+      "anchor_progress_fraction": 0.9811871741968107,
+      "anchor_progress_m": 316.1162236386451,
+      "anchor_quaternion_xyzw": [
+        0.01361717773956999,
+        -0.008339770458354493,
+        0.18930341897380887,
+        0.9817887941222071
+      ],
+      "canonical_anchor_frame": 757,
+      "canonical_trajectory_frame": 755,
+      "file": "submaps/submap_0158.npz",
+      "fine_point_count": 116365,
+      "point_count": 50577,
+      "reference_session": 0,
+      "route_index": 158,
+      "submap_id": 158,
+      "trajectory_frame": 755,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 762,
+      "anchor_position_m": [
+        -3.3631349263496233,
+        -1.3228599016579257,
+        0.14550390455076154
+      ],
+      "anchor_progress_fraction": 0.9875001023232169,
+      "anchor_progress_m": 318.1501057071254,
+      "anchor_quaternion_xyzw": [
+        0.005672441613469202,
+        -0.010405038985003652,
+        0.17997166927935082,
+        0.9836004050561723
+      ],
+      "canonical_anchor_frame": 762,
+      "canonical_trajectory_frame": 760,
+      "file": "submaps/submap_0159.npz",
+      "fine_point_count": 108073,
+      "point_count": 39827,
+      "reference_session": 0,
+      "route_index": 159,
+      "submap_id": 159,
+      "trajectory_frame": 760,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 766,
+      "anchor_position_m": [
+        -1.657370908272226,
+        -0.7358819342856898,
+        0.17940300311172352
+      ],
+      "anchor_progress_fraction": 0.9931050839804866,
+      "anchor_progress_m": 319.95590350152725,
+      "anchor_quaternion_xyzw": [
+        0.001570244337925408,
+        -0.008579018341929315,
+        0.16617990649356437,
+        0.9860568814499487
+      ],
+      "canonical_anchor_frame": 766,
+      "canonical_trajectory_frame": 764,
+      "file": "submaps/submap_0160.npz",
+      "fine_point_count": 114632,
+      "point_count": 45681,
+      "reference_session": 0,
+      "route_index": 160,
+      "submap_id": 160,
+      "trajectory_frame": 764,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 773,
+      "anchor_position_m": [
+        0.17736839710692576,
+        0.0794854914376431,
+        0.011353561711060797
+      ],
+      "anchor_progress_fraction": 0.9994105326801628,
+      "anchor_progress_m": 321.98737586858147,
+      "anchor_quaternion_xyzw": [
+        0.0034773558326160994,
+        -0.005448367758314985,
+        0.23198966515745317,
+        0.972696776259342
+      ],
+      "canonical_anchor_frame": 773,
+      "canonical_trajectory_frame": 771,
+      "file": "submaps/submap_0161.npz",
+      "fine_point_count": 102320,
+      "point_count": 41979,
+      "reference_session": 0,
+      "route_index": 161,
+      "submap_id": 161,
+      "trajectory_frame": 771,
+      "variant_index": 0
+    },
+    {
+      "anchor_frame": 780,
+      "anchor_position_m": [
+        0.08188961809361937,
+        0.058048640146742866,
+        0.02222486077816347
+      ],
+      "anchor_progress_fraction": 1,
+      "anchor_progress_m": 322.1772888515532,
+      "anchor_quaternion_xyzw": [
+        -0.0005094718207912154,
+        -0.008644319522594377,
+        0.2781573771459252,
+        0.9604964808461062
+      ],
+      "canonical_anchor_frame": 780,
+      "canonical_trajectory_frame": 778,
+      "file": "submaps/submap_0162.npz",
+      "fine_point_count": 50887,
+      "point_count": 19738,
+      "reference_session": 0,
+      "route_index": 162,
+      "submap_id": 162,
+      "trajectory_frame": 778,
+      "variant_index": 0
+    }
+  ],
+  "trajectory_alignments": [
+    {
+      "first_keyframe_index": 2,
+      "last_keyframe_index": 780,
+      "maximum_timestamp_error_s": 0,
+      "pose_count": 779,
+      "skipped_keyframes_end": 1,
+      "skipped_keyframes_start": 2,
+      "source": "/home/syh/path3_aab_qualification_20260916/a2_a1_multilap_refine_v1/refined_route_trajectory.npz",
+      "source_format": "npz_homogeneous_poses"
+    }
+  ],
+  "trajectory_pose_diagnostics": {
+    "pose_mode": "lio",
+    "prepared_roll_pitch_p95_deg": [
+      4.874589878570921,
+      20.96854931325586
+    ],
+    "raw_roll_pitch_p95_deg": [
+      4.874589878570921,
+      20.96854931325586
+    ]
+  },
+  "frozen_evidence_dir": "evidence"
+}

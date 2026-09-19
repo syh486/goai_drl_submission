@@ -1,0 +1,1007 @@
+{
+  "checkpoint": "/home/syh/goai_embodied_future_material/checkpoints/navigation/sru_deploy_model_2750.pt",
+  "checkpoint_iteration": 2750,
+  "map": {
+    "terrain_profile": "stage5_lower_density_stairs",
+    "terrain_seed": 123,
+    "surface_seed": 124,
+    "row": 0,
+    "col": 0,
+    "type": "stairs",
+    "difficulty": 0.5269105094011113
+  },
+  "route_seed": 20260912,
+  "target_world_m": [
+    [
+      17.400000000000002,
+      9.5,
+      0.0
+    ],
+    [
+      15.600000000000001,
+      5.5,
+      0.0
+    ],
+    [
+      17.5,
+      8.3,
+      0.0
+    ],
+    [
+      15.700000000000001,
+      12.5,
+      0.0
+    ],
+    [
+      16.6,
+      15.200000000000001,
+      0.0
+    ],
+    [
+      19.400000000000002,
+      14.5,
+      0.0
+    ],
+    [
+      24.3,
+      14.600000000000001,
+      0.0
+    ],
+    [
+      28.700000000000003,
+      14.100000000000001,
+      0.0
+    ],
+    [
+      24.3,
+      12.700000000000001,
+      0.0
+    ],
+    [
+      25.700000000000003,
+      16.0,
+      0.0
+    ]
+  ],
+  "collection_passes": [
+    {
+      "pass": 1,
+      "requested_start_perturbation": {
+        "x_m": 0.18,
+        "y_m": -0.12,
+        "yaw_deg": 2.0
+      },
+      "alignment": {
+        "estimated_yaw_deg": 2.0455828498050153,
+        "truth_yaw_deg": 2.0000000000000138,
+        "yaw_error_deg": 0.04558284980501526,
+        "estimated_translation_m": [
+          0.17092094546602543,
+          -0.10650002814546282,
+          3.958410273281499e-06
+        ],
+        "truth_translation_m": [
+          0.17999999999999902,
+          -0.11999999999999938,
+          -2.2067294881673825e-16
+        ],
+        "translation_error_m": 0.016268942404875548,
+        "rmse_m": 0.05869162040853837,
+        "overlap": 0.6997142857142857
+      },
+      "collected": 10,
+      "success": true,
+      "failure": null,
+      "route_file": "/home/syh/goai_embodied_future_material/training/evidence/start_anchor_route_sim_model2750_final/collection_pass_1.yaml",
+      "records": [
+        {
+          "target_index": 0,
+          "travel_steps": 29,
+          "hold_steps": 6,
+          "recorded_route_m": [
+            4.9193,
+            0.1356,
+            -0.041
+          ],
+          "truth_stop_route_m": [
+            4.9329594673034824,
+            0.12367561106551633,
+            -0.04518219147934155
+          ],
+          "intended_target_route_m": [
+            5.108815909777922,
+            -7.479910523841805e-16,
+            -0.04195580000000032
+          ],
+          "localization_error_m": 0.018608138650752403,
+          "target_stop_error_xy_m": 0.2149910350042415
+        },
+        {
+          "target_index": 1,
+          "travel_steps": 16,
+          "hold_steps": 7,
+          "recorded_route_m": [
+            9.1896,
+            1.1842,
+            -0.0408
+          ],
+          "truth_stop_route_m": [
+            9.196914277880104,
+            1.169777125351949,
+            -0.04187100617759633
+          ],
+          "intended_target_route_m": [
+            9.325057085893494,
+            1.2096736522002882,
+            -0.041955800000000334
+          ],
+          "localization_error_m": 0.01620694382828585,
+          "target_stop_error_xy_m": 0.13420995529436988
+        },
+        {
+          "target_index": 2,
+          "travel_steps": 34,
+          "hold_steps": 7,
+          "recorded_route_m": [
+            6.0714,
+            0.4166,
+            -0.0411
+          ],
+          "truth_stop_route_m": [
+            6.087030308517834,
+            0.40265353124014247,
+            -0.04625738599332075
+          ],
+          "intended_target_route_m": [
+            5.960285228074244,
+            0.8514693182963174,
+            -0.04195580000000033
+          ],
+          "localization_error_m": 0.021573343864975225,
+          "target_stop_error_xy_m": 0.46636887345480715
+        },
+        {
+          "target_index": 3,
+          "travel_steps": 18,
+          "hold_steps": 8,
+          "recorded_route_m": [
+            3.6929,
+            -3.0978,
+            -0.0402
+          ],
+          "truth_stop_route_m": [
+            3.707045728727238,
+            -3.1017483447037493,
+            -0.03673222846981957
+          ],
+          "intended_target_route_m": [
+            3.9167588641630746,
+            -3.2355834095260185,
+            -0.041955800000000286
+          ],
+          "localization_error_m": 0.015090278543147151,
+          "target_stop_error_xy_m": 0.24877987006651192
+        },
+        {
+          "target_index": 4,
+          "travel_steps": 22,
+          "hold_steps": 7,
+          "recorded_route_m": [
+            1.3579,
+            -4.5738,
+            -0.0417
+          ],
+          "truth_stop_route_m": [
+            1.3757958749046812,
+            -4.5899172070057634,
+            -0.04357258042628048
+          ],
+          "intended_target_route_m": [
+            1.2742678763469069,
+            -4.292579804652485,
+            -0.04195580000000027
+          ],
+          "localization_error_m": 0.024156433050504484,
+          "target_stop_error_xy_m": 0.31419335659644815
+        },
+        {
+          "target_index": 5,
+          "travel_steps": 12,
+          "hold_steps": 6,
+          "recorded_route_m": [
+            0.0041,
+            -1.8326,
+            -0.0395
+          ],
+          "truth_stop_route_m": [
+            0.022140794031700977,
+            -1.8526043089917452,
+            -0.04022592720471078
+          ],
+          "intended_target_route_m": [
+            6.597873484427605e-16,
+            -1.7029386365926409,
+            -0.0419558000000003
+          ],
+          "localization_error_m": 0.026947534169901616,
+          "target_stop_error_xy_m": 0.1512945083439257
+        },
+        {
+          "target_index": 6,
+          "travel_steps": 18,
+          "hold_steps": 6,
+          "recorded_route_m": [
+            -3.0957,
+            1.952,
+            -0.0387
+          ],
+          "truth_stop_route_m": [
+            -3.077588548264212,
+            1.9370667036977138,
+            -0.03870706456545494
+          ],
+          "intended_target_route_m": [
+            -3.2414556117211633,
+            1.9730599375694022,
+            -0.04195580000000034
+          ],
+          "localization_error_m": 0.0234739871418926,
+          "target_stop_error_xy_m": 0.1677734405993589
+        },
+        {
+          "target_index": 7,
+          "travel_steps": 17,
+          "hold_steps": 5,
+          "recorded_route_m": [
+            -5.6528,
+            5.3351,
+            -0.0391
+          ],
+          "truth_stop_route_m": [
+            -5.632251928703488,
+            5.3217427180477195,
+            -0.04380344022505773
+          ],
+          "intended_target_route_m": [
+            -5.701908331487773,
+            5.654930713926596,
+            -0.04195580000000038
+          ],
+          "localization_error_m": 0.02495521118143389,
+          "target_stop_error_xy_m": 0.34039132633871416
+        },
+        {
+          "target_index": 8,
+          "travel_steps": 29,
+          "hold_steps": 6,
+          "recorded_route_m": [
+            -1.7722,
+            3.4334,
+            -0.0405
+          ],
+          "truth_stop_route_m": [
+            -1.7558487639446636,
+            3.4223795450715735,
+            -0.044756068346970365
+          ],
+          "intended_target_route_m": [
+            -1.791021669519845,
+            3.200350196355133,
+            -0.041955800000000355
+          ],
+          "localization_error_m": 0.020172443211988262,
+          "target_stop_error_xy_m": 0.22479805376837103
+        },
+        {
+          "target_index": 9,
+          "travel_steps": 28,
+          "hold_steps": 6,
+          "recorded_route_m": [
+            -5.2677,
+            1.7012,
+            -0.0401
+          ],
+          "truth_stop_route_m": [
+            -5.2515789532500765,
+            1.6904623126646876,
+            -0.04710151970631473
+          ],
+          "intended_target_route_m": [
+            -5.214515549290568,
+            2.1374815990335216,
+            -0.04195580000000035
+          ],
+          "localization_error_m": 0.020596294710992284,
+          "target_stop_error_xy_m": 0.4485531610620611
+        }
+      ]
+    },
+    {
+      "pass": 2,
+      "requested_start_perturbation": {
+        "x_m": -0.22,
+        "y_m": 0.16,
+        "yaw_deg": -3.5
+      },
+      "alignment": {
+        "estimated_yaw_deg": -3.5036047601546754,
+        "truth_yaw_deg": -3.500000000000011,
+        "yaw_error_deg": -0.0036047601546727037,
+        "estimated_translation_m": [
+          -0.23702600585353456,
+          0.15665578051215953,
+          -1.2476864249075009e-05
+        ],
+        "truth_translation_m": [
+          -0.21999999999999917,
+          0.15999999999999914,
+          -2.238734797360887e-16
+        ],
+        "translation_error_m": 0.01735133525062579,
+        "rmse_m": 0.057481562929400994,
+        "overlap": 0.6994285714285714
+      },
+      "collected": 10,
+      "success": true,
+      "failure": null,
+      "route_file": "/home/syh/goai_embodied_future_material/training/evidence/start_anchor_route_sim_model2750_final/collection_pass_2.yaml",
+      "records": [
+        {
+          "target_index": 0,
+          "travel_steps": 30,
+          "hold_steps": 6,
+          "recorded_route_m": [
+            4.9309,
+            -0.0843,
+            -0.0404
+          ],
+          "truth_stop_route_m": [
+            4.949868339347854,
+            -0.07070990597312729,
+            -0.04243913068344546
+          ],
+          "intended_target_route_m": [
+            5.108815909777922,
+            -7.479910523841805e-16,
+            -0.04195580000000032
+          ],
+          "localization_error_m": 0.02342320659556998,
+          "target_stop_error_xy_m": 0.1739661488576149
+        },
+        {
+          "target_index": 1,
+          "travel_steps": 17,
+          "hold_steps": 7,
+          "recorded_route_m": [
+            9.3271,
+            1.2096,
+            -0.0398
+          ],
+          "truth_stop_route_m": [
+            9.335559331709097,
+            1.218539370249807,
+            -0.039487822765346306
+          ],
+          "intended_target_route_m": [
+            9.325057085893494,
+            1.2096736522002882,
+            -0.041955800000000334
+          ],
+          "localization_error_m": 0.012311380428429549,
+          "target_stop_error_xy_m": 0.013744021380400996
+        },
+        {
+          "target_index": 2,
+          "travel_steps": 35,
+          "hold_steps": 6,
+          "recorded_route_m": [
+            6.0492,
+            0.4477,
+            -0.0404
+          ],
+          "truth_stop_route_m": [
+            6.070363163646465,
+            0.4578204837552857,
+            -0.04536421001539415
+          ],
+          "intended_target_route_m": [
+            5.960285228074244,
+            0.8514693182963174,
+            -0.04195580000000033
+          ],
+          "localization_error_m": 0.02397805388360353,
+          "target_stop_error_xy_m": 0.4087499930707701
+        },
+        {
+          "target_index": 3,
+          "travel_steps": 18,
+          "hold_steps": 7,
+          "recorded_route_m": [
+            3.6197,
+            -3.289,
+            -0.039
+          ],
+          "truth_stop_route_m": [
+            3.6425340373353423,
+            -3.2708147823490674,
+            -0.03652121060435395
+          ],
+          "intended_target_route_m": [
+            3.9167588641630746,
+            -3.2355834095260185,
+            -0.041955800000000286
+          ],
+          "localization_error_m": 0.029295730045717807,
+          "target_stop_error_xy_m": 0.27647876099204516
+        },
+        {
+          "target_index": 4,
+          "travel_steps": 26,
+          "hold_steps": 6,
+          "recorded_route_m": [
+            1.3266,
+            -4.707,
+            -0.0402
+          ],
+          "truth_stop_route_m": [
+            1.3566038573934507,
+            -4.702636289104678,
+            -0.042836041960998106
+          ],
+          "intended_target_route_m": [
+            1.2742678763469069,
+            -4.292579804652485,
+            -0.04195580000000027
+          ],
+          "localization_error_m": 0.030433898016596864,
+          "target_stop_error_xy_m": 0.4182410001616155
+        },
+        {
+          "target_index": 5,
+          "travel_steps": 12,
+          "hold_steps": 6,
+          "recorded_route_m": [
+            0.0118,
+            -1.8455,
+            -0.0391
+          ],
+          "truth_stop_route_m": [
+            0.03729191823485974,
+            -1.8470991304342363,
+            -0.04090952891572356
+          ],
+          "intended_target_route_m": [
+            6.597873484427605e-16,
+            -1.7029386365926409,
+            -0.0419558000000003
+          ],
+          "localization_error_m": 0.025606044371111202,
+          "target_stop_error_xy_m": 0.1489057928701503
+        },
+        {
+          "target_index": 6,
+          "travel_steps": 18,
+          "hold_steps": 6,
+          "recorded_route_m": [
+            -3.085,
+            1.9613,
+            -0.0398
+          ],
+          "truth_stop_route_m": [
+            -3.06106674464773,
+            1.956059811589671,
+            -0.03827912007109182
+          ],
+          "intended_target_route_m": [
+            -3.2414556117211633,
+            1.9730599375694022,
+            -0.04195580000000034
+          ],
+          "localization_error_m": 0.02454736975911802,
+          "target_stop_error_xy_m": 0.18118815537270505
+        },
+        {
+          "target_index": 7,
+          "travel_steps": 17,
+          "hold_steps": 6,
+          "recorded_route_m": [
+            -5.7109,
+            5.2635,
+            -0.0414
+          ],
+          "truth_stop_route_m": [
+            -5.6912476703111405,
+            5.258694147194962,
+            -0.047409453853903445
+          ],
+          "intended_target_route_m": [
+            -5.701908331487773,
+            5.654930713926596,
+            -0.04195580000000038
+          ],
+          "localization_error_m": 0.021105066192871655,
+          "target_stop_error_xy_m": 0.3963799522074693
+        },
+        {
+          "target_index": 8,
+          "travel_steps": 30,
+          "hold_steps": 6,
+          "recorded_route_m": [
+            -1.8596,
+            3.321,
+            -0.0419
+          ],
+          "truth_stop_route_m": [
+            -1.8404713494371863,
+            3.3227249228001687,
+            -0.04392077474933207
+          ],
+          "intended_target_route_m": [
+            -1.791021669519845,
+            3.200350196355133,
+            -0.041955800000000355
+          ],
+          "localization_error_m": 0.01931228007274932,
+          "target_stop_error_xy_m": 0.13198804686949822
+        },
+        {
+          "target_index": 9,
+          "travel_steps": 55,
+          "hold_steps": 5,
+          "recorded_route_m": [
+            -5.5708,
+            1.8833,
+            -0.0414
+          ],
+          "truth_stop_route_m": [
+            -5.549442182003878,
+            1.8784159059522647,
+            -0.04446318939979279
+          ],
+          "intended_target_route_m": [
+            -5.214515549290568,
+            2.1374815990335216,
+            -0.04195580000000035
+          ],
+          "localization_error_m": 0.022122248835089495,
+          "target_stop_error_xy_m": 0.4234275411830791
+        }
+      ]
+    },
+    {
+      "pass": 3,
+      "requested_start_perturbation": {
+        "x_m": 0.12,
+        "y_m": 0.2,
+        "yaw_deg": 5.0
+      },
+      "alignment": {
+        "estimated_yaw_deg": 4.959709479696015,
+        "truth_yaw_deg": 4.999999999999998,
+        "yaw_error_deg": -0.04029052030398361,
+        "estimated_translation_m": [
+          0.11535955636276801,
+          0.19719869340476245,
+          2.841092618190935e-05
+        ],
+        "truth_translation_m": [
+          0.11999999999999877,
+          0.2000000000000003,
+          -2.2433069843885306e-16
+        ],
+        "translation_error_m": 0.0054205020958915775,
+        "rmse_m": 0.05606197014622199,
+        "overlap": 0.7
+      },
+      "collected": 10,
+      "success": true,
+      "failure": null,
+      "route_file": "/home/syh/goai_embodied_future_material/training/evidence/start_anchor_route_sim_model2750_final/collection_pass_3.yaml",
+      "records": [
+        {
+          "target_index": 0,
+          "travel_steps": 29,
+          "hold_steps": 6,
+          "recorded_route_m": [
+            4.9334,
+            0.0313,
+            -0.0406
+          ],
+          "truth_stop_route_m": [
+            4.928853688207162,
+            0.04073024895028711,
+            -0.040057069206345275
+          ],
+          "intended_target_route_m": [
+            5.108815909777922,
+            -7.479910523841805e-16,
+            -0.04195580000000032
+          ],
+          "localization_error_m": 0.010483001479957394,
+          "target_stop_error_xy_m": 0.18451383246856035
+        },
+        {
+          "target_index": 1,
+          "travel_steps": 17,
+          "hold_steps": 7,
+          "recorded_route_m": [
+            9.2933,
+            1.0827,
+            -0.0399
+          ],
+          "truth_stop_route_m": [
+            9.287345245022067,
+            1.089658195557699,
+            -0.041090387365399675
+          ],
+          "intended_target_route_m": [
+            9.325057085893494,
+            1.2096736522002882,
+            -0.041955800000000334
+          ],
+          "localization_error_m": 0.009235400064215329,
+          "target_stop_error_xy_m": 0.12580100466626287
+        },
+        {
+          "target_index": 2,
+          "travel_steps": 36,
+          "hold_steps": 7,
+          "recorded_route_m": [
+            6.1223,
+            0.4269,
+            -0.0406
+          ],
+          "truth_stop_route_m": [
+            6.125316505226188,
+            0.4336087927997953,
+            -0.04556044261313869
+          ],
+          "intended_target_route_m": [
+            5.960285228074244,
+            0.8514693182963174,
+            -0.04195580000000033
+          ],
+          "localization_error_m": 0.008872045735254365,
+          "target_stop_error_xy_m": 0.449269118910516
+        },
+        {
+          "target_index": 3,
+          "travel_steps": 16,
+          "hold_steps": 7,
+          "recorded_route_m": [
+            3.8361,
+            -3.0087,
+            -0.0398
+          ],
+          "truth_stop_route_m": [
+            3.839959903396696,
+            -2.9995433275440493,
+            -0.0392831295202359
+          ],
+          "intended_target_route_m": [
+            3.9167588641630746,
+            -3.2355834095260185,
+            -0.041955800000000286
+          ],
+          "localization_error_m": 0.009950410031262317,
+          "target_stop_error_xy_m": 0.24821966214796629
+        },
+        {
+          "target_index": 4,
+          "travel_steps": 13,
+          "hold_steps": 7,
+          "recorded_route_m": [
+            1.4888,
+            -4.453,
+            -0.0412
+          ],
+          "truth_stop_route_m": [
+            1.4963030964682273,
+            -4.449935951330338,
+            -0.04391560691331115
+          ],
+          "intended_target_route_m": [
+            1.2742678763469069,
+            -4.292579804652485,
+            -0.04195580000000027
+          ],
+          "localization_error_m": 0.008547477509137388,
+          "target_stop_error_xy_m": 0.27214076481046573
+        },
+        {
+          "target_index": 5,
+          "travel_steps": 15,
+          "hold_steps": 5,
+          "recorded_route_m": [
+            -0.1469,
+            -1.9986,
+            -0.0393
+          ],
+          "truth_stop_route_m": [
+            -0.14335984136386173,
+            -1.9995372905520459,
+            -0.040281255767237324
+          ],
+          "intended_target_route_m": [
+            6.597873484427605e-16,
+            -1.7029386365926409,
+            -0.0419558000000003
+          ],
+          "localization_error_m": 0.003791318982717685,
+          "target_stop_error_xy_m": 0.3294279976662619
+        },
+        {
+          "target_index": 6,
+          "travel_steps": 19,
+          "hold_steps": 6,
+          "recorded_route_m": [
+            -2.9323,
+            2.1615,
+            -0.0394
+          ],
+          "truth_stop_route_m": [
+            -2.9290224848494013,
+            2.158003931157222,
+            -0.0400525455882437
+          ],
+          "intended_target_route_m": [
+            -3.2414556117211633,
+            1.9730599375694022,
+            -0.04195580000000034
+          ],
+          "localization_error_m": 0.004836364198505567,
+          "target_stop_error_xy_m": 0.3630685052866442
+        },
+        {
+          "target_index": 7,
+          "travel_steps": 17,
+          "hold_steps": 6,
+          "recorded_route_m": [
+            -5.6808,
+            5.461,
+            -0.0399
+          ],
+          "truth_stop_route_m": [
+            -5.680922979385385,
+            5.460149423554634,
+            -0.045245725671309696
+          ],
+          "intended_target_route_m": [
+            -5.701908331487773,
+            5.654930713926596,
+            -0.04195580000000038
+          ],
+          "localization_error_m": 0.005414368584751189,
+          "target_stop_error_xy_m": 0.19590848904993302
+        },
+        {
+          "target_index": 8,
+          "travel_steps": 29,
+          "hold_steps": 6,
+          "recorded_route_m": [
+            -1.7589,
+            3.5386,
+            -0.0408
+          ],
+          "truth_stop_route_m": [
+            -1.7596009783842241,
+            3.5398740187600644,
+            -0.0450057392956109
+          ],
+          "intended_target_route_m": [
+            -1.791021669519845,
+            3.200350196355133,
+            -0.041955800000000355
+          ],
+          "localization_error_m": 0.004450026687424547,
+          "target_stop_error_xy_m": 0.3409746116823004
+        },
+        {
+          "target_index": 9,
+          "travel_steps": 42,
+          "hold_steps": 5,
+          "recorded_route_m": [
+            -5.3372,
+            1.8305,
+            -0.0404
+          ],
+          "truth_stop_route_m": [
+            -5.3344028755615795,
+            1.8271932611029396,
+            -0.044788570123204995
+          ],
+          "intended_target_route_m": [
+            -5.214515549290568,
+            2.1374815990335216,
+            -0.04195580000000035
+          ],
+          "localization_error_m": 0.006165871794290729,
+          "target_stop_error_xy_m": 0.332643688736364
+        }
+      ]
+    }
+  ],
+  "comparison": {
+    "fused_route_m": [
+      [
+        4.9309,
+        0.0313,
+        -0.0406
+      ],
+      [
+        9.2933,
+        1.1842,
+        -0.0399
+      ],
+      [
+        6.0714,
+        0.4269,
+        -0.0406
+      ],
+      [
+        3.6929,
+        -3.0978,
+        -0.0398
+      ],
+      [
+        1.3579,
+        -4.5738,
+        -0.0412
+      ],
+      [
+        0.0041,
+        -1.8455,
+        -0.0393
+      ],
+      [
+        -3.085,
+        1.9613,
+        -0.0394
+      ],
+      [
+        -5.6808,
+        5.3351,
+        -0.0399
+      ],
+      [
+        -1.7722,
+        3.4334,
+        -0.0408
+      ],
+      [
+        -5.3372,
+        1.8305,
+        -0.0404
+      ]
+    ],
+    "cross_pass_xy_deviation_m": {
+      "mean": 0.08727874410805654,
+      "p95": 0.22848737323015197,
+      "max": 0.2517882642221436
+    },
+    "collection_localization_error_m": {
+      "mean": 0.017188739054074923,
+      "p95": 0.028239041901600516,
+      "max": 0.030433898016596864
+    },
+    "ground_truth_stop_error_xy_m": {
+      "mean": 0.27087968896398107,
+      "p95": 0.4489469378787113,
+      "max": 0.46636887345480715
+    },
+    "per_waypoint_max_cross_pass_xy_m": [
+      0.11560000000000001,
+      0.1036999999999999,
+      0.05090000000000039,
+      0.20473319222832456,
+      0.1781220087468136,
+      0.21503629926131076,
+      0.2517882642221436,
+      0.12590000000000057,
+      0.1423815999348227,
+      0.23949279738647675
+    ]
+  },
+  "onboard_replay": {
+    "requested_start_perturbation": {
+      "x_m": 0.16,
+      "y_m": -0.18,
+      "yaw_deg": -4.0
+    },
+    "alignment": {
+      "estimated_yaw_deg": -4.032643242857139,
+      "truth_yaw_deg": -4.000000000000012,
+      "yaw_error_deg": -0.0326432428571195,
+      "estimated_translation_m": [
+        0.1577566869539754,
+        -0.18086806625164709,
+        -2.928500591971799e-05
+      ],
+      "truth_translation_m": [
+        0.16000000000000006,
+        -0.17999999999999883,
+        -2.1998712076259174e-16
+      ],
+      "translation_error_m": 0.002405587257051128,
+      "rmse_m": 0.05685274122924409,
+      "overlap": 0.7
+    },
+    "reached": 10,
+    "waypoints": 10,
+    "success": true,
+    "failure": null,
+    "records": [
+      {
+        "target_index": 0,
+        "steps": 27,
+        "estimated_reach_xy_m": 0.4782690812273803,
+        "truth_reach_xy_m": 0.4795098298307305,
+        "position_error_xy_m": 0.0076087406788340785
+      },
+      {
+        "target_index": 1,
+        "steps": 17,
+        "estimated_reach_xy_m": 0.32925694351777196,
+        "truth_reach_xy_m": 0.3317105330305531,
+        "position_error_xy_m": 0.01306381190504482
+      },
+      {
+        "target_index": 2,
+        "steps": 46,
+        "estimated_reach_xy_m": 0.49010605864587325,
+        "truth_reach_xy_m": 0.48038265652400935,
+        "position_error_xy_m": 0.010137990327105257
+      },
+      {
+        "target_index": 3,
+        "steps": 119,
+        "estimated_reach_xy_m": 0.32977025276763433,
+        "truth_reach_xy_m": 0.34070871443845735,
+        "position_error_xy_m": 0.011258485184978509
+      },
+      {
+        "target_index": 4,
+        "steps": 28,
+        "estimated_reach_xy_m": 0.43994341015531235,
+        "truth_reach_xy_m": 0.44493714839741016,
+        "position_error_xy_m": 0.0103541488632639
+      },
+      {
+        "target_index": 5,
+        "steps": 23,
+        "estimated_reach_xy_m": 0.4631005068074386,
+        "truth_reach_xy_m": 0.45659953728638203,
+        "position_error_xy_m": 0.007484833294219923
+      },
+      {
+        "target_index": 6,
+        "steps": 21,
+        "estimated_reach_xy_m": 0.44788345670760676,
+        "truth_reach_xy_m": 0.4514629371369437,
+        "position_error_xy_m": 0.008496932305169451
+      },
+      {
+        "target_index": 7,
+        "steps": 15,
+        "estimated_reach_xy_m": 0.44805115626229747,
+        "truth_reach_xy_m": 0.45700581944897906,
+        "position_error_xy_m": 0.009693024433483546
+      },
+      {
+        "target_index": 8,
+        "steps": 39,
+        "estimated_reach_xy_m": 0.4972011837487366,
+        "truth_reach_xy_m": 0.49413260402657044,
+        "position_error_xy_m": 0.003654737697421487
+      },
+      {
+        "target_index": 9,
+        "steps": 24,
+        "estimated_reach_xy_m": 0.46305186679176424,
+        "truth_reach_xy_m": 0.47223524499284836,
+        "position_error_xy_m": 0.009344937791942565
+      }
+    ]
+  },
+  "wall_seconds": 210.31505194099736
+}

@@ -1,0 +1,32 @@
+{
+  "comparison_name": "SRU-FPN baseline vs final Hybrid VQ-AE",
+  "protocol": {
+    "reconstruction_dataset": "final_12gb_2026-04-30_v2_worldz",
+    "reconstruction_split": "benchmark_500_balanced.json",
+    "probe_train_dataset": "lidar_benchmark3_dataset_v3",
+    "probe_test_dataset": "lidar_benchmark3_dataset_v2",
+    "probe_test_split": "benchmark3_1600_balanced.json",
+    "latent_shape_per_view": [32, 5, 8],
+    "note": "Both models use the same datasets, held-out splits, probe architectures and fused latent shape."
+  },
+  "baseline": {
+    "label": "SRU-FPN LiDAR baseline",
+    "model_name": "model1",
+    "source_dir": "/home/syh/lidar_project/outputs/废弃任务/train_model1_weighted",
+    "b5_terrain_parameter_nrmse": 0.18174023367464542,
+    "b6_traversability_rmse_m": 0.6942989826202393,
+    "reconstruction_l1_m": 0.20770328964293003,
+    "masked_obstacle_l1_m": 0.5440129612758756,
+    "latent_consistency_l1": 0.8086238580942154
+  },
+  "final": {
+    "label": "Hybrid VQ-AE (ours)",
+    "model_name": "model1_opt_hybrid_d2c_geo_late_additive_resgate",
+    "source_dir": "/home/syh/lidar_project/outputs/train_model1_opt_hybrid_d2c_geo_late_additive_resgate",
+    "b5_terrain_parameter_nrmse": 0.1623346721753478,
+    "b6_traversability_rmse_m": 0.5583564043045044,
+    "reconstruction_l1_m": 0.10073601689562202,
+    "masked_obstacle_l1_m": 0.35766802747175097,
+    "latent_consistency_l1": 0.14510202969610692
+  }
+}

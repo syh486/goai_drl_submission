@@ -1,0 +1,27 @@
+{
+  "format": "s10_mujoco_native_lidar_replay_v1",
+  "native_shape_per_view": [
+    96,
+    900
+  ],
+  "encoder_shape_per_view": [
+    96,
+    90
+  ],
+  "distance_input_scale_m": 10.0,
+  "world_z_input_scale_m": 3.0,
+  "horizontal_resolution_deg": 0.4,
+  "front_rear_mode": true,
+  "terrain_seeds": [
+    20260905,
+    20260906
+  ],
+  "num_envs": 128,
+  "stores": [
+    "front_raw_d",
+    "rear_raw_d",
+    "root_qpos",
+    "episode_id",
+    "terrain_tile"
+  ]
+}

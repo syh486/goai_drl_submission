@@ -1,0 +1,397 @@
+{
+  "schema_version": 1,
+  "route_file": "/home/syh/goai_embodied_future_material/training/evidence/start_anchor_route_sim_model2750_final/collection_pass_1.yaml",
+  "waypoint_count": 10,
+  "events": [
+    {
+      "event": "mark",
+      "index": 0,
+      "name": "waypoint_00",
+      "recorded_at": "2026-09-12T14:31:45Z",
+      "sensor_stamp_s": 6.600000000000003,
+      "position_base_median_m": [
+        4.919332799403957,
+        0.1355868817279171,
+        0.3790699902991394
+      ],
+      "position_terrain_m": [
+        4.919332799403957,
+        0.1355868817279171,
+        -0.040956372879571594
+      ],
+      "height_source": "local_lidar_support_plane",
+      "orientation_wxyz": [
+        0.9859771176944234,
+        -0.001133916718681143,
+        0.004501837613590256,
+        -0.1668159796721323
+      ],
+      "window": {
+        "duration_s": 1.0,
+        "samples": 5,
+        "healthy_fraction": 1.0,
+        "linear_speed_p95_mps": 0.047673398636556966,
+        "angular_speed_p95_rps": 0.09505345514603589,
+        "xy_spread_m": 0.01312719792369011,
+        "z_spread_m": 0.0026124944976828046,
+        "covariance_trace_median": 0.23270982826056036
+      },
+      "latest_diagnostics": {
+        "covariance_trace": 0.22285228160780127,
+        "icp_accepted": true,
+        "support_height_map_m": -0.040999559482854726
+      }
+    },
+    {
+      "event": "mark",
+      "index": 1,
+      "name": "waypoint_01",
+      "recorded_at": "2026-09-12T14:31:48Z",
+      "sensor_stamp_s": 11.099999999999993,
+      "position_base_median_m": [
+        9.189625585574294,
+        1.1841619963689665,
+        0.38288516844018217
+      ],
+      "position_terrain_m": [
+        9.189625585574294,
+        1.1841619963689665,
+        -0.040769810493987244
+      ],
+      "height_source": "local_lidar_support_plane",
+      "orientation_wxyz": [
+        0.9966841732734186,
+        -0.0028212826604484,
+        0.009726342684667263,
+        0.08073473458439258
+      ],
+      "window": {
+        "duration_s": 1.0,
+        "samples": 6,
+        "healthy_fraction": 1.0,
+        "linear_speed_p95_mps": 0.02386919834293265,
+        "angular_speed_p95_rps": 0.07105955570435554,
+        "xy_spread_m": 0.024867379214073077,
+        "z_spread_m": 0.002516405790592313,
+        "covariance_trace_median": 0.16336158453984423
+      },
+      "latest_diagnostics": {
+        "covariance_trace": 0.15759477514354,
+        "icp_accepted": true,
+        "support_height_map_m": -0.04075162678633288
+      }
+    },
+    {
+      "event": "mark",
+      "index": 2,
+      "name": "waypoint_02",
+      "recorded_at": "2026-09-12T14:31:54Z",
+      "sensor_stamp_s": 19.29999999999996,
+      "position_base_median_m": [
+        6.0713513393353,
+        0.4166281373449648,
+        0.37747267837063636
+      ],
+      "position_terrain_m": [
+        6.0713513393353,
+        0.4166281373449648,
+        -0.04109882631793171
+      ],
+      "height_source": "local_lidar_support_plane",
+      "orientation_wxyz": [
+        0.057283745220339854,
+        -3.797495151056626e-05,
+        -0.0015701727556848581,
+        0.9983567026113219
+      ],
+      "window": {
+        "duration_s": 1.0,
+        "samples": 6,
+        "healthy_fraction": 1.0,
+        "linear_speed_p95_mps": 0.01467010558954,
+        "angular_speed_p95_rps": 0.03612739096334463,
+        "xy_spread_m": 0.0021624742778010423,
+        "z_spread_m": 0.001098873453477367,
+        "covariance_trace_median": 0.11284301406850902
+      },
+      "latest_diagnostics": {
+        "covariance_trace": 0.11044908288280109,
+        "icp_accepted": true,
+        "support_height_map_m": -0.04112683814402234
+      }
+    },
+    {
+      "event": "mark",
+      "index": 3,
+      "name": "waypoint_03",
+      "recorded_at": "2026-09-12T14:31:59Z",
+      "sensor_stamp_s": 24.499999999999943,
+      "position_base_median_m": [
+        3.6929044311464247,
+        -3.097795493982937,
+        0.3882264900971807
+      ],
+      "position_terrain_m": [
+        3.6929044311464247,
+        -3.097795493982937,
+        -0.0402479218493771
+      ],
+      "height_source": "local_lidar_support_plane",
+      "orientation_wxyz": [
+        0.7769554914682474,
+        -0.0008555385552577955,
+        0.0021469638081302936,
+        -0.6295512869318283
+      ],
+      "window": {
+        "duration_s": 1.0,
+        "samples": 6,
+        "healthy_fraction": 1.0,
+        "linear_speed_p95_mps": 0.061064136317131174,
+        "angular_speed_p95_rps": 0.019902970675085382,
+        "xy_spread_m": 0.00757332226558673,
+        "z_spread_m": 0.00046238461990932844,
+        "covariance_trace_median": 0.09551108904130573
+      },
+      "latest_diagnostics": {
+        "covariance_trace": 0.09390751287216959,
+        "icp_accepted": true,
+        "support_height_map_m": -0.04029711189563381
+      }
+    },
+    {
+      "event": "mark",
+      "index": 4,
+      "name": "waypoint_04",
+      "recorded_at": "2026-09-12T14:32:03Z",
+      "sensor_stamp_s": 30.299999999999926,
+      "position_base_median_m": [
+        1.3578736396972386,
+        -4.573787906830155,
+        0.3798918552449462
+      ],
+      "position_terrain_m": [
+        1.3578736396972386,
+        -4.573787906830155,
+        -0.0416859024333713
+      ],
+      "height_source": "local_lidar_support_plane",
+      "orientation_wxyz": [
+        0.27250716539277003,
+        -0.006814691490053863,
+        -0.00020680906139363827,
+        0.9621295973097933
+      ],
+      "window": {
+        "duration_s": 1.0,
+        "samples": 6,
+        "healthy_fraction": 1.0,
+        "linear_speed_p95_mps": 0.023676361873724176,
+        "angular_speed_p95_rps": 0.09219218392177306,
+        "xy_spread_m": 0.01603112909901584,
+        "z_spread_m": 0.0026451564574364594,
+        "covariance_trace_median": 0.08385131317881961
+      },
+      "latest_diagnostics": {
+        "covariance_trace": 0.0828467969357468,
+        "icp_accepted": true,
+        "support_height_map_m": -0.04166256737814103
+      }
+    },
+    {
+      "event": "mark",
+      "index": 5,
+      "name": "waypoint_05",
+      "recorded_at": "2026-09-12T14:32:07Z",
+      "sensor_stamp_s": 33.99999999999994,
+      "position_base_median_m": [
+        0.004105554677644674,
+        -1.8326099456322444,
+        0.3842015125661969
+      ],
+      "position_terrain_m": [
+        0.004105554677644674,
+        -1.8326099456322444,
+        -0.03951422046829937
+      ],
+      "height_source": "local_lidar_support_plane",
+      "orientation_wxyz": [
+        0.6494038505907344,
+        -0.007436698317143218,
+        0.0037111665995934874,
+        0.7603982914226841
+      ],
+      "window": {
+        "duration_s": 1.0,
+        "samples": 5,
+        "healthy_fraction": 1.0,
+        "linear_speed_p95_mps": 0.052224020836358055,
+        "angular_speed_p95_rps": 0.09630422940141145,
+        "xy_spread_m": 0.019202634456293388,
+        "z_spread_m": 0.002424501943216417,
+        "covariance_trace_median": 0.07874922905041445
+      },
+      "latest_diagnostics": {
+        "covariance_trace": 0.07766574043648049,
+        "icp_accepted": true,
+        "support_height_map_m": -0.03951422046829937
+      }
+    },
+    {
+      "event": "mark",
+      "index": 6,
+      "name": "waypoint_06",
+      "recorded_at": "2026-09-12T14:32:11Z",
+      "sensor_stamp_s": 38.80000000000001,
+      "position_base_median_m": [
+        -3.095732348933492,
+        1.9520388482967466,
+        0.3866163416168124
+      ],
+      "position_terrain_m": [
+        -3.095732348933492,
+        1.9520388482967466,
+        -0.03872901271324161
+      ],
+      "height_source": "local_lidar_support_plane",
+      "orientation_wxyz": [
+        0.4948485203595195,
+        -0.008737089631397592,
+        0.0027139947717718465,
+        0.8689310901303658
+      ],
+      "window": {
+        "duration_s": 1.0,
+        "samples": 5,
+        "healthy_fraction": 1.0,
+        "linear_speed_p95_mps": 0.040331284462529225,
+        "angular_speed_p95_rps": 0.08658424724662322,
+        "xy_spread_m": 0.031092778401719725,
+        "z_spread_m": 0.002550836690932423,
+        "covariance_trace_median": 0.07249971707108199
+      },
+      "latest_diagnostics": {
+        "covariance_trace": 0.07183010123666667,
+        "icp_accepted": true,
+        "support_height_map_m": -0.038728641252501694
+      }
+    },
+    {
+      "event": "mark",
+      "index": 7,
+      "name": "waypoint_07",
+      "recorded_at": "2026-09-12T14:32:14Z",
+      "sensor_stamp_s": 43.200000000000074,
+      "position_base_median_m": [
+        -5.652755937254109,
+        5.335140972874142,
+        0.38217146193148327
+      ],
+      "position_terrain_m": [
+        -5.652755937254109,
+        5.335140972874142,
+        -0.03906969055374633
+      ],
+      "height_source": "local_lidar_support_plane",
+      "orientation_wxyz": [
+        0.616857202841212,
+        -0.0019059108388161444,
+        -0.0002567891140899828,
+        0.7870727367061707
+      ],
+      "window": {
+        "duration_s": 1.0,
+        "samples": 5,
+        "healthy_fraction": 1.0,
+        "linear_speed_p95_mps": 0.02947194962335679,
+        "angular_speed_p95_rps": 0.11099343127940405,
+        "xy_spread_m": 0.01974652965433581,
+        "z_spread_m": 0.000737593133949277,
+        "covariance_trace_median": 0.06835604990691273
+      },
+      "latest_diagnostics": {
+        "covariance_trace": 0.06784967175386637,
+        "icp_accepted": true,
+        "support_height_map_m": -0.039143958769198746
+      }
+    },
+    {
+      "event": "mark",
+      "index": 8,
+      "name": "waypoint_08",
+      "recorded_at": "2026-09-12T14:32:20Z",
+      "sensor_stamp_s": 50.20000000000017,
+      "position_base_median_m": [
+        -1.772235385016494,
+        3.433368172403199,
+        0.3798691723601347
+      ],
+      "position_terrain_m": [
+        -1.772235385016494,
+        3.433368172403199,
+        -0.04046137501238284
+      ],
+      "height_source": "local_lidar_support_plane",
+      "orientation_wxyz": [
+        0.8656091314169847,
+        0.001369754358886416,
+        0.00677314984543219,
+        -0.5006726273940897
+      ],
+      "window": {
+        "duration_s": 1.0,
+        "samples": 5,
+        "healthy_fraction": 1.0,
+        "linear_speed_p95_mps": 0.012460279478174335,
+        "angular_speed_p95_rps": 0.03180682983652115,
+        "xy_spread_m": 0.013915868983670053,
+        "z_spread_m": 0.002707991156073508,
+        "covariance_trace_median": 0.06475351259090703
+      },
+      "latest_diagnostics": {
+        "covariance_trace": 0.06445633752925899,
+        "icp_accepted": true,
+        "support_height_map_m": -0.04043303554235581
+      }
+    },
+    {
+      "event": "mark",
+      "index": 9,
+      "name": "waypoint_09",
+      "recorded_at": "2026-09-12T14:32:26Z",
+      "sensor_stamp_s": 57.00000000000027,
+      "position_base_median_m": [
+        -5.267730818038448,
+        1.7011577859556406,
+        0.37706251889299336
+      ],
+      "position_terrain_m": [
+        -5.267730818038448,
+        1.7011577859556406,
+        -0.04014470646109259
+      ],
+      "height_source": "local_lidar_support_plane",
+      "orientation_wxyz": [
+        0.299323504226678,
+        -0.0018143415176077346,
+        -0.001904398263762489,
+        0.9541480604442752
+      ],
+      "window": {
+        "duration_s": 1.0,
+        "samples": 5,
+        "healthy_fraction": 1.0,
+        "linear_speed_p95_mps": 0.020290816382087844,
+        "angular_speed_p95_rps": 0.06828558646475469,
+        "xy_spread_m": 0.0012478960215496137,
+        "z_spread_m": 0.0017516199473424643,
+        "covariance_trace_median": 0.06239635909065274
+      },
+      "latest_diagnostics": {
+        "covariance_trace": 0.06210914473545312,
+        "icp_accepted": true,
+        "support_height_map_m": -0.04015802428676291
+      }
+    }
+  ]
+}
